@@ -382,84 +382,6 @@ class RedditTikTokCreator:
                         logging.warning(f"Erreur lors de la suppression du dossier {dir_path}: {e}")
         
         return files_removed, dirs_removed
-    
-    def combine_videos(self, video_paths, output_path):
-        """Combine plusieurs vidéos en une seule"""
-        import os
-        import shutil
-        from moviepy.editor import VideoFileClip, concatenate_videoclips
-        
-        # Créer un répertoire temporaire pour les copies des vidéos
-        temp_dir = os.path.join(self.output_dir, ".temp_combine")
-        os.makedirs(temp_dir, exist_ok=True)
-        
-        # Vérifier les chemins et copier les vidéos dans un emplacement sûr
-        valid_paths = []
-        copied_paths = []
-        
-        for i, path in enumerate(video_paths):
-            if os.path.exists(path) and os.path.isfile(path):
-                # Copier le fichier pour éviter les problèmes de suppression
-                base_name = os.path.basename(path)
-                safe_copy_path = os.path.join(temp_dir, f"video_{i}_{base_name}")
-                try:
-                    shutil.copy2(path, safe_copy_path)
-                    valid_paths.append(safe_copy_path)
-                    copied_paths.append(safe_copy_path)
-                    logging.info(f"Copie de vidéo pour combinaison: {path} -> {safe_copy_path}")
-                except Exception as e:
-                    logging.error(f"Erreur lors de la copie de la vidéo {path}: {e}")
-                    
-                # Copier également le fichier à la racine du dossier output pour le conserver
-                output_copy = os.path.join(self.output_dir, base_name)
-                if not os.path.exists(output_copy):
-                    try:
-                        shutil.copy2(path, output_copy)
-                        logging.info(f"Copie de sauvegarde: {path} -> {output_copy}")
-                    except Exception as e:
-                        logging.warning(f"Erreur lors de la copie de sauvegarde de {path}: {e}")
-        
-        if not valid_paths:
-            logging.error("Aucune vidéo valide à combiner")
-            return False
-        
-        try:
-            logging.info(f"Combinaison de {len(valid_paths)} vidéos")
-            video_clips = [VideoFileClip(p) for p in valid_paths]
-            final_clip = concatenate_videoclips(video_clips)
-            
-            # Créer le répertoire de sortie si nécessaire
-            os.makedirs(os.path.dirname(output_path), exist_ok=True)
-            
-            # Écrire la vidéo finale
-            final_clip.write_videofile(output_path, codec="libx264", audio_codec="aac")
-            
-            # Fermer les clips pour libérer les ressources
-            for clip in video_clips:
-                clip.close()
-            final_clip.close()
-            
-            # Nettoyage des fichiers temporaires
-            for path in copied_paths:
-                try:
-                    if os.path.exists(path):
-                        os.remove(path)
-                except Exception as e:
-                    logging.warning(f"Erreur lors de la suppression du fichier temporaire {path}: {e}")
-            
-            # Essayer de supprimer le dossier temporaire
-            try:
-                shutil.rmtree(temp_dir)
-            except Exception as e:
-                logging.warning(f"Erreur lors de la suppression du dossier temporaire {temp_dir}: {e}")
-            
-            return True
-        except Exception as e:
-            logging.error(f"Erreur lors de la combinaison des vidéos: {str(e)}")
-            import traceback
-            logging.error(traceback.format_exc())
-            return False
-
 
 def main():
     try:
@@ -547,62 +469,13 @@ def main():
             print(f"\nTotal: {len(videos)} videos")
             print(f"Les videos ont ete sauvegardees dans: {creator.output_dir}")
             
-            # Déboguer les chemins pour la combinaison
-            print("\nDébug des chemins de vidéos:")
-            
-            # Vérifier les chemins et les corriger si nécessaire
-            valid_videos = []
-            for i, video in enumerate(videos):
-                old_path = video['path']
-                print(f"{i+1}. Path original: {old_path}")
-                
-                # Si le chemin original n'existe pas, essayons de trouver la vidéo dans le répertoire output
-                if not os.path.exists(old_path):
-                    # Extraire les parties importantes du chemin (dossier de sortie et nom de base)
-                    base_name = os.path.basename(old_path)
-                    dir_name = os.path.dirname(os.path.dirname(os.path.dirname(old_path)))  # Remonte de 3 niveaux (video/post_id/output)
-                    
-                    # Chercher la vidéo dans le répertoire racine
-                    possible_path = os.path.join(dir_name, base_name)
-                    if os.path.exists(possible_path):
-                        video['path'] = possible_path
-                        valid_videos.append(video)
-                        print(f"   Path corrigé: {possible_path} (existe: Oui)")
-                    else:
-                        # Chercher tout fichier similaire
-                        for root, _, files in os.walk(dir_name):
-                            for file in files:
-                                if file.endswith('.mp4') and file.startswith(os.path.splitext(base_name)[0].split('_')[0]):
-                                    video['path'] = os.path.join(root, file)
-                                    valid_videos.append(video)
-                                    print(f"   Path trouvé: {video['path']} (existe: Oui)")
-                                    break
-                else:
-                    valid_videos.append(video)
-                    print(f"   Path existe déjà: {old_path}")
-            
-            # Mettre à jour la liste des vidéos
-            videos = valid_videos
-            for i, video in enumerate(videos):
-                print(f"{i+1}. Path final: {video['path']}")
-                print(f"   Existe: {os.path.exists(video['path'])}")
-                if os.path.exists(video['path']):
-                    print(f"   Taille: {os.path.getsize(video['path'])} octets")
-            
-            # Combinez les vidéos
-            combined_video_path = os.path.join(creator.output_dir, "combined_video.mp4")
-            # Utiliser le chemin 'path' complet depuis la liste des vidéos
-            if videos and creator.combine_videos([video['path'] for video in videos], combined_video_path):
-                print(f"\nVideo combinee creee avec succes: {combined_video_path}")
-            else:
-                print("\nErreur lors de la combinaison des videos.")
-        else:
-            print("Aucune video n'a ete generee. Consultez le fichier journal pour plus de details.")
+    except KeyboardInterrupt:
+        print("\nInterruption utilisateur, arret du programme")
+        sys.exit(0)
     except Exception as e:
-        logging.error(f"Erreur lors de l'execution: {e}")
-        print(f"Une erreur est survenue: {e}")
+        print(f"Erreur: {str(e)}")
         traceback.print_exc()
-
+        sys.exit(1)
 
 if __name__ == "__main__":
     main()
