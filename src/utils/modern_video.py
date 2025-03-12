@@ -472,7 +472,7 @@ class TikTokVideoMaker:
                     
             return False
 
-    def _create_temp_video(self, images, duration_per_image=5.0, loop=False, fps=30, output_path=None):
+    def _create_temp_video(self, images, duration_per_image=11, loop=False, fps=30, output_path=None):
         """
         Crée une vidéo temporaire à partir d'une liste d'images.
         

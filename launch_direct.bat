@@ -1,32 +1,20 @@
 @echo off
-echo ======================================
-echo = Reddit Video Maker               =
-echo ======================================
-echo.
+setlocal
 
-REM Activer l'environnement virtuel
-call venv\Scripts\activate.bat
+:: Prompt for subreddit
+set /p subreddit="Enter subreddit (default: askreddit): "
+if "%subreddit%"=="" set subreddit=askreddit
 
-REM Définir le répertoire de travail
-cd src
+:: Prompt for timeframe
+set /p timeframe="Enter timeframe (default: day): "
+if "%timeframe%"=="" set timeframe=day
 
-REM Exécuter le script directement
-echo Lancement de la création de vidéo...
-python -c "import main; main.main()"
+:: Prompt for post count
+set /p post_count="Enter number of posts to process (default: 1): "
+if "%post_count%"=="" set post_count=1
 
-if %ERRORLEVEL% NEQ 0 (
-    echo.
-    echo Une erreur est survenue lors de l'exécution du script.
-    echo Vérifiez les messages ci-dessus pour plus d'informations.
-) else (
-    echo.
-    echo ======================================
-    echo = Création de vidéo terminée avec   =
-    echo = succès!                          =
-    echo ======================================
-)
+:: Run the Python script with the provided options
+python src/silent_video_creator.py --subreddit %subreddit% --timeframe %timeframe% --post_count %post_count%
 
-REM Revenir au dossier parent
-cd ..
-
+endlocal
 pause
