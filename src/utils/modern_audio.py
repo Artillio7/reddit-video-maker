@@ -1,11 +1,3 @@
-import os
-import random
-import numpy as np
-from gtts import gTTS
-from pathlib import Path
-import logging
-from moviepy.audio.io.AudioFileClip import AudioFileClip
-from moviepy.audio.AudioClip import CompositeAudioClip, concatenate_audioclips
 
 class TTSGenerator:
     def __init__(self, language='en', tld='com', temp_dir='temp'):

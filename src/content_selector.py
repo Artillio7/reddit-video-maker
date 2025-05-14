@@ -168,7 +168,7 @@ def generate_videos(category_key, option_index):
         f"--sorting", selected_option["sorting"],
         f"--timeframe", selected_option["timeframe"],
         f"--post-count", str(selected_option["post_count"]),
-        f"--video-count", str(selected_option["video_count"])
+        
     ]
     
     if "comment_sort" in selected_option:
@@ -179,7 +179,7 @@ def generate_videos(category_key, option_index):
     print(f"Tri: {selected_option['sorting']}")
     print(f"Période: {selected_option['timeframe']}")
     print(f"Nombre de posts: {selected_option['post_count']}")
-    print(f"Nombre de vidéos: {selected_option['video_count']}")
+    
     if "comment_sort" in selected_option:
         print(f"Tri des commentaires: {selected_option['comment_sort']}")
     print("\nLancement de la génération...\n")
@@ -188,9 +188,9 @@ def generate_videos(category_key, option_index):
     result = run_command(args)
     
     if result == 0:
-        print("\nLes vidéos ont été générées avec succès !")
+        print("\nLe contenu a été généré avec succès !")
     else:
-        print(f"\nUne erreur s'est produite lors de la génération des vidéos (code: {result}).")
+        print(f"\nUne erreur s'est produite lors de la génération du contenu (code: {result}).")
     
     input("\nAppuyez sur Entrée pour continuer...")
 

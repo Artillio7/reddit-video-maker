@@ -1,30 +1,69 @@
 # Reddit Video Maker
 
-Un outil automatisé pour créer des vidéos TikTok à partir de contenu Reddit.
+## 🎬 Point d'entrée principal
 
-## Configuration requise
+Lancez **exclusivement** le projet via :
 
-- Python 3.8 ou supérieur
-- FFmpeg installé et accessible dans le PATH
-- Un compte Reddit (pour les identifiants API)
-
-## Installation
-
-1. Cloner le repository
-2. Exécuter `installer.bat` ou `install_dependencies.ps1` pour installer toutes les dépendances
-3. Créer un fichier `.env` avec vos identifiants Reddit (voir Configuration)
-
-## Configuration
-
-Créez un fichier `.env` à la racine du projet avec les informations suivantes :
-
-```env
-REDDIT_CLIENT_ID=votre_client_id
-REDDIT_CLIENT_SECRET=votre_client_secret
-REDDIT_USER_AGENT=votre_user_agent
+```bash
+python src/main.py [options]
 ```
 
-## Utilisation
+- `src/main.py` est le **seul main officiel**.
+- Tous les autres scripts (ex : `modern_main.py`, `mock_data.py`) sont obsolètes ou supprimés.
+
+## 🔗 Dépendances
+- API Reddit (nécessite des identifiants valides dans `.env`)
+- Voir `requirements.txt` pour les dépendances Python.
+
+## 🚀 Exemples d'utilisation
+
+```bash
+python src/main.py --subreddit news --post-count 20 --video-count 3
+```
+
+## 📦 Structure du projet
+- `src/main.py` : orchestrateur principal (scraping, audio, vidéo, etc.)
+- `src/utils/` : modules utilitaires (scraping, audio, etc.)
+- `.env` : variables d'environnement (Reddit API)
+- `output/` : vidéos générées
+
+## 🛑 Notes
+- **modern_main.py** et **mock_data.py** sont obsolètes/supprimés.
+- Le projet ne fonctionne qu'avec des données Reddit réelles (plus de fallback mock).
+
+## 🔒 Sécurité
+- Ne partagez jamais vos identifiants Reddit en dur dans le code ou publiquement.
+- Changez votre mot de passe Reddit après vos tests si besoin.
+
+
+This project scrapes Reddit posts and comments and generates audio from the selected content. The project is streamlined to focus on scraping and audio generation only.
+
+## Features
+- Scrape posts and comments from Reddit
+- Generate audio (TTS) from Reddit comments
+- Multiple content categories and subreddit options
+- Easy setup and launch via batch scripts
+
+## Requirements
+- Python 3.8+
+- Reddit API credentials (see `.env.example`)
+- FFmpeg (for audio processing)
+
+## Setup
+1. Clone the repository
+2. Install dependencies: `pip install -r requirements.txt`
+3. Copy `.env.example` to `.env` and fill in your Reddit API credentials
+4. (Optional) Install FFmpeg if not already installed
+
+## Usage
+- To launch the content selector: `launch_content_selector.bat`
+- To run the main script directly: `python src/main.py --help`
+
+## Directory Structure
+- `src/`: Main source code (scraping & audio)
+- `resources/`: Fonts, music, backgrounds, icons
+- `output/`: Generated audio and data
+- `temp/`: Temporary files
 
 Le script principal accepte plusieurs paramètres pour personnaliser la génération de vidéos :
 

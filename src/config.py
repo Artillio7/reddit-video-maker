@@ -31,6 +31,12 @@ REDDIT_CONFIG = {
     "client_secret": client_secret,
     "user_agent": user_agent or "RedditVideoMaker by /u/your_reddit_username"
 }
+# Ajout des identifiants script Reddit si présents
+reddit_username = os.environ.get("REDDIT_USERNAME")
+reddit_password = os.environ.get("REDDIT_PASSWORD")
+if reddit_username and reddit_password:
+    REDDIT_CONFIG["username"] = reddit_username
+    REDDIT_CONFIG["password"] = reddit_password
 
 # Video Configuration
 VIDEO_CONFIG = {
@@ -45,6 +51,9 @@ VIDEO_CONFIG = {
     "comment_duration": 8,  # Duration for comment cards in seconds
     "transition_duration": 0.8,  # Duration of transitions in seconds
     "enable_zoom_effect": True,  # Enable zoom effects on images
+    "zoom_factor": 0.8,  # Facteur de zoom pour les images (< 1 pour dézoomer)
+    "background_path": None,  # Chemin vers l'image ou vidéo d'arrière-plan
+    "background_audio_path": None,  # Chemin vers l'audio d'arrière-plan
     "video_codec": "libx264",
     "video_bitrate": "2500k",
 }

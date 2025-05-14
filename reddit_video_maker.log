@@ -47520,3 +47520,235 @@ Also Zoo tycoon (the origi...' (65 caractères)
 2025-03-03 13:32:57,391 - INFO - Fichiers temporaires supprimés: 0
 2025-03-03 13:32:57,392 - INFO - Processus terminé en 373.59 secondes.
 2025-03-03 13:32:57,392 - INFO - Vidéos créées: 5/5
+2025-04-27 04:04:56,942 - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-04-27 04:04:56,943 - INFO - Successfully connected to Reddit API (read-only mode)
+2025-04-27 04:04:56,944 - INFO - TTSGenerator initialisé (langue=en, tld=com)
+2025-04-27 04:04:56,944 - INFO - RedditTikTokCreator initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-04-27 04:04:56,944 - INFO - Début du processus de création vidéo
+2025-04-27 04:04:56,944 - INFO - Paramètres: subreddit=news, timeframe=day, post_count=20, video_count=5
+2025-04-27 04:04:56,944 - INFO - Récupération des posts de r/news avec tri hot...
+2025-04-27 04:04:57,289 - ERROR - Erreur lors de la récupération des posts: received 403 HTTP response
+2025-04-27 04:04:57,289 - ERROR - Aucun post n'a été récupéré
+2025-04-27 04:04:57,289 - ERROR - Vérifiez vos identifiants Reddit dans le fichier .env
+2025-04-27 04:04:57,289 - ERROR - Suivez les instructions dans le fichier .env pour obtenir vos identifiants
+2025-04-27 04:11:00,612 - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-04-27 04:11:00,613 - INFO - Successfully connected to Reddit API (read-only mode)
+2025-04-27 04:11:00,613 - INFO - TTSGenerator initialisé (langue=en, tld=com)
+2025-04-27 04:11:00,613 - INFO - RedditTikTokCreator initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-04-27 04:11:00,614 - INFO - Début du processus de création vidéo
+2025-04-27 04:11:00,614 - INFO - Paramètres: subreddit=Sephora, timeframe=month, post_count=15, video_count=3
+2025-04-27 04:11:00,614 - INFO - Récupération des posts de r/Sephora avec tri hot...
+2025-04-27 04:11:00,957 - ERROR - Erreur lors de la récupération des posts: received 403 HTTP response
+2025-04-27 04:11:00,958 - ERROR - Aucun post n'a été récupéré
+2025-04-27 04:11:00,958 - ERROR - Vérifiez vos identifiants Reddit dans le fichier .env
+2025-04-27 04:11:00,958 - ERROR - Suivez les instructions dans le fichier .env pour obtenir vos identifiants
+2025-04-27 04:27:40,241 - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-04-27 04:27:40,243 - INFO - Successfully connected to Reddit API (read-only mode)
+2025-04-27 04:27:40,244 - INFO - TTSGenerator initialisé (langue=en, tld=com)
+2025-04-27 04:27:40,244 - INFO - RedditTikTokCreator initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-04-27 04:27:40,244 - INFO - Début du processus de création vidéo
+2025-04-27 04:27:40,244 - INFO - Paramètres: subreddit=askreddit, timeframe=day, post_count=10, video_count=3
+2025-04-27 04:27:40,245 - INFO - Méthode de tri aléatoire sélectionnée: rising
+2025-04-27 04:27:40,245 - INFO - Récupération des posts de r/askreddit avec tri rising...
+2025-04-27 04:27:40,604 - ERROR - Erreur lors de la récupération des posts: received 403 HTTP response
+2025-04-27 04:27:40,604 - ERROR - Aucun post n'a été récupéré
+2025-04-27 04:27:40,605 - ERROR - Vérifiez vos identifiants Reddit dans le fichier .env
+2025-04-27 04:27:40,605 - ERROR - Suivez les instructions dans le fichier .env pour obtenir vos identifiants
+2025-04-27 11:00:20,702 - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-04-27 11:00:20,807 - INFO - Connected to Reddit API in read-only mode
+2025-04-27 11:00:20,807 - INFO - TTSGenerator initialisé (langue=en, tld=com)
+2025-04-27 11:00:20,807 - INFO - RedditTikTokCreator initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-04-27 11:00:20,807 - INFO - Début du processus de création vidéo
+2025-04-27 11:00:20,807 - INFO - Paramètres: subreddit=news, timeframe=day, post_count=20, video_count=3
+2025-04-27 11:00:20,808 - INFO - Récupération des posts de r/news avec tri hot...
+2025-04-27 11:00:21,169 - ERROR - Erreur lors de la récupération des posts: received 403 HTTP response
+2025-04-27 11:00:21,170 - ERROR - Aucun post n'a été récupéré
+2025-04-27 11:00:21,170 - ERROR - Vérifiez vos identifiants Reddit dans le fichier .env
+2025-04-27 11:00:21,170 - ERROR - Suivez les instructions dans le fichier .env pour obtenir vos identifiants
+2025-04-27 11:04:50,856 - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-04-27 11:04:50,858 - INFO - Connected to Reddit API in read-only mode
+2025-04-27 11:04:50,858 - INFO - TTSGenerator initialisé (langue=en, tld=com)
+2025-04-27 11:04:50,858 - INFO - RedditTikTokCreator initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-04-27 11:04:50,858 - INFO - Début du processus de création vidéo
+2025-04-27 11:04:50,858 - INFO - Paramètres: subreddit=news, timeframe=day, post_count=20, video_count=3
+2025-04-27 11:04:50,858 - INFO - Récupération des posts de r/news avec tri hot...
+2025-04-27 11:04:51,229 - ERROR - Erreur lors de la récupération des posts: received 403 HTTP response
+2025-04-27 11:04:51,230 - WARNING - Aucun post n'a été récupéré; utilisation de données fictives pour la vidéo
+2025-04-27 11:28:06,661 - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-04-27 11:28:07,431 - ERROR - Erreur d'authentification script Reddit : invalid_grant error processing request
+2025-04-27 11:28:07,431 - INFO - TTSGenerator initialisé (langue=en, tld=com)
+2025-04-27 11:28:07,431 - INFO - RedditTikTokCreator initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-04-27 11:28:07,432 - INFO - Début du processus de création vidéo
+2025-04-27 11:28:07,432 - INFO - Paramètres: subreddit=news, timeframe=day, post_count=20, video_count=3
+2025-04-27 11:28:07,432 - INFO - Récupération des posts de r/news avec tri hot...
+2025-04-27 11:28:08,128 - ERROR - Erreur lors de la récupération des posts: invalid_grant error processing request
+2025-04-27 11:28:08,129 - WARNING - Aucun post n'a été récupéré; utilisation de données fictives pour la vidéo
+2025-04-27 11:41:57,141 - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-04-27 11:41:57,849 - ERROR - Erreur d'authentification script Reddit : invalid_grant error processing request
+2025-04-27 11:41:57,849 - INFO - TTSGenerator initialisé (langue=en, tld=com)
+2025-04-27 11:41:57,850 - INFO - AppController initialisé.
+2025-04-27 11:41:57,850 - INFO - [Controller] Scraping r/news...
+2025-04-27 11:41:57,850 - INFO - Récupération des posts de r/news avec tri hot...
+2025-04-27 11:41:58,577 - ERROR - Erreur lors de la récupération des posts: invalid_grant error processing request
+2025-04-27 11:41:58,577 - ERROR - Aucun post Reddit récupéré. Arrêt du pipeline.
+2025-04-27 11:50:27,490 - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-04-27 11:50:28,185 - ERROR - Erreur d'authentification script Reddit : invalid_grant error processing request
+2025-04-27 11:50:28,186 - INFO - TTSGenerator initialisé (langue=en, tld=com)
+2025-04-27 11:50:28,186 - INFO - AppController initialisé.
+2025-04-27 11:50:28,186 - INFO - [Controller] Scraping r/news...
+2025-04-27 11:50:28,186 - INFO - Récupération des posts de r/news avec tri hot...
+2025-04-27 11:50:28,886 - ERROR - Erreur lors de la récupération des posts: invalid_grant error processing request
+2025-04-27 11:50:28,887 - ERROR - Aucun post Reddit récupéré. Arrêt du pipeline.
+2025-04-27 11:51:12,295 - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-04-27 11:51:12,487 - ERROR - Erreur d'authentification script Reddit : invalid_grant error processing request
+2025-04-27 11:51:12,488 - INFO - TTSGenerator initialisé (langue=en, tld=com)
+2025-04-27 11:51:12,488 - INFO - AppController initialisé.
+2025-04-27 11:51:12,488 - INFO - [Controller] Scraping r/news...
+2025-04-27 11:51:12,488 - INFO - Récupération des posts de r/news avec tri hot...
+2025-04-27 11:51:12,648 - ERROR - Erreur lors de la récupération des posts: invalid_grant error processing request
+2025-04-27 11:51:12,648 - ERROR - Aucun post Reddit récupéré. Arrêt du pipeline.
+2025-04-27 11:53:31,243 - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-04-27 11:53:31,927 - ERROR - Erreur d'authentification script Reddit : invalid_grant error processing request
+2025-04-27 11:53:31,928 - INFO - TTSGenerator initialisé (langue=en, tld=com)
+2025-04-27 11:53:31,928 - INFO - AppController initialisé.
+2025-04-27 11:53:31,928 - INFO - [Controller] Scraping r/news...
+2025-04-27 11:53:31,928 - INFO - Récupération des posts de r/news avec tri hot...
+2025-04-27 11:53:32,599 - ERROR - Erreur lors de la récupération des posts: invalid_grant error processing request
+2025-04-27 11:53:32,600 - ERROR - Aucun post Reddit récupéré. Arrêt du pipeline.
+2025-04-27 11:54:51,384 - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-04-27 11:54:52,100 - ERROR - Erreur d'authentification script Reddit : invalid_grant error processing request
+2025-04-27 11:54:52,101 - INFO - TTSGenerator initialisé (langue=en, tld=com)
+2025-04-27 11:54:52,101 - INFO - AppController initialisé.
+2025-04-27 11:54:52,101 - INFO - [Controller] Scraping r/news...
+2025-04-27 11:54:52,102 - INFO - Récupération des posts de r/news avec tri hot...
+2025-04-27 11:54:52,776 - ERROR - Erreur lors de la récupération des posts: invalid_grant error processing request
+2025-04-27 11:54:52,776 - ERROR - Aucun post Reddit récupéré. Arrêt du pipeline.
+2025-04-27 11:58:28,921 - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-04-27 11:58:29,628 - ERROR - Erreur d'authentification script Reddit : invalid_grant error processing request
+2025-04-27 11:58:29,628 - INFO - TTSGenerator initialisé (langue=en, tld=com)
+2025-04-27 11:58:29,628 - INFO - AppController initialisé.
+2025-04-27 11:58:29,629 - INFO - [Controller] Scraping r/news...
+2025-04-27 11:58:29,629 - INFO - Récupération des posts de r/news avec tri hot...
+2025-04-27 11:58:30,369 - ERROR - Erreur lors de la récupération des posts: invalid_grant error processing request
+2025-04-27 11:58:30,369 - ERROR - Aucun post Reddit récupéré. Arrêt du pipeline.
+2025-04-27 12:07:00,507 - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-04-27 12:07:01,298 - ERROR - Erreur d'authentification script Reddit : unauthorized_client error processing request (Only script apps may use password auth)
+2025-04-27 12:07:01,298 - INFO - TTSGenerator initialisé (langue=en, tld=com)
+2025-04-27 12:07:01,299 - INFO - AppController initialisé.
+2025-04-27 12:07:01,299 - INFO - [Controller] Scraping r/news...
+2025-04-27 12:07:01,299 - INFO - Récupération des posts de r/news avec tri hot...
+2025-04-27 12:07:01,960 - ERROR - Erreur lors de la récupération des posts: unauthorized_client error processing request (Only script apps may use password auth)
+2025-04-27 12:07:01,960 - ERROR - Aucun post Reddit récupéré. Arrêt du pipeline.
+2025-04-27 12:11:40,255 - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-04-27 12:11:41,218 - INFO - Authentifié sur Reddit en mode script : Total-Ad8842
+2025-04-27 12:11:41,219 - INFO - TTSGenerator initialisé (langue=en, tld=com)
+2025-04-27 12:11:41,219 - INFO - AppController initialisé.
+2025-04-27 12:11:41,219 - INFO - [Controller] Scraping r/news...
+2025-04-27 12:11:41,219 - INFO - Récupération des posts de r/news avec tri hot...
+2025-04-27 12:12:01,535 - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-04-27 12:12:02,504 - INFO - Authentifié sur Reddit en mode script : Total-Ad8842
+2025-04-27 12:12:02,504 - INFO - TTSGenerator initialisé (langue=en, tld=com)
+2025-04-27 12:12:02,504 - INFO - AppController initialisé.
+2025-04-27 12:12:02,505 - INFO - [Controller] Scraping r/news...
+2025-04-27 12:12:02,505 - INFO - Récupération des posts de r/news avec tri hot...
+2025-04-27 12:13:44,919 - INFO - 20 posts récupérés de r/news
+2025-04-27 12:13:44,920 - INFO - Structure du premier post: ['post', 'title', 'author', 'score', 'url', 'created_utc', 'id', 'comment_count', 'comments']
+2025-04-27 12:13:44,920 - INFO - [Controller] 20 posts récupérés. Lancement génération audio/vidéo...
+2025-04-27 12:13:44,920 - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-04-27 12:13:45,831 - INFO - Authentifié sur Reddit en mode script : Total-Ad8842
+2025-04-27 12:13:45,832 - INFO - TTSGenerator initialisé (langue=en, tld=com)
+2025-04-27 12:13:45,832 - INFO - RedditTikTokCreator initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-04-27 12:13:45,832 - INFO - Début du processus de création vidéo
+2025-04-27 12:13:45,832 - INFO - Paramètres: subreddit=news, timeframe=day, post_count=20, video_count=3
+2025-04-27 12:13:45,832 - INFO - Récupération des posts de r/news avec tri hot...
+2025-04-27 12:15:22,238 - INFO - 20 posts récupérés de r/news
+2025-04-27 12:15:22,239 - INFO - Structure du premier post: ['post', 'title', 'author', 'score', 'url', 'created_utc', 'id', 'comment_count', 'comments']
+2025-04-27 12:15:22,239 - INFO - 20 posts récupérés, création de 3 vidéos
+2025-04-27 12:16:24,297 - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-04-27 12:16:25,322 - INFO - Authentifié sur Reddit en mode script : Total-Ad8842
+2025-04-27 12:16:25,322 - INFO - TTSGenerator initialisé (langue=en, tld=com)
+2025-04-27 12:16:25,323 - INFO - AppController initialisé.
+2025-04-27 12:16:25,323 - INFO - [Controller] Scraping r/funny...
+2025-04-27 12:16:25,323 - INFO - Récupération des posts de r/funny avec tri hot...
+2025-04-27 12:17:00,881 - INFO - 15 posts récupérés de r/funny
+2025-04-27 12:17:00,882 - INFO - Structure du premier post: ['post', 'title', 'author', 'score', 'url', 'created_utc', 'id', 'comment_count', 'comments']
+2025-04-27 12:17:00,882 - INFO - [Controller] 15 posts récupérés. Lancement génération audio/vidéo...
+2025-04-27 12:17:00,883 - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-04-27 12:17:01,970 - INFO - Authentifié sur Reddit en mode script : Total-Ad8842
+2025-04-27 12:17:01,970 - INFO - TTSGenerator initialisé (langue=en, tld=com)
+2025-04-27 12:17:01,970 - INFO - RedditTikTokCreator initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-04-27 12:17:01,970 - INFO - Début du processus de création vidéo
+2025-04-27 12:17:01,971 - INFO - Paramètres: subreddit=funny, timeframe=day, post_count=15, video_count=3
+2025-04-27 12:17:01,971 - INFO - Récupération des posts de r/funny avec tri hot...
+2025-04-27 12:17:35,826 - INFO - 15 posts récupérés de r/funny
+2025-04-27 12:17:35,826 - INFO - Structure du premier post: ['post', 'title', 'author', 'score', 'url', 'created_utc', 'id', 'comment_count', 'comments']
+2025-04-27 12:17:35,826 - INFO - 15 posts récupérés, création de 3 vidéos
+2025-04-27 12:32:41,851 - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-04-27 12:32:42,546 - ERROR - Erreur d'authentification script Reddit : invalid_grant error processing request
+2025-04-27 12:32:42,547 - INFO - TTSGenerator initialisé (langue=en, tld=com)
+2025-04-27 12:32:42,547 - INFO - AppController initialisé.
+2025-04-27 12:32:42,547 - INFO - [Controller] Scraping r/askreddit...
+2025-04-27 12:32:42,547 - INFO - Méthode de tri aléatoire sélectionnée: top
+2025-04-27 12:32:42,547 - INFO - Récupération des posts de r/askreddit avec tri top...
+2025-04-27 12:32:43,249 - ERROR - Erreur lors de la récupération des posts: invalid_grant error processing request
+2025-04-27 12:32:43,250 - ERROR - Aucun post Reddit récupéré. Arrêt du pipeline.
+2025-04-27 12:49:24,844 - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-04-27 12:49:25,854 - INFO - Authentifié sur Reddit en mode script : Total-Ad8842
+2025-04-27 12:49:25,855 - INFO - TTSGenerator initialisé (langue=en, tld=com)
+2025-04-27 12:49:25,855 - INFO - AppController initialisé.
+2025-04-27 12:49:25,855 - INFO - [Controller] Scraping r/news...
+2025-04-27 12:49:25,855 - INFO - Récupération des posts de r/news avec tri hot...
+2025-04-27 12:51:01,206 - INFO - 20 posts récupérés de r/news
+2025-04-27 12:51:01,207 - INFO - Structure du premier post: ['post', 'title', 'author', 'score', 'url', 'created_utc', 'id', 'comment_count', 'comments']
+2025-04-27 12:51:01,207 - INFO - [Controller] 20 posts récupérés. Lancement génération audio/vidéo...
+2025-04-27 12:51:01,208 - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-04-27 12:51:02,157 - INFO - Authentifié sur Reddit en mode script : Total-Ad8842
+2025-04-27 12:51:02,157 - INFO - TTSGenerator initialisé (langue=en, tld=com)
+2025-04-27 12:51:02,158 - INFO - RedditTikTokCreator initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-04-27 12:51:02,158 - INFO - Début du processus de création vidéo
+2025-04-27 12:51:02,158 - INFO - Paramètres: subreddit=news, timeframe=day, post_count=20, video_count=3
+2025-04-27 12:51:02,158 - INFO - Récupération des posts de r/news avec tri hot...
+2025-04-27 12:52:43,341 - INFO - 20 posts récupérés de r/news
+2025-04-27 12:52:43,341 - INFO - Structure du premier post: ['post', 'title', 'author', 'score', 'url', 'created_utc', 'id', 'comment_count', 'comments']
+2025-04-27 12:52:43,342 - INFO - 20 posts récupérés, création de 3 vidéos
+2025-04-27 13:11:24,884 - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-04-27 13:11:25,952 - INFO - Authentifié sur Reddit en mode script : Total-Ad8842
+2025-04-27 13:11:25,953 - INFO - TTSGenerator initialisé (langue=en, tld=com)
+2025-04-27 13:11:25,953 - INFO - AppController initialisé.
+2025-04-27 13:11:25,953 - INFO - [Controller] Scraping r/artificial...
+2025-04-27 13:11:25,953 - INFO - Récupération des posts de r/artificial avec tri hot...
+2025-04-27 13:11:33,456 - INFO - Media telecharge: https://preview.redd.it/m3mc0bb4zaxe1.png?width=1080&format=png&auto=webp&s=5dd3dfc5257fd66662cf85daa522bb2f13101a96 -> C:\Users\Artillio\Documents\reddit-video-maker\output\1k8uukw\images\comments_media\mp9enfk_img_0.png
+2025-04-27 13:11:33,826 - INFO - Media telecharge: https://preview.redd.it/gqa4atcw6bxe1.jpeg?width=4096&format=pjpg&auto=webp&s=c11eeca3e6ff5737b82cc7a9ef71fbb26e5ba336 -> C:\Users\Artillio\Documents\reddit-video-maker\output\1k8uukw\images\comments_media\mp9l6ed_img_0.jpeg
+2025-04-27 13:11:33,954 - INFO - Media telecharge: https://preview.redd.it/r48o8af7yaxe1.jpeg?width=1080&format=pjpg&auto=webp&s=6cdb14d05952bf2f43bbf5d40e5448719fc0028e -> C:\Users\Artillio\Documents\reddit-video-maker\output\1k8uukw\images\comments_media\mp9f3ss_img_0.jpeg
+2025-04-27 13:11:35,311 - INFO - Media telecharge: https://preview.redd.it/o7eizbh7w5xe1.png?width=1079&format=png&auto=webp&s=4d9d33a09aafc3e7e1c5c2d27b36ad5569663602 -> C:\Users\Artillio\Documents\reddit-video-maker\output\1k7rwmu\images\comments_media\mp4ltug_img_0.png
+2025-04-27 13:11:35,441 - INFO - Media telecharge: https://preview.redd.it/e8eeu0f0l3xe1.jpeg?width=474&format=pjpg&auto=webp&s=7dfdd2a1bdf282c291f0092c95e0cf5d51d5d599 -> C:\Users\Artillio\Documents\reddit-video-maker\output\1k7rwmu\images\comments_media\mp36a3a_img_0.jpeg
+2025-04-27 13:11:39,015 - INFO - Media telecharge: https://preview.redd.it/heok3rqwk7xe1.jpeg?width=960&format=pjpg&auto=webp&s=4ede516d6da6610d2c2095f1876759a7741a98f9 -> C:\Users\Artillio\Documents\reddit-video-maker\output\1k89baq\images\comments_media\mp66h7v_img_0.jpeg
+2025-04-27 13:11:39,832 - INFO - Media telecharge: https://preview.redd.it/jz1odkkpj4xe1.png?width=648&format=png&auto=webp&s=6e5e0f8f236bbfc62b23cd577a5cd4607db0b9bf -> C:\Users\Artillio\Documents\reddit-video-maker\output\1k85mjy\images\comments_media\mp3ungx_img_0.png
+2025-04-27 13:11:43,061 - INFO - Media telecharge: https://preview.redd.it/j62iludiw0xe1.png?width=1814&format=png&auto=webp&s=4c4c9fa467a0c5fcd0eef0d0939d2921b24cca55 -> C:\Users\Artillio\Documents\reddit-video-maker\output\1k7rhnu\images\comments_media\mp0gyw0_img_0.png
+2025-04-27 13:11:46,261 - INFO - Media telecharge: https://preview.redd.it/d1i2d3wjlmwe1.jpeg?width=640&format=pjpg&auto=webp&s=d8d5cd10d63f7fdcfd6920d0ab8a9a1646a64a9a -> C:\Users\Artillio\Documents\reddit-video-maker\output\1k64n8o\images\comments_media\monekif_img_0.jpeg
+2025-04-27 13:11:46,853 - INFO - Media telecharge: https://preview.redd.it/vdswn7y71twe1.png?width=815&format=png&auto=webp&s=e9b60e43978742bb031b4dba341cf3532c1e3da6 -> C:\Users\Artillio\Documents\reddit-video-maker\output\1k6uzmm\images\comments_media\mot3s6q_img_0.png
+2025-04-27 13:11:51,175 - INFO - 20 posts récupérés de r/artificial
+2025-04-27 13:11:51,176 - INFO - Structure du premier post: ['post', 'title', 'author', 'score', 'url', 'created_utc', 'id', 'comment_count', 'comments']
+2025-04-27 13:11:51,176 - INFO - [Controller] 20 posts récupérés. Lancement génération audio/vidéo...
+2025-04-27 13:11:51,176 - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-04-27 13:11:52,146 - INFO - Authentifié sur Reddit en mode script : Total-Ad8842
+2025-04-27 13:11:52,146 - INFO - TTSGenerator initialisé (langue=en, tld=com)
+2025-04-27 13:11:52,147 - INFO - RedditTikTokCreator initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-04-27 13:11:52,147 - INFO - Début du processus de création vidéo
+2025-04-27 13:11:52,147 - INFO - Paramètres: subreddit=artificial, timeframe=week, post_count=20, video_count=3
+2025-04-27 13:11:52,147 - INFO - Récupération des posts de r/artificial avec tri hot...
+2025-04-27 13:11:58,709 - INFO - Media telecharge: https://preview.redd.it/m3mc0bb4zaxe1.png?width=1080&format=png&auto=webp&s=5dd3dfc5257fd66662cf85daa522bb2f13101a96 -> C:\Users\Artillio\Documents\reddit-video-maker\output\1k8uukw\images\comments_media\mp9enfk_img_0.png
+2025-04-27 13:11:58,885 - INFO - Media telecharge: https://preview.redd.it/gqa4atcw6bxe1.jpeg?width=4096&format=pjpg&auto=webp&s=c11eeca3e6ff5737b82cc7a9ef71fbb26e5ba336 -> C:\Users\Artillio\Documents\reddit-video-maker\output\1k8uukw\images\comments_media\mp9l6ed_img_0.jpeg
+2025-04-27 13:11:58,956 - INFO - Media telecharge: https://preview.redd.it/r48o8af7yaxe1.jpeg?width=1080&format=pjpg&auto=webp&s=6cdb14d05952bf2f43bbf5d40e5448719fc0028e -> C:\Users\Artillio\Documents\reddit-video-maker\output\1k8uukw\images\comments_media\mp9f3ss_img_0.jpeg
+2025-04-27 13:12:00,100 - INFO - Media telecharge: https://preview.redd.it/o7eizbh7w5xe1.png?width=1079&format=png&auto=webp&s=4d9d33a09aafc3e7e1c5c2d27b36ad5569663602 -> C:\Users\Artillio\Documents\reddit-video-maker\output\1k7rwmu\images\comments_media\mp4ltug_img_0.png
+2025-04-27 13:12:00,152 - INFO - Media telecharge: https://preview.redd.it/e8eeu0f0l3xe1.jpeg?width=474&format=pjpg&auto=webp&s=7dfdd2a1bdf282c291f0092c95e0cf5d51d5d599 -> C:\Users\Artillio\Documents\reddit-video-maker\output\1k7rwmu\images\comments_media\mp36a3a_img_0.jpeg
+2025-04-27 13:12:03,707 - INFO - Media telecharge: https://preview.redd.it/heok3rqwk7xe1.jpeg?width=960&format=pjpg&auto=webp&s=4ede516d6da6610d2c2095f1876759a7741a98f9 -> C:\Users\Artillio\Documents\reddit-video-maker\output\1k89baq\images\comments_media\mp66h7v_img_0.jpeg
+2025-04-27 13:12:04,511 - INFO - Media telecharge: https://preview.redd.it/jz1odkkpj4xe1.png?width=648&format=png&auto=webp&s=6e5e0f8f236bbfc62b23cd577a5cd4607db0b9bf -> C:\Users\Artillio\Documents\reddit-video-maker\output\1k85mjy\images\comments_media\mp3ungx_img_0.png
+2025-04-27 13:12:07,576 - INFO - Media telecharge: https://preview.redd.it/j62iludiw0xe1.png?width=1814&format=png&auto=webp&s=4c4c9fa467a0c5fcd0eef0d0939d2921b24cca55 -> C:\Users\Artillio\Documents\reddit-video-maker\output\1k7rhnu\images\comments_media\mp0gyw0_img_0.png
+2025-04-27 13:12:10,997 - INFO - Media telecharge: https://preview.redd.it/d1i2d3wjlmwe1.jpeg?width=640&format=pjpg&auto=webp&s=d8d5cd10d63f7fdcfd6920d0ab8a9a1646a64a9a -> C:\Users\Artillio\Documents\reddit-video-maker\output\1k64n8o\images\comments_media\monekif_img_0.jpeg
+2025-04-27 13:12:11,523 - INFO - Media telecharge: https://preview.redd.it/vdswn7y71twe1.png?width=815&format=png&auto=webp&s=e9b60e43978742bb031b4dba341cf3532c1e3da6 -> C:\Users\Artillio\Documents\reddit-video-maker\output\1k6uzmm\images\comments_media\mot3s6q_img_0.png
+2025-04-27 13:12:15,385 - INFO - 20 posts récupérés de r/artificial
+2025-04-27 13:12:15,385 - INFO - Structure du premier post: ['post', 'title', 'author', 'score', 'url', 'created_utc', 'id', 'comment_count', 'comments']
+2025-04-27 13:12:15,385 - INFO - 20 posts récupérés, création de 3 vidéos
+2025-05-13 15:17:55,111 - ERROR - Erreur d'importation: No module named 'utils'
+2025-05-13 15:17:55,112 - ERROR - Assurez-vous d'exécuter le script depuis le dossier src

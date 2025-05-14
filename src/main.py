@@ -33,10 +33,10 @@ logging.basicConfig(
 # Importer les modules du projet
 try:
     from utils.modern_audio import ModernAudioMaker, TTSGenerator
-    from utils.modern_video import TikTokVideoMaker
-    from utils.modern_captions import ModernCaptionMaker, CommentCardCreator
     from utils.redditScrape import RedditScraper
+    from utils.modern_video import TikTokVideoMaker
     import config
+    from utils.comment_card_creator import CommentCardCreator
 except ImportError as e:
     logging.error(f"Erreur d'importation: {e}")
     logging.error("Assurez-vous d'exécuter le script depuis le dossier src")
@@ -94,7 +94,6 @@ class RedditTikTokCreator:
         self.temp_dir = os.path.join(self.base_dir, 'temp')
         os.makedirs(self.temp_dir, exist_ok=True)
         
-        # Initialiser les ressources
         self.resources_dir = os.path.join(self.base_dir, 'resources')
         self.music_dir = os.path.join(self.resources_dir, 'music')
         self.fonts_dir = os.path.join(self.resources_dir, 'fonts')
@@ -107,6 +106,9 @@ class RedditTikTokCreator:
         # Initialiser les composants
         self.reddit_scraper = RedditScraper()
         self.tts_generator = TTSGenerator()
+        self.comment_card_creator = CommentCardCreator(
+            os.path.join(self.output_dir, 'comment_cards')
+        )
         
         logging.info(f"RedditTikTokCreator initialisé avec répertoire de sortie: {self.output_dir}")
     
@@ -149,9 +151,7 @@ class RedditTikTokCreator:
         )
         
         if not posts:
-            logging.error("Aucun post n'a été récupéré")
-            logging.error("Vérifiez vos identifiants Reddit dans le fichier .env")
-            logging.error("Suivez les instructions dans le fichier .env pour obtenir vos identifiants")
+            logging.error("Aucun post n'a été récupéré. Arrêt du script.")
             return []
         
         logging.info(f"{len(posts)} posts récupérés, création de {min(video_count, len(posts))} vidéos")
@@ -193,12 +193,31 @@ class RedditTikTokCreator:
                 output_video = os.path.join(video_dir, f"{post_id}_video.mp4")  # Vidéo sans audio
                 output_audio = os.path.join(audio_dir, f"{post_id}_audio.mp3")  # Audio combiné séparé
                 
-                # Initialiser le créateur de vidéos
+                # Initialiser le créateur de vidéos avec notre nouvelle classe
                 video_maker = TikTokVideoMaker(
                     output_path=output_video,
                     output_size=(config.VIDEO_CONFIG.get('width', 1080), config.VIDEO_CONFIG.get('height', 1920)),
                     fps=config.VIDEO_CONFIG.get('fps', 30)
                 )
+                
+                # Configurer le facteur de zoom pour que les images soient entièrement visibles
+                # Une valeur de 0.9 permet de voir l'image complète avec une petite marge
+                video_maker.set_zoom_factor(0.9)
+                
+                # Configurer l'arrière-plan si spécifié dans la configuration
+                background_path = config.VIDEO_CONFIG.get('background_path')
+                if background_path and os.path.exists(background_path):
+                    # Déterminer le type d'arrière-plan en fonction de l'extension
+                    ext = os.path.splitext(background_path)[1].lower()
+                    if ext in [".mp4", ".avi", ".mov", ".mkv"]:
+                        video_maker.set_background(background_path, "video")
+                    else:
+                        video_maker.set_background(background_path, "image")
+                
+                # Configurer l'audio d'arrière-plan si spécifié
+                background_audio = config.VIDEO_CONFIG.get('background_audio_path')
+                if background_audio and os.path.exists(background_audio):
+                    video_maker.set_background_audio(background_audio)
                 
                 # Créer les images
                 logging.info("Création des images...")
@@ -214,16 +233,11 @@ class RedditTikTokCreator:
                 
                 # Images des commentaires
                 comment_images = []
-                for j, comment in enumerate(post.get('comments', [])):
-                    comment_image = os.path.join(images_dir, f"comment_{j}.png")
-                    caption_maker.create_comment_card(
-                        comment_text=comment.get('body', ''),
-                        author=comment.get('author', 'unknown'),
-                        upvotes=comment.get('score', 0),
-                        output_path=comment_image,
-                        media=comment.get('media', None)  # Passer les informations de médias
-                    )
-                    comment_images.append(comment_image)
+                comments = post.get('comments', [])
+                for comment in comments:
+                    # Générer une carte texte pour le commentaire
+                    comment_card_path = self.comment_card_creator.create_card(comment)
+                    comment_images.append(comment_card_path)
                 
                 # Créer l'audio
                 logging.info("Création de l'audio...")
@@ -251,10 +265,12 @@ class RedditTikTokCreator:
                     logging.error("Erreur lors de la combinaison des fichiers audio")
                     continue
                 
-                # Ajouter les images à la vidéo
-                video_maker.add_image(title_image, duration=5)
-                for image in comment_images:
-                    video_maker.add_image(image, duration=5)
+                # Créer un diaporama avec toutes les images
+                all_images = [title_image] + comment_images
+                
+                # Créer un diaporama de 61 secondes avec toutes les images
+                logging.info("Création d'un diaporama de 61 secondes avec les images")
+                video_maker.create_slideshow(all_images, total_duration=61)
                 
                 # Rendre la vidéo
                 if not video_maker.render():
@@ -443,10 +459,24 @@ def main():
             print(f"Nettoyage termine: {empty_dirs_removed[1]} dossiers vides et {temp_removed[0]} fichiers temporaires supprimes")
             return
         
-        # Créer l'instance et générer les vidéos
-        creator = RedditTikTokCreator(output_dir=args.output_dir)
+        # Utilisation du nouveau contrôleur pour vérifier le scraping
+        from app_controller import AppController
+        controller = AppController(output_dir=args.output_dir)
+        posts = controller.run_full_pipeline(
+            subreddit=args.subreddit,
+            timeframe=args.timeframe,
+            post_count=args.post_count,
+            video_count=args.video_count,
+            allow_nsfw=args.allow_nsfw,
+            sorting=args.sorting,
+            comment_sort=args.comment_sort
+        )
+        if not posts:
+            print("Aucun post Reddit n'a été récupéré. Arrêt du script.")
+            return
         
-        print(f"Recuperation des posts depuis r/{args.subreddit} (tri: {args.sorting or 'default'})...")
+        # On passe ensuite à la génération vidéo classique
+        creator = RedditTikTokCreator(output_dir=args.output_dir)
         videos = creator.create_video(
             subreddit=args.subreddit,
             timeframe=args.timeframe,

@@ -1,532 +1,330 @@
-import moviepy
-from moviepy.editor import VideoClip, ImageClip, ColorClip, AudioFileClip, concatenate_videoclips, CompositeVideoClip, CompositeAudioClip, concatenate_audioclips
-from moviepy.video.io.VideoFileClip import VideoFileClip
-from PIL import Image, ImageDraw, ImageFont
-import numpy as np
-from pathlib import Path
-import random
-import logging
+
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+"""
+Modern Video Maker
+-----------------
+Module pour créer des vidéos TikTok avec des images correctement dimensionnées.
+"""
+
 import os
 import sys
-import time
-import tempfile
-import soundfile as sf
-import traceback
-import unicodedata
+import logging
+from pathlib import Path
 
-# Configuration du logger
-logging.basicConfig(level=logging.INFO, 
-                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-logger = logging.getLogger('TikTokVideoMaker')
+# Vérifier si moviepy est installé
+try:
+    from moviepy.editor import *
+except ImportError:
+    print("Le module moviepy n'est pas installé. Installation en cours...")
+    import subprocess
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "moviepy"])
+    from moviepy.editor import *
+
+# Vérifier si Pillow est installé
+try:
+    from PIL import Image, ImageTk
+except ImportError:
+    print("Le module Pillow n'est pas installé. Installation en cours...")
+    import subprocess
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "Pillow"])
+    from PIL import Image
+
+# Compatibilité avec les différentes versions de Pillow
+# ANTIALIAS est déprécié dans les nouvelles versions de Pillow et remplacé par LANCZOS
+if not hasattr(Image, 'ANTIALIAS'):
+    Image.ANTIALIAS = Image.LANCZOS
 
 class TikTokVideoMaker:
-    """Classe pour créer des vidéos TikTok avec des clips d'images et de l'audio"""
+    """Classe pour créer des vidéos au format TikTok à partir d'images."""
     
-    def __init__(self, output_size=(1080, 1920), fps=30, output_path='output.mp4', video_codec='libx264', video_bitrate='5000k'):
+    def __init__(self, output_path, output_size=(1080, 1920), fps=30):
         """
-        Initialise le créateur de vidéos.
+        Initialise le créateur de vidéos TikTok.
         
         Args:
-            output_size: Taille de sortie de la vidéo (width, height)
+            output_path: Chemin de sortie pour la vidéo générée
+            output_size: Taille de la vidéo (largeur, hauteur)
             fps: Images par seconde
-            output_path: Chemin de sortie pour la vidéo
-            video_codec: Codec vidéo
-            video_bitrate: Débit vidéo
         """
-        # Corriger le type d'output_size si nécessaire
-        if isinstance(output_size, int):
-            # Si on a reçu deux entiers séparés (width, height)
-            self.width, self.height = output_size, fps
-            fps = 30  # Valeur par défaut
-        else:
-            # Sinon c'est un tuple (width, height)
-            self.width, self.height = output_size
-            
-        self.output_size = (self.width, self.height)
-        self.fps = fps
-        self.images = []
-        self.background_color = (0, 0, 0)
         self.output_path = output_path
-        self.video_codec = video_codec
-        self.video_bitrate = video_bitrate
-        self.duration = 0
+        self.output_size = output_size
+        self.fps = fps
+        self.clips = []
+        self.background_color = (25, 25, 25)  # Couleur de fond (RGB)
+        self.background_path = None  # Chemin vers l'image ou vidéo d'arrière-plan
+        self.background_audio_path = None  # Chemin vers l'audio d'arrière-plan
+        self.background_type = None  # Type d'arrière-plan: 'image', 'video' ou None
+        self.total_duration = 0
         
-        logger.info(f"TikTokVideoMaker initialisé avec taille={self.output_size}, fps={fps}")
-        
-    def create_background(self, color=None, duration=60):
+    def set_background(self, background_path, type='image'):
         """
-        Crée un arrière-plan de couleur unie.
+        Définit l'arrière-plan de la vidéo.
         
         Args:
-            color: Couleur d'arrière-plan RGB
-            duration: Durée en secondes
-            
-        Returns:
-            Clip d'arrière-plan
+            background_path: Chemin vers l'image ou la vidéo d'arrière-plan
+            type: Type d'arrière-plan ('image' ou 'video')
         """
-        if color is None:
-            color = self.background_color
+        if not os.path.exists(background_path):
+            logging.error(f"Le fichier d'arrière-plan {background_path} n'existe pas.")
+            return False
             
-        try:
-            background = ColorClip(self.output_size, color=color, duration=duration)
-            return background
-        except Exception as e:
-            logger.error(f"Erreur lors de la création de l'arrière-plan: {e}")
-            # Solution de secours, créer une image noire
-            black_img = np.zeros((self.height, self.width, 3), dtype=np.uint8)
-            return ImageClip(black_img, duration=duration)
-            
-    def add_text_clip(self, text, duration=5, position='center', font_size=40):
+        self.background_path = background_path
+        self.background_type = type
+        return True
+    
+    def set_background_audio(self, audio_path):
         """
-        Ajoute un clip de texte à la vidéo.
+        Définit l'audio d'arrière-plan de la vidéo.
         
         Args:
-            text: Texte à afficher
-            duration: Durée d'affichage en secondes
-            position: Position du texte ('center', 'top', etc.)
-            font_size: Taille de la police
-            
-        Returns:
-            Clip de texte
+            audio_path: Chemin vers le fichier audio d'arrière-plan
         """
-        logger.info(f"Ajout de texte: '{text[:30]}...' ({duration}s)")
+        if not os.path.exists(audio_path):
+            logging.error(f"Le fichier audio {audio_path} n'existe pas.")
+            return False
+            
+        self.background_audio_path = audio_path
+        return True
+    
+    def set_zoom_factor(self, zoom_factor):
+        """
+        Cette méthode est conservée pour la compatibilité avec le code existant,
+        mais n'a plus d'effet car les images sont maintenant positionnées sans zoom.
         
-        # Pour le texte, nous allons créer une image avec PIL puis la convertir en clip
-        try:
-            # Créer une image vide avec un fond transparent
-            img = Image.new('RGBA', self.output_size, (0, 0, 0, 0))
-            draw = ImageDraw.Draw(img)
-            
-            # Essayer de charger la police Arial ou utiliser une police par défaut
-            try:
-                font = ImageFont.truetype("arial.ttf", font_size)
-            except IOError:
-                font = ImageFont.load_default()
-            
-            # Calculer les dimensions du texte et le centrer
-            text_width, text_height = draw.textbbox((0, 0), text, font=font)[2:4]
-            
-            # Positionner le texte
-            if position == 'center':
-                x = (self.width - text_width) // 2
-                y = (self.height - text_height) // 2
-            elif position == 'top':
-                x = (self.width - text_width) // 2
-                y = 100
-            elif position == 'bottom':
-                x = (self.width - text_width) // 2
-                y = self.height - text_height - 100
-            else:
-                x = (self.width - text_width) // 2
-                y = (self.height - text_height) // 2
-            
-            # Dessiner le texte
-            draw.text((x, y), text, font=font, fill=(255, 255, 255, 255))
-            
-            # Convertir en ImageClip
-            txt_clip = ImageClip(np.array(img))
-            txt_clip = txt_clip.set_duration(duration)
-            
-            self.images.append({'path': txt_clip, 'duration': duration})
-            self.duration += duration
-            return txt_clip
-        except Exception as e:
-            logger.error(f"Erreur lors de la création du texte: {e}")
-            return None
+        Args:
+            zoom_factor: Facteur de zoom (ignoré dans cette version)
+        """
+        logging.info("La fonction set_zoom_factor est désactivée dans cette version. Les images sont positionnées sans zoom.")
         
     def add_image(self, image_path, duration=5):
         """
-        Ajoute une image à la vidéo.
+        Ajoute une image à la vidéo en la redimensionnant correctement pour le format TikTok,
+        en s'assurant qu'elle est bien proportionnée et visible dans l'écran vertical.
         
         Args:
             image_path: Chemin vers l'image
-            duration: Durée d'affichage en secondes
+            duration: Durée d'affichage de l'image en secondes
         """
+        if not os.path.exists(image_path):
+            logging.error(f"L'image {image_path} n'existe pas.")
+            return False
+        
         try:
-            logging.info(f"Ajout d'image: {image_path} ({duration}s)")
+            # Charger l'image avec moviepy
+            img_clip = ImageClip(image_path).set_duration(duration)
             
-            # Créer le clip d'image
-            image_clip = ImageClip(image_path)
+            # Obtenir les dimensions originales de l'image
+            img_width, img_height = img_clip.size
+            video_width, video_height = self.output_size
             
-            # Définir la durée
-            image_clip = image_clip.set_duration(duration)
+            logging.debug(f"Dimensions originales de l'image: {img_width}x{img_height}")
             
-            # Redimensionner l'image si nécessaire
-            if image_clip.size != self.output_size:
-                image_clip = image_clip.resize(self.output_size)
+            # Calculer le ratio d'aspect de l'image et de la vidéo
+            img_ratio = img_width / img_height
+            video_ratio = video_width / video_height
+            
+            # Déterminer la meilleure façon de redimensionner l'image pour le format TikTok
+            # Pour le format vertical de TikTok, nous voulons que l'image soit bien visible
+            # mais pas trop grande pour éviter qu'elle ne soit coupée
+            
+            # Limiter la largeur maximale à 80% de la largeur de la vidéo
+            max_width = int(video_width * 0.8)  # 80% de la largeur de la vidéo
+            
+            # Limiter la hauteur maximale à 60% de la hauteur de la vidéo
+            # pour laisser de l'espace en haut et en bas
+            max_height = int(video_height * 0.6)  # 60% de la hauteur de la vidéo
+            
+            # Calculer les nouvelles dimensions en respectant le ratio d'aspect original
+            if img_ratio > video_ratio:  # Image plus large que haute par rapport à la vidéo
+                # Limiter par la largeur
+                new_width = min(img_width, max_width)
+                new_height = int(new_width / img_ratio)
+                
+                # Vérifier si la hauteur ne dépasse pas la limite
+                if new_height > max_height:
+                    new_height = max_height
+                    new_width = int(new_height * img_ratio)
+            else:  # Image plus haute que large par rapport à la vidéo
+                # Limiter par la hauteur
+                new_height = min(img_height, max_height)
+                new_width = int(new_height * img_ratio)
+                
+                # Vérifier si la largeur ne dépasse pas la limite
+                if new_width > max_width:
+                    new_width = max_width
+                    new_height = int(new_width / img_ratio)
+            
+            # Redimensionner l'image avec les nouvelles dimensions
+            img_clip = img_clip.resize((new_width, new_height))
+            logging.debug(f"Image redimensionnée: {new_width}x{new_height}")
+            
+            # Centrer l'image (position 'center' gère automatiquement le centrage horizontal et vertical)
+            img_clip = img_clip.set_position('center')
+            
+            logging.debug(f"Image positionnée: {os.path.basename(image_path)} - Dimensions finales: {new_width}x{new_height}")
+            
+            # Créer le fond
+            if self.background_path and self.background_type == 'image':
+                # Utiliser une image comme arrière-plan
+                try:
+                    bg_img = ImageClip(self.background_path).set_duration(duration)
+                    # Redimensionner l'arrière-plan pour couvrir toute la vidéo
+                    bg_img = bg_img.resize(self.output_size)
+                    bg_clip = bg_img
+                except Exception as e:
+                    logging.error(f"Erreur avec l'image d'arrière-plan: {e}. Utilisation de la couleur par défaut.")
+                    bg_clip = ColorClip(self.output_size, color=self.background_color).set_duration(duration)
+            elif self.background_path and self.background_type == 'video':
+                # Utiliser une vidéo comme arrière-plan
+                try:
+                    bg_video = VideoFileClip(self.background_path)
+                    # Extraire un segment de la vidéo de la durée nécessaire (en boucle si nécessaire)
+                    if bg_video.duration < duration:
+                        # Répéter la vidéo si elle est trop courte
+                        n_loops = int(duration / bg_video.duration) + 1
+                        bg_video = bg_video.loop(n=n_loops)
+                    bg_video = bg_video.subclip(0, duration)
+                    # Redimensionner la vidéo pour couvrir toute la vidéo
+                    bg_video = bg_video.resize(self.output_size)
+                    bg_clip = bg_video
+                except Exception as e:
+                    logging.error(f"Erreur avec la vidéo d'arrière-plan: {e}. Utilisation de la couleur par défaut.")
+                    bg_clip = ColorClip(self.output_size, color=self.background_color).set_duration(duration)
+            else:
+                # Utiliser une couleur unie comme arrière-plan
+                bg_clip = ColorClip(self.output_size, color=self.background_color).set_duration(duration)
+            
+            # Superposer l'image sur le fond
+            final_clip = CompositeVideoClip([bg_clip, img_clip])
             
             # Ajouter le clip à la liste
-            self.images.append({'path': image_clip, 'duration': duration})
-            self.duration += duration
-            
+            self.clips.append(final_clip)
+            self.total_duration += duration
             return True
         except Exception as e:
-            logging.error(f"Erreur lors de l'ajout de l'image: {str(e)}")
+            logging.error(f"Erreur lors de l'ajout de l'image: {e}")
             return False
-
-    def add_audio(self, audio_files):
+    
+    def add_audio_to_video(self, video_path, audio_path, output_path):
         """
-        Ajoute l'audio à la vidéo finale.
+        Ajoute un fichier audio à une vidéo.
         
         Args:
-            audio_files: Liste des chemins vers les fichiers audio à ajouter
-            
+            video_path: Chemin vers la vidéo
+            audio_path: Chemin vers le fichier audio
+            output_path: Chemin de sortie pour la vidéo avec audio
+        
         Returns:
-            bool: True si l'ajout a réussi, False sinon
+            bool: True si l'opération a réussi, False sinon
         """
         try:
-            import time
-            start_time = time.time()
-            logging.info("[VIDEO] Début de l'ajout d'audio")
+            # Charger la vidéo et l'audio
+            video = VideoFileClip(video_path)
+            audio = AudioFileClip(audio_path)
             
-            # Définir un timeout (en secondes)
-            TIMEOUT = 60  # 60 secondes max pour le traitement audio
-            
-            # Vérifier que les fichiers audio existent
-            valid_files = [f for f in audio_files if os.path.exists(f) and os.path.getsize(f) > 0]
-            if not valid_files:
-                logging.error("[VIDEO] Aucun fichier audio valide trouvé")
-                self._save_silent_video()
-                return True
-                
-            # Si nous avons déjà un rendu vidéo, utiliser add_audio_to_video
-            if os.path.exists(self.output_path) and os.path.getsize(self.output_path) > 0:
-                temp_audio_path = os.path.join(os.path.dirname(self.output_path), "temp_combined_audio.mp3")
-                
-                # Combiner les audios si nécessaire
-                if len(valid_files) > 1:
-                    # Charger les clips audio
-                    try:
-                        logging.info("[VIDEO] Combinaison des fichiers audio")
-                        audio_clips = [AudioFileClip(f) for f in valid_files]
-                        combined_audio = concatenate_audioclips(audio_clips)
-                        combined_audio.write_audiofile(temp_audio_path, logger=None)
-                        
-                        # Fermer les clips audio
-                        for clip in audio_clips:
-                            clip.close()
-                        combined_audio.close()
-                        
-                        return self.add_audio_to_video(self.output_path, temp_audio_path)
-                    except Exception as e:
-                        logging.error(f"[VIDEO] Erreur lors de la combinaison des audios: {str(e)}")
-                        self._save_silent_video()
-                        return True
-                else:
-                    # Un seul fichier audio, pas besoin de combiner
-                    return self.add_audio_to_video(self.output_path, valid_files[0])
-            
-            # Charger les clips audio
-            try:
-                logging.info("[VIDEO] Chargement des fichiers audio")
-                audio_clips = [AudioFileClip(f) for f in valid_files]
-            except Exception as e:
-                logging.error(f"[VIDEO] Erreur lors du chargement des audios: {str(e)}")
-                self._save_silent_video()
-                return True
-            
-            # Vérifier le timeout
-            if time.time() - start_time > TIMEOUT:
-                logging.warning(f"[VIDEO] Timeout dépassé ({TIMEOUT}s) pendant le chargement de l'audio")
-                self._save_silent_video()
-                return True
-            
-            # Créer le clip audio final
-            final_audio = concatenate_audioclips(audio_clips)
-            
-            # Créer le clip vidéo final
-            final_clip = self.get_final_video()
+            # Ajuster la durée de l'audio à celle de la vidéo si nécessaire
+            if audio.duration > video.duration:
+                audio = audio.subclip(0, video.duration)
             
             # Ajouter l'audio à la vidéo
-            final_clip = final_clip.set_audio(final_audio)
+            final_video = video.set_audio(audio)
             
-            # Sauvegarder la vidéo finale
-            logging.info("[VIDEO] Sauvegarde de la vidéo avec audio...")
-            final_clip.write_videofile(
-                self.output_path,
-                fps=self.fps,
-                codec=self.video_codec,
-                bitrate=self.video_bitrate,
-                audio_codec='aac',
-                audio_bitrate='192k',
-                threads=4,
-                logger=None
-            )
+            # Enregistrer la vidéo finale
+            final_video.write_videofile(output_path, codec='libx264', audio_codec='aac', fps=self.fps)
             
-            # Nettoyer
-            final_clip.close()
-            final_audio.close()
-            for clip in audio_clips:
-                clip.close()
-                
-            logging.info("[VIDEO] Vidéo avec audio créée avec succès")
-            return True
-            
-        except Exception as e:
-            logging.error(f"[VIDEO] Erreur lors de l'ajout de l'audio: {str(e)}")
-            error_details = traceback.format_exc()
-            logging.debug(f"[VIDEO] Détails de l'erreur: {error_details}")
-            self._save_silent_video()
-            return True
-
-    def _save_silent_video(self):
-        """Sauvegarde la vidéo sans audio en cas d'erreur"""
-        try:
-            logging.info("[VIDEO] Sauvegarde de la vidéo sans audio...")
-            final_video = self.get_final_video()
-            
-            final_video.write_videofile(
-                self.output_path,
-                fps=self.fps,
-                codec=self.video_codec,
-                bitrate=self.video_bitrate,
-                audio=False,
-                logger=None
-            )
-            
+            # Fermer les clips
+            video.close()
+            audio.close()
             final_video.close()
-            logging.info(f"[VIDEO] Vidéo sans audio créée avec succès: {self.output_path}")
+            
             return True
         except Exception as e:
-            logging.error(f"[VIDEO] Erreur lors de la sauvegarde de la vidéo sans audio: {str(e)}")
+            logging.error(f"Erreur lors de l'ajout de l'audio à la vidéo: {e}")
             return False
-
-    def get_final_video(self):
-        """Renvoie la vidéo finale en concaténant tous les clips"""
-        try:
-            # Concaténer tous les clips vidéo
-            image_clips = [img_data['path'] for img_data in self.images]
-            final_video = concatenate_videoclips(image_clips, method="compose")
-            return final_video
-        except Exception as e:
-            logging.error(f"[VIDEO] Erreur lors de la création de la vidéo finale: {str(e)}")
-            return None
-
-    def clean_resources(self):
-        """Nettoie toutes les ressources pour éviter les fuites de mémoire."""
-        try:
-            # Fermer tous les clips vidéo
-            for img_data in self.images:
-                if img_data['path'] and hasattr(img_data['path'], 'close'):
-                    try:
-                        img_data['path'].close()
-                    except Exception as e:
-                        logging.warning(f"Erreur lors de la fermeture d'un clip: {e}")
-            
-            # Vider la liste des clips
-            self.images = []
-            
-            # Forcer le garbage collector pour libérer la mémoire
-            import gc
-            gc.collect()
-            
-            logging.info("Ressources nettoyées avec succès")
-            return True
-            
-        except Exception as e:
-            logging.error(f"Erreur lors du nettoyage des ressources: {e}")
-            return False
-
+    
     def render(self):
         """
-        Crée une vidéo à partir des images ajoutées.
+        Rend la vidéo finale avec toutes les images ajoutées.
         
         Returns:
             bool: True si le rendu a réussi, False sinon
         """
-        if not self.images:
-            logging.error("[VIDEO] Aucune image fournie pour la vidéo")
+        if not self.clips:
+            logging.error("Aucune image n'a été ajoutée à la vidéo.")
             return False
-            
-        # Assurer que le répertoire de sortie existe
-        output_dir = os.path.dirname(self.output_path)
-        if not os.path.exists(output_dir):
-            os.makedirs(output_dir, exist_ok=True)
         
         try:
-            start_render_time = time.time()
-            logging.info(f"[VIDEO] Rendu de {len(self.images)} images...")
+            # Concaténer tous les clips pour créer une séquence d'images
+            final_clip = concatenate_videoclips(self.clips)
             
-            # Créer une liste de clips d'images
-            image_clips = []
-            for img_data in self.images:
-                img_path = img_data['path']
-                duration = img_data['duration']
-                image_clips.append(img_path.set_duration(duration))
+            # Ajouter l'audio d'arrière-plan si spécifié
+            if self.background_audio_path and os.path.exists(self.background_audio_path):
+                try:
+                    bg_audio = AudioFileClip(self.background_audio_path)
+                    
+                    # Ajuster la durée de l'audio à celle de la vidéo
+                    if bg_audio.duration < final_clip.duration:
+                        # Répéter l'audio si nécessaire pour couvrir toute la durée
+                        n_loops = int(final_clip.duration / bg_audio.duration) + 1
+                        bg_audio = concatenate_audioclips([bg_audio] * n_loops)
+                    
+                    # Couper l'audio à la durée exacte de la vidéo
+                    bg_audio = bg_audio.subclip(0, final_clip.duration)
+                    
+                    # Réduire le volume de l'audio d'arrière-plan
+                    bg_audio = bg_audio.volumex(0.3)  # Ajuster le volume à 30%
+                    
+                    # Ajouter l'audio à la vidéo
+                    final_clip = final_clip.set_audio(bg_audio)
+                except Exception as e:
+                    logging.error(f"Erreur lors de l'ajout de l'audio d'arrière-plan: {e}")
             
-            # Concaténer les clips d'images
-            final_clip = concatenate_videoclips(image_clips, method="compose")
+            # Enregistrer la vidéo
+            has_audio = self.background_audio_path is not None
+            final_clip.write_videofile(self.output_path, codec='libx264', fps=self.fps, audio=has_audio)
             
-            # Sauvegarder la vidéo
-            final_clip.write_videofile(
-                self.output_path,
-                fps=self.fps,
-                codec=self.video_codec,
-                bitrate=self.video_bitrate,
-                audio=False,
-                threads=4,
-                logger=None
-            )
+            # Fermer le clip final
+            final_clip.close()
             
             # Fermer tous les clips
-            final_clip.close()
-            for clip in image_clips:
+            for clip in self.clips:
                 clip.close()
             
-            render_time = time.time() - start_render_time
-            logging.info(f"[VIDEO] Rendu terminé en {render_time:.2f} secondes")
-            
-            # Vérifier que la vidéo a bien été créée
-            if not os.path.exists(self.output_path) or os.path.getsize(self.output_path) < 1024:
-                logging.error(f"[VIDEO] La vidéo n'a pas été créée correctement ou est vide: {self.output_path}")
-                return False
-                
-            logging.info(f"[VIDEO] Vidéo créée avec succès: {self.output_path}")
             return True
-            
         except Exception as e:
-            logging.error(f"[VIDEO] Erreur lors du rendu de la vidéo: {str(e)}")
-            traceback.print_exc()
+            logging.error(f"Erreur lors du rendu de la vidéo: {e}")
             return False
-
-    def add_audio_to_video(self, video_path, audio_path, output_path=None):
+    
+    def create_slideshow(self, image_paths, total_duration=61):
         """
-        Ajoute un fichier audio à un fichier vidéo existant.
+        Crée un diaporama à partir d'une liste d'images avec une durée totale spécifiée.
+        Les images sont redimensionnées pour être entièrement visibles et centrées.
         
         Args:
-            video_path: Chemin vers le fichier vidéo
-            audio_path: Chemin vers le fichier audio
-            output_path: Chemin de sortie (si None, utilise le même que video_path)
+            image_paths: Liste des chemins vers les images
+            total_duration: Durée totale de la vidéo en secondes (par défaut 61s)
             
         Returns:
-            bool: True si la combinaison a réussi, False sinon
+            bool: True si la création a réussi, False sinon
         """
-        if not os.path.exists(video_path):
-            logging.error(f"[VIDEO] Le fichier vidéo n'existe pas: {video_path}")
+        if not image_paths:
+            logging.error("Aucune image fournie pour le diaporama.")
             return False
             
-        if not os.path.exists(audio_path):
-            logging.error(f"[VIDEO] Le fichier audio n'existe pas: {audio_path}")
-            return False
-            
-        # Si aucun chemin de sortie n'est spécifié, utiliser le même que la vidéo d'entrée
-        if output_path is None:
-            output_path = video_path
-            
-        # Créer un fichier temporaire pour la sortie
-        tmp_output = f"{output_path}.tmp.mp4"
+        # Calculer la durée de chaque image pour atteindre la durée totale
+        image_count = len(image_paths)
+        duration_per_image = total_duration / image_count
         
-        try:
-            logging.info("[VIDEO] Début de l'ajout d'audio")
-            
-            # Charger les fichiers vidéo et audio
-            video_clip = VideoFileClip(video_path)
-            audio_clip = AudioFileClip(audio_path)
-            
-            # Vérifier si la durée de l'audio est suffisante
-            if audio_clip.duration < video_clip.duration:
-                logging.warning(f"[VIDEO] L'audio ({audio_clip.duration:.2f}s) est plus court que la vidéo ({video_clip.duration:.2f}s)")
-            
-            # Ajouter l'audio à la vidéo
-            video_with_audio = video_clip.set_audio(audio_clip)
-            
-            # Sauvegarder la vidéo avec audio
-            logging.info("[VIDEO] Sauvegarde de la vidéo avec audio...")
-            video_with_audio.write_videofile(
-                tmp_output,
-                codec=self.video_codec,
-                bitrate=self.video_bitrate,
-                audio_codec='aac',
-                audio_bitrate='192k',
-                threads=4,
-                logger=None
-            )
-            
-            # Fermer les clips
-            video_clip.close()
-            audio_clip.close()
-            video_with_audio.close()
-            
-            # Remplacer le fichier original par le fichier temporaire
-            if os.path.exists(tmp_output):
-                if os.path.exists(output_path):
-                    os.remove(output_path)
-                os.rename(tmp_output, output_path)
-                logging.info("[VIDEO] Vidéo avec audio créée avec succès")
-                return True
-            else:
-                logging.error("[VIDEO] Échec de la création de la vidéo avec audio")
+        logging.info(f"Création d'un diaporama avec {image_count} images")
+        
+        # Ajouter chaque image à la vidéo
+        for i, image_path in enumerate(image_paths):
+            # Ajouter l'image au diaporama
+            if not self.add_image(image_path, duration=duration_per_image):
+                logging.error(f"Échec de l'ajout de l'image {image_path}")
                 return False
-                
-        except Exception as e:
-            logging.error(f"[VIDEO] Erreur lors de l'ajout de l'audio à la vidéo: {str(e)}")
-            error_details = traceback.format_exc()
-            logging.debug(f"[VIDEO] Détails de l'erreur: {error_details}")
-            
-            # En cas d'erreur, supprimer le fichier temporaire s'il existe
-            if os.path.exists(tmp_output):
-                try:
-                    os.remove(tmp_output)
-                except:
-                    pass
-                    
-            return False
-
-    def _create_temp_video(self, images, duration_per_image=5.0, loop=False, fps=30, output_path=None):
-        """
-        Crée une vidéo temporaire à partir d'une liste d'images.
         
-        Args:
-            images (list): Liste des chemins d'images à utiliser
-            duration_per_image (float): Durée de chaque image en secondes
-            loop (bool): Si True, la vidéo sera en boucle
-            fps (int): Images par seconde
-            output_path (str): Chemin de sortie pour la vidéo (si None, un chemin temporaire sera utilisé)
-            
-        Returns:
-            str: Chemin vers la vidéo créée
-        """
-        if not images:
-            logging.error("[VIDEO] Aucune image fournie pour la vidéo")
-            return None
-            
-        # Assurer que le répertoire de sortie existe
-        if output_path:
-            output_dir = os.path.dirname(output_path)
-            if not os.path.exists(output_dir):
-                os.makedirs(output_dir, exist_ok=True)
-        else:
-            # Créer un fichier temporaire
-            output_path = os.path.join(self.temp_dir, f"temp_video_{int(time.time())}.mp4")
-            os.makedirs(os.path.dirname(output_path), exist_ok=True)
-        
-        self.output_path = output_path
-        
-        try:
-            start_render_time = time.time()
-            logging.info(f"[VIDEO] Rendu de {len(images)} images...")
-            
-            # Créer une liste de clips d'images
-            image_clips = [ImageClip(img).set_duration(duration_per_image) for img in images]
-            
-            # Concaténer les clips d'images
-            final_clip = concatenate_videoclips(image_clips, method="compose")
-            
-            # Sauvegarder la vidéo
-            final_clip.write_videofile(
-                output_path,
-                fps=fps,
-                codec=self.video_codec,
-                bitrate=self.video_bitrate,
-                audio=False,
-                logger=None
-            )
-            
-            final_clip.close()
-            
-            logging.info(f"[VIDEO] Vidéo temporaire créée avec succès: {output_path}")
-            return output_path
-            
-        except Exception as e:
-            logging.error(f"[VIDEO] Erreur lors de la création de la vidéo temporaire: {str(e)}")
-            return None
+        # Rendre la vidéo
+        return self.render()

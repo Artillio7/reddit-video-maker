@@ -34,31 +34,23 @@ logger = logging.getLogger(__name__)
 class RedditScraper:
     def __init__(self):
         """Initialize Reddit API connection"""
-        self.reddit = None
-        self.media_extractor = MediaExtractor()  # Initialize MediaExtractor
-        
-        # Vérifier si les identifiants sont définis
-        if not REDDIT_CONFIG.get("client_id") or not REDDIT_CONFIG.get("client_secret"):
-            logger.error("Identifiants Reddit manquants. Veuillez configurer le fichier .env")
-            logger.error("Suivez les instructions dans le fichier .env pour obtenir vos identifiants")
-            return
-            
+        # Initialize MediaExtractor and Reddit API in read-only mode
+        self.media_extractor = MediaExtractor()
         try:
             self.reddit = praw.Reddit(**REDDIT_CONFIG)
-            # Tester la connexion
-            username = self.reddit.user.me()
-            if username:
-                logger.info(f"Successfully connected to Reddit API as {username}")
+            # Si username/password sont fournis, tenter mode script (non read-only)
+            if REDDIT_CONFIG.get("username") and REDDIT_CONFIG.get("password"):
+                try:
+                    me = self.reddit.user.me()
+                    logger.info(f"Authentifié sur Reddit en mode script : {me}")
+                except Exception as auth_exc:
+                    logger.error(f"Erreur d'authentification script Reddit : {auth_exc}")
             else:
-                logger.info("Successfully connected to Reddit API (read-only mode)")
-        except ResponseException as e:
-            if e.response.status_code == 401:
-                logger.error("Erreur d'authentification (401): Identifiants Reddit invalides")
-                logger.error("Veuillez vérifier vos identifiants dans le fichier .env")
-            else:
-                logger.error(f"Erreur API Reddit: {e}")
+                self.reddit.read_only = True
+                logger.info("Connected to Reddit API in read-only mode")
         except Exception as e:
-            logger.error(f"Failed to connect to Reddit API: {e}")
+            self.reddit = None
+            logger.error(f"Error connecting to Reddit API: {e}")
 
     def select_random_subreddit(self):
         """

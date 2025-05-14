@@ -1,0 +1,65 @@
+# Fichiers et dossiers Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Environnements virtuels
+venv/
+env/
+ENV/
+
+# Fichiers de log
+*.log
+reddit_video_maker.log
+
+# Dossiers temporaires
+temp/
+tmp/
+
+# Fichiers de sortie
+output/
+
+# Fichiers de configuration locaux
+.env
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers d'IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Fichiers FFmpeg téléchargés
+ffmpeg.zip
+
+# Fichiers temporaires de génération de vidéos
+*.tmp
+*.temp
+
+# Fichiers numériques (versions de packages)
+1.11.3
+1.24.0
+2.31.0
+
+# Fichiers de cache
+.cache/
