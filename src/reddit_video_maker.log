@@ -1,0 +1,10 @@
+2025-03-06 23:08:38,672 - RedditContentCreator - INFO - RedditContentCreator initialisé avec répertoire de sortie: output
+2025-03-06 23:08:38,672 - RedditContentCreator - INFO - Début du processus de création: subreddit=askreddit, timeframe=day, post_count=1
+2025-03-06 23:08:38,672 - root - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\src\output
+2025-03-06 23:08:38,673 - utils.redditScrape - INFO - Successfully connected to Reddit API (read-only mode)
+2025-03-06 23:08:38,673 - utils.redditScrape - INFO - Using sorting method: rising with span: day
+2025-03-06 23:08:39,123 - utils.redditScrape - INFO - Selected post: Pro-Brexit politicians promised to cut migration and now it is 80% higher than before Brexit - what do you think about it?
+2025-03-06 23:08:41,159 - RedditContentCreator - INFO - Traitement du post 1/1
+2025-03-06 23:08:41,162 - RedditContentCreator - INFO - Création des images...
+2025-03-06 23:08:41,603 - RedditContentCreator - INFO - Création de l'audio...
+2025-03-06 23:08:46,993 - RedditContentCreator - INFO - Contenu créé avec succès dans le dossier: output\askreddit_Pro-Brexit-politicians-promised-to-cut-migration-a_1741298921

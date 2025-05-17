@@ -117,29 +117,39 @@ class TikTokGUI(tk.Tk):
         scrollbar = ttk.Scrollbar(list_frame)
         scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
         
-        # Listbox pour afficher les images sélectionnées
-        self.image_listbox = tk.Listbox(list_frame, height=10, selectmode=tk.SINGLE, yscrollcommand=scrollbar.set)
+        # Listbox pour afficher les images sélectionnées avec sélection multiple
+        self.image_listbox = tk.Listbox(list_frame, height=10, selectmode=tk.EXTENDED, yscrollcommand=scrollbar.set)
         self.image_listbox.pack(fill=tk.BOTH, expand=True, padx=5, pady=5)
         scrollbar.config(command=self.image_listbox.yview)
         
         # Bind double-click pour prévisualiser l'image
         self.image_listbox.bind('<Double-1>', self.preview_image)
         
+        # Bind pour le glisser-déposer
+        self.image_listbox.bind('<ButtonPress-1>', self.on_drag_start)
+        self.image_listbox.bind('<B1-Motion>', self.on_drag_motion)
+        self.image_listbox.bind('<ButtonRelease-1>', self.on_drag_release)
+        
         # Frame pour les boutons de manipulation de la liste
         list_button_frame = ttk.Frame(main_frame)
         list_button_frame.pack(fill=tk.X, pady=5)
         
-        # Bouton pour supprimer une image
-        delete_btn = ttk.Button(list_button_frame, text="Supprimer", command=self.delete_image)
+        # Bouton pour supprimer les images sélectionnées
+        delete_btn = ttk.Button(list_button_frame, text="Supprimer la sélection", command=self.delete_image)
         delete_btn.pack(side=tk.LEFT, padx=5)
         
-        # Bouton pour monter une image dans la liste
-        up_btn = ttk.Button(list_button_frame, text="Monter", command=self.move_image_up)
+        # Bouton pour monter les images sélectionnées dans la liste
+        up_btn = ttk.Button(list_button_frame, text="Monter la sélection", command=self.move_image_up)
         up_btn.pack(side=tk.LEFT, padx=5)
         
-        # Bouton pour descendre une image dans la liste
-        down_btn = ttk.Button(list_button_frame, text="Descendre", command=self.move_image_down)
+        # Bouton pour descendre les images sélectionnées dans la liste
+        down_btn = ttk.Button(list_button_frame, text="Descendre la sélection", command=self.move_image_down)
         down_btn.pack(side=tk.LEFT, padx=5)
+        
+        # Label d'aide pour le glisser-déposer
+        help_text = "Astuce: Utilisez Ctrl+clic pour sélectionner plusieurs images. \nVous pouvez aussi glisser-déposer les images pour les réorganiser."
+        help_label = ttk.Label(list_button_frame, text=help_text, foreground="#555555")
+        help_label.pack(side=tk.RIGHT, padx=5)
         
         # Frame pour la prévisualisation
         preview_frame = ttk.LabelFrame(main_frame, text="Prévisualisation")
@@ -316,7 +326,7 @@ class TikTokGUI(tk.Tk):
     def preview_image(self, event, image_path=None):
         """Prévisualise l'image sélectionnée avec l'arrière-plan si disponible."""
         if image_path is None:
-            # Obtenir l'image sélectionnée dans la listbox
+            # Obtenir les images sélectionnées dans la listbox
             selection = self.image_listbox.curselection()
             if not selection:
                 # Si aucune image n'est sélectionnée mais qu'il y a des images dans la liste,
@@ -326,6 +336,10 @@ class TikTokGUI(tk.Tk):
                 else:
                     return
             else:
+                # Si plusieurs images sont sélectionnées, utiliser la première sélectionnée
+                # et afficher un message indiquant le nombre d'images sélectionnées
+                if len(selection) > 1:
+                    self.status_var.set(f"{len(selection)} images sélectionnées")
                 index = selection[0]
                 image_path = self.selected_images[index]
         
@@ -382,50 +396,126 @@ class TikTokGUI(tk.Tk):
             messagebox.showerror("Erreur", f"Impossible de prévisualiser l'image: {e}")
     
     def delete_image(self):
-        """Supprime l'image sélectionnée de la liste."""
+        """Supprime les images sélectionnées de la liste."""
         selection = self.image_listbox.curselection()
         if not selection:
             return
         
-        index = selection[0]
-        self.image_listbox.delete(index)
-        del self.selected_images[index]
+        # Convertir en liste et trier en ordre décroissant pour éviter les problèmes d'index
+        indices = sorted(list(selection), reverse=True)
         
-        self.status_var.set("Image supprimée")
+        # Supprimer chaque image sélectionnée
+        for index in indices:
+            self.image_listbox.delete(index)
+            del self.selected_images[index]
+        
+        count = len(indices)
+        self.status_var.set(f"{count} image(s) supprimée(s)")
+    
+    def on_drag_start(self, event):
+        """Commence l'opération de glisser-déposer."""
+        # Identifier l'index de l'élément sous le curseur
+        widget = event.widget
+        index = widget.nearest(event.y)
+        
+        # Vérifier si l'élément est déjà sélectionné
+        if index not in widget.curselection():
+            # Si l'utilisateur n'a pas maintenu Ctrl ou Shift, désélectionner tout
+            if not (event.state & 4) and not (event.state & 1):
+                widget.selection_clear(0, tk.END)
+            widget.selection_set(index)
+        
+        # Stocker l'index et la position y de départ
+        self._drag_start_index = index
+        self._drag_start_y = event.y
+    
+    def on_drag_motion(self, event):
+        """Gère le mouvement pendant le glisser-déposer."""
+        pass  # Nous pourrions ajouter un retour visuel ici si nécessaire
+    
+    def on_drag_release(self, event):
+        """Termine l'opération de glisser-déposer."""
+        if not hasattr(self, '_drag_start_index'):
+            return
+        
+        widget = event.widget
+        end_index = widget.nearest(event.y)
+        
+        # Si l'index de fin est différent de l'index de départ, déplacer l'élément
+        if end_index != self._drag_start_index:
+            # Obtenir tous les éléments sélectionnés
+            selection = widget.curselection()
+            
+            # Si un seul élément est sélectionné, le déplacer
+            if len(selection) == 1:
+                self._move_items(selection, end_index)
+            # Si plusieurs éléments sont sélectionnés, les déplacer ensemble
+            elif len(selection) > 1 and self._drag_start_index in selection:
+                self._move_items(selection, end_index)
+        
+        # Nettoyer les variables temporaires
+        del self._drag_start_index
+        del self._drag_start_y
+    
+    def _move_items(self, selection, end_index):
+        """Déplace les éléments sélectionnés vers la position cible."""
+        # Convertir en liste et trier
+        indices = sorted(list(selection))
+        
+        # Déterminer si on déplace vers le haut ou vers le bas
+        moving_up = end_index < indices[0]
+        
+        # Calculer la position cible pour chaque élément
+        if moving_up:
+            target_indices = list(range(end_index, end_index + len(indices)))
+        else:
+            # Ajuster l'index de fin pour tenir compte des suppressions
+            adjusted_end = end_index - (len(indices) - 1) if end_index > indices[-1] else end_index
+            target_indices = list(range(adjusted_end, adjusted_end + len(indices)))
+        
+        # Créer des copies temporaires des éléments à déplacer
+        temp_items = [self.selected_images[i] for i in indices]
+        temp_texts = [self.image_listbox.get(i) for i in indices]
+        
+        # Supprimer les éléments originaux (en ordre décroissant pour éviter les problèmes d'index)
+        for i in sorted(indices, reverse=True):
+            self.image_listbox.delete(i)
+            del self.selected_images[i]
+        
+        # Insérer les éléments à leurs nouvelles positions
+        for i, (item, text) in enumerate(zip(temp_items, temp_texts)):
+            target_idx = target_indices[i]
+            self.image_listbox.insert(target_idx, text)
+            self.selected_images.insert(target_idx, item)
+            self.image_listbox.selection_set(target_idx)
+        
+        self.status_var.set("Images réorganisées")
     
     def move_image_up(self):
-        """Déplace l'image sélectionnée vers le haut dans la liste."""
+        """Déplace les images sélectionnées vers le haut dans la liste."""
         selection = self.image_listbox.curselection()
-        if not selection or selection[0] == 0:
+        if not selection:
             return
-        
-        index = selection[0]
-        
-        # Échanger les images dans la liste
-        self.selected_images[index], self.selected_images[index-1] = self.selected_images[index-1], self.selected_images[index]
-        
-        # Mettre à jour la listbox
-        text = self.image_listbox.get(index)
-        self.image_listbox.delete(index)
-        self.image_listbox.insert(index-1, text)
-        self.image_listbox.selection_set(index-1)
+            
+        # Vérifier si la première image sélectionnée est déjà tout en haut
+        if min(selection) == 0:
+            return
+            
+        # Utiliser la méthode _move_items pour déplacer les éléments sélectionnés
+        self._move_items(selection, min(selection) - 1)
     
     def move_image_down(self):
-        """Déplace l'image sélectionnée vers le bas dans la liste."""
+        """Déplace les images sélectionnées vers le bas dans la liste."""
         selection = self.image_listbox.curselection()
-        if not selection or selection[0] == len(self.selected_images) - 1:
+        if not selection:
             return
-        
-        index = selection[0]
-        
-        # Échanger les images dans la liste
-        self.selected_images[index], self.selected_images[index+1] = self.selected_images[index+1], self.selected_images[index]
-        
-        # Mettre à jour la listbox
-        text = self.image_listbox.get(index)
-        self.image_listbox.delete(index)
-        self.image_listbox.insert(index+1, text)
-        self.image_listbox.selection_set(index+1)
+            
+        # Vérifier si la dernière image sélectionnée est déjà tout en bas
+        if max(selection) == len(self.selected_images) - 1:
+            return
+            
+        # Utiliser la méthode _move_items pour déplacer les éléments sélectionnés
+        self._move_items(selection, max(selection) + 2)
     
     def generate_video(self):
         """Génère la vidéo à partir des images sélectionnées."""

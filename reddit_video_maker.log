@@ -47520,6 +47520,7 @@ Also Zoo tycoon (the origi...' (65 caractères)
 2025-03-03 13:32:57,391 - INFO - Fichiers temporaires supprimés: 0
 2025-03-03 13:32:57,392 - INFO - Processus terminé en 373.59 secondes.
 2025-03-03 13:32:57,392 - INFO - Vidéos créées: 5/5
+<<<<<<< HEAD
 2025-04-27 04:04:56,942 - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
 2025-04-27 04:04:56,943 - INFO - Successfully connected to Reddit API (read-only mode)
 2025-04-27 04:04:56,944 - INFO - TTSGenerator initialisé (langue=en, tld=com)
@@ -47752,3 +47753,1028 @@ Also Zoo tycoon (the origi...' (65 caractères)
 2025-04-27 13:12:15,385 - INFO - 20 posts récupérés, création de 3 vidéos
 2025-05-13 15:17:55,111 - ERROR - Erreur d'importation: No module named 'utils'
 2025-05-13 15:17:55,112 - ERROR - Assurez-vous d'exécuter le script depuis le dossier src
+=======
+2025-03-06 20:28:08,630 - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-03-06 20:28:08,802 - INFO - Successfully connected to Reddit API (read-only mode)
+2025-03-06 20:28:08,802 - INFO - TTSGenerator initialisé (langue=en, tld=com)
+2025-03-06 20:28:08,803 - INFO - RedditTikTokCreator initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-03-06 20:28:08,803 - INFO - Début du processus de création vidéo
+2025-03-06 20:28:08,804 - INFO - Paramètres: subreddit=askreddit, timeframe=week, post_count=20, video_count=5
+2025-03-06 20:28:08,804 - INFO - Récupération des posts de r/askreddit avec tri top...
+2025-03-06 20:30:58,006 - INFO - Tri des posts par nombre de commentaires
+2025-03-06 20:30:58,006 - INFO - 20 posts récupérés de r/askreddit
+2025-03-06 20:30:58,007 - INFO - Structure du premier post: ['post', 'title', 'author', 'score', 'url', 'created_utc', 'id', 'comment_count', 'comments']
+2025-03-06 20:30:58,008 - INFO - 20 posts récupérés, création de 5 vidéos
+2025-03-06 20:30:58,009 - INFO - CommentCardCreator initialisé (1080x1920)
+2025-03-06 20:30:58,010 - INFO - Traitement du post 1/5: [Breaking News] 2025 Donald Trump speech to a join...
+2025-03-06 20:30:58,013 - INFO - TikTokVideoMaker initialisé avec taille=(1080, 1920), fps=30
+2025-03-06 20:30:58,015 - INFO - Création des images...
+2025-03-06 20:30:58,275 - INFO - Carte de titre créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250306_203058\images\title.png
+2025-03-06 20:30:58,480 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250306_203058\images\comment_0.png
+2025-03-06 20:30:58,687 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250306_203058\images\comment_1.png
+2025-03-06 20:30:58,850 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250306_203058\images\comment_2.png
+2025-03-06 20:30:59,023 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250306_203058\images\comment_3.png
+2025-03-06 20:30:59,230 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250306_203058\images\comment_4.png
+2025-03-06 20:30:59,231 - INFO - Création de l'audio...
+2025-03-06 20:30:59,232 - INFO - Génération TTS pour '[Breaking News] 2025 Donald Trump speech to a join...' (71 caractères)
+2025-03-06 20:30:59,594 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250306_203058\audio\title.mp3
+2025-03-06 20:30:59,596 - INFO - Génération TTS pour '# Make your bets on the following:
+
+1. Withdrawal ...' (244 caractères)
+2025-03-06 20:31:07,349 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250306_203058\audio\comment_0.mp3
+2025-03-06 20:31:07,350 - INFO - Génération TTS pour 'At this point he could straight-up publicly admit ...' (214 caractères)
+2025-03-06 20:31:08,494 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250306_203058\audio\comment_1.mp3
+2025-03-06 20:31:08,495 - INFO - Génération TTS pour 'One of the biggest surprises of the last trump pre...' (141 caractères)
+2025-03-06 20:31:09,159 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250306_203058\audio\comment_2.mp3
+2025-03-06 20:31:09,161 - INFO - Génération TTS pour 'Lemme guess... 
+
+Biden Ukraine Biden Biden Russia ...' (123 caractères)
+2025-03-06 20:31:10,222 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250306_203058\audio\comment_3.mp3
+2025-03-06 20:31:10,223 - INFO - Génération TTS pour 'Democrats clap when Trump notes that the United St...' (268 caractères)
+2025-03-06 20:31:12,140 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250306_203058\audio\comment_4.mp3
+2025-03-06 20:31:14,881 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250306_203058\images\title.png (5s)
+2025-03-06 20:31:14,937 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250306_203058\images\comment_0.png (5s)
+2025-03-06 20:31:14,993 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250306_203058\images\comment_1.png (5s)
+2025-03-06 20:31:15,052 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250306_203058\images\comment_2.png (5s)
+2025-03-06 20:31:15,105 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250306_203058\images\comment_3.png (5s)
+2025-03-06 20:31:15,159 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250306_203058\images\comment_4.png (5s)
+2025-03-06 20:31:15,217 - INFO - [VIDEO] Rendu de 6 images...
+2025-03-06 20:31:49,896 - INFO - [VIDEO] Rendu terminé en 34.68 secondes
+2025-03-06 20:31:49,897 - INFO - [VIDEO] Vidéo créée avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250306_203058\video\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250306_203058_video.mp4
+2025-03-06 20:31:49,898 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-06 20:31:49,898 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-06 20:31:50,311 - INFO - [VIDEO] Sauvegarde de la vidéo avec audio...
+2025-03-06 20:32:11,711 - INFO - [VIDEO] Vidéo avec audio créée avec succès
+2025-03-06 20:32:11,712 - INFO - Traitement du post 2/5: What are your thoughts on candidates passing a civ...
+2025-03-06 20:32:11,716 - INFO - TikTokVideoMaker initialisé avec taille=(1080, 1920), fps=30
+2025-03-06 20:32:11,716 - INFO - Création des images...
+2025-03-06 20:32:11,904 - INFO - Carte de titre créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250306_203211\images\title.png
+2025-03-06 20:32:12,053 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250306_203211\images\comment_0.png
+2025-03-06 20:32:12,246 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250306_203211\images\comment_1.png
+2025-03-06 20:32:12,443 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250306_203211\images\comment_2.png
+2025-03-06 20:32:12,584 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250306_203211\images\comment_3.png
+2025-03-06 20:32:12,811 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250306_203211\images\comment_4.png
+2025-03-06 20:32:12,813 - INFO - Création de l'audio...
+2025-03-06 20:32:12,814 - INFO - Génération TTS pour 'What are your thoughts on candidates passing a civ...' (100 caractères)
+2025-03-06 20:32:13,226 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250306_203211\audio\title.mp3
+2025-03-06 20:32:13,227 - INFO - Génération TTS pour 'We're so far gone from something like that at this...' (100 caractères)
+2025-03-06 20:32:13,554 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250306_203211\audio\comment_0.mp3
+2025-03-06 20:32:13,556 - INFO - Génération TTS pour 'Who would write them?  
+  
+In theory this would be...' (153 caractères)
+2025-03-06 20:32:14,801 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250306_203211\audio\comment_1.mp3
+2025-03-06 20:32:14,802 - INFO - Génération TTS pour 'Who would be in charge of designing the test and d...' (174 caractères)
+2025-03-06 20:32:15,446 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250306_203211\audio\comment_2.mp3
+2025-03-06 20:32:15,446 - INFO - Génération TTS pour 'At this point, we need voters who could pass a civ...' (59 caractères)
+2025-03-06 20:32:15,745 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250306_203211\audio\comment_3.mp3
+2025-03-06 20:32:15,746 - INFO - Génération TTS pour 'Like, seriously, if u wanna make laws, u should pr...' (325 caractères)
+2025-03-06 20:32:19,362 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250306_203211\audio\comment_4.mp3
+2025-03-06 20:32:21,514 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250306_203211\images\title.png (5s)
+2025-03-06 20:32:21,565 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250306_203211\images\comment_0.png (5s)
+2025-03-06 20:32:21,620 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250306_203211\images\comment_1.png (5s)
+2025-03-06 20:32:21,675 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250306_203211\images\comment_2.png (5s)
+2025-03-06 20:32:21,729 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250306_203211\images\comment_3.png (5s)
+2025-03-06 20:32:21,782 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250306_203211\images\comment_4.png (5s)
+2025-03-06 20:32:21,837 - INFO - [VIDEO] Rendu de 6 images...
+2025-03-06 20:32:53,251 - INFO - [VIDEO] Rendu terminé en 31.41 secondes
+2025-03-06 20:32:53,251 - INFO - [VIDEO] Vidéo créée avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250306_203211\video\askreddit_What_are_your_thoughts_on_candidates_pas_20250306_203211_video.mp4
+2025-03-06 20:32:53,252 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-06 20:32:53,252 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-06 20:32:53,640 - INFO - [VIDEO] Sauvegarde de la vidéo avec audio...
+2025-03-06 20:33:12,778 - INFO - [VIDEO] Vidéo avec audio créée avec succès
+2025-03-06 20:33:12,779 - INFO - Traitement du post 3/5: What are your thoughts on letting US residents sel...
+2025-03-06 20:33:12,780 - INFO - TikTokVideoMaker initialisé avec taille=(1080, 1920), fps=30
+2025-03-06 20:33:12,780 - INFO - Création des images...
+2025-03-06 20:33:12,927 - INFO - Carte de titre créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_letting_US_res_20250306_203312\images\title.png
+2025-03-06 20:33:13,018 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_letting_US_res_20250306_203312\images\comment_0.png
+2025-03-06 20:33:13,227 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_letting_US_res_20250306_203312\images\comment_1.png
+2025-03-06 20:33:13,414 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_letting_US_res_20250306_203312\images\comment_2.png
+2025-03-06 20:33:13,625 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_letting_US_res_20250306_203312\images\comment_3.png
+2025-03-06 20:33:13,780 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_letting_US_res_20250306_203312\images\comment_4.png
+2025-03-06 20:33:13,781 - INFO - Création de l'audio...
+2025-03-06 20:33:13,782 - INFO - Génération TTS pour 'What are your thoughts on letting US residents sel...' (177 caractères)
+2025-03-06 20:33:14,571 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_letting_US_res_20250306_203312\audio\title.mp3
+2025-03-06 20:33:14,572 - INFO - Génération TTS pour 'Valid question. If someone can buy their citizensh...' (170 caractères)
+2025-03-06 20:33:15,789 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_letting_US_res_20250306_203312\audio\comment_0.mp3
+2025-03-06 20:33:15,790 - INFO - Génération TTS pour 'I don't have any debt, but I would love to sell mi...' (106 caractères)
+2025-03-06 20:33:16,377 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_letting_US_res_20250306_203312\audio\comment_1.mp3
+2025-03-06 20:33:16,378 - INFO - Génération TTS pour 'If I could get 5 million to fuck off to anywhere e...' (174 caractères)
+2025-03-06 20:33:17,712 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_letting_US_res_20250306_203312\audio\comment_2.mp3
+2025-03-06 20:33:17,713 - INFO - Génération TTS pour 'Literally the ONLY thing keeping me here is the la...' (201 caractères)
+2025-03-06 20:33:19,420 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_letting_US_res_20250306_203312\audio\comment_3.mp3
+2025-03-06 20:33:19,421 - INFO - Génération TTS pour 'Assuming no taxes, wire me the money and I’ll hand...' (59 caractères)
+2025-03-06 20:33:20,017 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_letting_US_res_20250306_203312\audio\comment_4.mp3
+2025-03-06 20:33:22,036 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_letting_US_res_20250306_203312\images\title.png (5s)
+2025-03-06 20:33:22,087 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_letting_US_res_20250306_203312\images\comment_0.png (5s)
+2025-03-06 20:33:22,142 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_letting_US_res_20250306_203312\images\comment_1.png (5s)
+2025-03-06 20:33:22,198 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_letting_US_res_20250306_203312\images\comment_2.png (5s)
+2025-03-06 20:33:22,256 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_letting_US_res_20250306_203312\images\comment_3.png (5s)
+2025-03-06 20:33:22,312 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_letting_US_res_20250306_203312\images\comment_4.png (5s)
+2025-03-06 20:33:22,364 - INFO - [VIDEO] Rendu de 6 images...
+2025-03-06 20:33:58,042 - INFO - [VIDEO] Rendu terminé en 35.68 secondes
+2025-03-06 20:33:58,043 - INFO - [VIDEO] Vidéo créée avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_letting_US_res_20250306_203312\video\askreddit_What_are_your_thoughts_on_letting_US_res_20250306_203312_video.mp4
+2025-03-06 20:33:58,043 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-06 20:33:58,044 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-06 20:33:58,434 - INFO - [VIDEO] Sauvegarde de la vidéo avec audio...
+2025-03-06 20:34:19,021 - INFO - [VIDEO] Vidéo avec audio créée avec succès
+2025-03-06 20:34:19,022 - INFO - Traitement du post 4/5: It’s the 5 year anniversary of the COVID pandemic,...
+2025-03-06 20:34:19,025 - INFO - TikTokVideoMaker initialisé avec taille=(1080, 1920), fps=30
+2025-03-06 20:34:19,025 - INFO - Création des images...
+2025-03-06 20:34:19,181 - INFO - Carte de titre créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_It’s_the_5_year_anniversary_of_the_COVID_20250306_203419\images\title.png
+2025-03-06 20:34:19,339 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_It’s_the_5_year_anniversary_of_the_COVID_20250306_203419\images\comment_0.png
+2025-03-06 20:34:19,603 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_It’s_the_5_year_anniversary_of_the_COVID_20250306_203419\images\comment_1.png
+2025-03-06 20:34:19,852 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_It’s_the_5_year_anniversary_of_the_COVID_20250306_203419\images\comment_2.png
+2025-03-06 20:34:20,021 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_It’s_the_5_year_anniversary_of_the_COVID_20250306_203419\images\comment_3.png
+2025-03-06 20:34:20,255 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_It’s_the_5_year_anniversary_of_the_COVID_20250306_203419\images\comment_4.png
+2025-03-06 20:34:20,257 - INFO - Création de l'audio...
+2025-03-06 20:34:20,258 - INFO - Génération TTS pour 'It’s the 5 year anniversary of the COVID pandemic,...' (113 caractères)
+2025-03-06 20:34:20,930 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_It’s_the_5_year_anniversary_of_the_COVID_20250306_203419\audio\title.mp3
+2025-03-06 20:34:20,931 - INFO - Génération TTS pour 'The pandemic ruined many things and caused a shift...' (124 caractères)
+2025-03-06 20:34:21,567 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_It’s_the_5_year_anniversary_of_the_COVID_20250306_203419\audio\comment_0.mp3
+2025-03-06 20:34:21,568 - INFO - Génération TTS pour 'The world just got worse. Everyone is angry all th...' (455 caractères)
+2025-03-06 20:34:24,362 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_It’s_the_5_year_anniversary_of_the_COVID_20250306_203419\audio\comment_1.mp3
+2025-03-06 20:34:24,363 - INFO - Génération TTS pour 'I thought it didn't affect me that bad because no ...' (399 caractères)
+2025-03-06 20:34:26,450 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_It’s_the_5_year_anniversary_of_the_COVID_20250306_203419\audio\comment_2.mp3
+2025-03-06 20:34:26,452 - INFO - Génération TTS pour 'I REALLY dislike people now-Covid really exposed h...' (97 caractères)
+2025-03-06 20:34:26,814 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_It’s_the_5_year_anniversary_of_the_COVID_20250306_203419\audio\comment_3.mp3
+2025-03-06 20:34:26,816 - INFO - Génération TTS pour 'In March 2020 I thought I had covid and went to ur...' (345 caractères)
+2025-03-06 20:34:28,889 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_It’s_the_5_year_anniversary_of_the_COVID_20250306_203419\audio\comment_4.mp3
+2025-03-06 20:34:31,350 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_It’s_the_5_year_anniversary_of_the_COVID_20250306_203419\images\title.png (5s)
+2025-03-06 20:34:31,379 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_It’s_the_5_year_anniversary_of_the_COVID_20250306_203419\images\comment_0.png (5s)
+2025-03-06 20:34:31,410 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_It’s_the_5_year_anniversary_of_the_COVID_20250306_203419\images\comment_1.png (5s)
+2025-03-06 20:34:31,444 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_It’s_the_5_year_anniversary_of_the_COVID_20250306_203419\images\comment_2.png (5s)
+2025-03-06 20:34:31,476 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_It’s_the_5_year_anniversary_of_the_COVID_20250306_203419\images\comment_3.png (5s)
+2025-03-06 20:34:31,510 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_It’s_the_5_year_anniversary_of_the_COVID_20250306_203419\images\comment_4.png (5s)
+2025-03-06 20:34:31,581 - INFO - [VIDEO] Rendu de 6 images...
+2025-03-06 20:35:04,412 - INFO - [VIDEO] Rendu terminé en 32.83 secondes
+2025-03-06 20:35:04,412 - INFO - [VIDEO] Vidéo créée avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_It’s_the_5_year_anniversary_of_the_COVID_20250306_203419\video\askreddit_It’s_the_5_year_anniversary_of_the_COVID_20250306_203419_video.mp4
+2025-03-06 20:35:04,413 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-06 20:35:04,413 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-06 20:35:04,786 - INFO - [VIDEO] Sauvegarde de la vidéo avec audio...
+2025-03-06 20:35:26,592 - INFO - [VIDEO] Vidéo avec audio créée avec succès
+2025-03-06 20:35:26,593 - INFO - Traitement du post 5/5: How do you feel about the growing movement to boyc...
+2025-03-06 20:35:26,595 - INFO - TikTokVideoMaker initialisé avec taille=(1080, 1920), fps=30
+2025-03-06 20:35:26,596 - INFO - Création des images...
+2025-03-06 20:35:26,741 - INFO - Carte de titre créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_the_growing_moveme_20250306_203526\images\title.png
+2025-03-06 20:35:26,933 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_the_growing_moveme_20250306_203526\images\comment_0.png
+2025-03-06 20:35:27,078 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_the_growing_moveme_20250306_203526\images\comment_1.png
+2025-03-06 20:35:27,268 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_the_growing_moveme_20250306_203526\images\comment_2.png
+2025-03-06 20:35:27,640 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_the_growing_moveme_20250306_203526\images\comment_3.png
+2025-03-06 20:35:27,852 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_the_growing_moveme_20250306_203526\images\comment_4.png
+2025-03-06 20:35:27,853 - INFO - Création de l'audio...
+2025-03-06 20:35:27,854 - INFO - Génération TTS pour 'How do you feel about the growing movement to boyc...' (62 caractères)
+2025-03-06 20:35:28,178 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_the_growing_moveme_20250306_203526\audio\title.mp3
+2025-03-06 20:35:28,179 - INFO - Génération TTS pour 'I live here and I would love to boycott this place...' (51 caractères)
+2025-03-06 20:35:28,497 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_the_growing_moveme_20250306_203526\audio\comment_0.mp3
+2025-03-06 20:35:28,498 - INFO - Génération TTS pour 'As an American thank you for supporting us by boyc...' (77 caractères)
+2025-03-06 20:35:29,685 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_the_growing_moveme_20250306_203526\audio\comment_1.mp3
+2025-03-06 20:35:29,686 - INFO - Génération TTS pour 'I can’t blame anyone for wanting distance from the...' (166 caractères)
+2025-03-06 20:35:31,012 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_the_growing_moveme_20250306_203526\audio\comment_2.mp3
+2025-03-06 20:35:31,013 - INFO - Génération TTS pour 'As a Canadian, I’ve never seen everyone so unified...' (673 caractères)
+2025-03-06 20:35:36,318 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_the_growing_moveme_20250306_203526\audio\comment_3.mp3
+2025-03-06 20:35:36,319 - INFO - Génération TTS pour 'I am trying to boycott the USA from inside the USA...' (65 caractères)
+2025-03-06 20:35:36,672 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_the_growing_moveme_20250306_203526\audio\comment_4.mp3
+2025-03-06 20:35:38,952 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_the_growing_moveme_20250306_203526\images\title.png (5s)
+2025-03-06 20:35:39,003 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_the_growing_moveme_20250306_203526\images\comment_0.png (5s)
+2025-03-06 20:35:39,054 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_the_growing_moveme_20250306_203526\images\comment_1.png (5s)
+2025-03-06 20:35:39,106 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_the_growing_moveme_20250306_203526\images\comment_2.png (5s)
+2025-03-06 20:35:39,157 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_the_growing_moveme_20250306_203526\images\comment_3.png (5s)
+2025-03-06 20:35:39,211 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_the_growing_moveme_20250306_203526\images\comment_4.png (5s)
+2025-03-06 20:35:39,263 - INFO - [VIDEO] Rendu de 6 images...
+2025-03-06 20:36:10,968 - INFO - [VIDEO] Rendu terminé en 31.71 secondes
+2025-03-06 20:36:10,969 - INFO - [VIDEO] Vidéo créée avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_the_growing_moveme_20250306_203526\video\askreddit_How_do_you_feel_about_the_growing_moveme_20250306_203526_video.mp4
+2025-03-06 20:36:10,969 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-06 20:36:10,970 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-06 20:36:11,340 - INFO - [VIDEO] Sauvegarde de la vidéo avec audio...
+2025-03-06 20:36:31,159 - INFO - [VIDEO] Vidéo avec audio créée avec succès
+2025-03-06 20:36:31,161 - INFO - Fichiers temporaires supprimés: 3
+2025-03-06 20:36:31,162 - INFO - Processus terminé en 502.36 secondes.
+2025-03-06 20:36:31,162 - INFO - Vidéos créées: 5/5
+2025-03-06 22:53:19,515 - RedditContentCreator - INFO - RedditContentCreator initialisé avec répertoire de sortie: output
+2025-03-06 22:53:19,516 - RedditContentCreator - INFO - Début du processus de création: subreddit=askreddit, timeframe=day, post_count=1
+2025-03-06 22:53:19,516 - root - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-03-06 22:53:19,567 - utils.redditScrape - INFO - Successfully connected to Reddit API (read-only mode)
+2025-03-06 22:53:19,568 - utils.redditScrape - INFO - Using sorting method: controversial with span: day
+2025-03-06 22:53:20,042 - utils.redditScrape - INFO - Selected post: What’s a ‘men’s secret’ that women have absolutely no idea about?
+2025-03-06 22:53:20,962 - RedditContentCreator - INFO - Traitement du post 1/1
+2025-03-06 22:53:20,966 - RedditContentCreator - INFO - Création des images...
+2025-03-06 22:53:21,389 - RedditContentCreator - INFO - Création de l'audio...
+2025-03-06 22:53:24,321 - RedditContentCreator - INFO - Contenu créé avec succès dans le dossier: output\askreddit_What_s-a-_men_s-secret_-that-women-have-absolutely_1741298000
+2025-03-10 12:08:39,406 - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-03-10 12:08:39,553 - INFO - Successfully connected to Reddit API (read-only mode)
+2025-03-10 12:08:39,554 - INFO - TTSGenerator initialisé (langue=en, tld=com)
+2025-03-10 12:08:39,554 - INFO - RedditTikTokCreator initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-03-10 12:08:39,554 - INFO - Début du processus de création vidéo
+2025-03-10 12:08:39,554 - INFO - Paramètres: subreddit=askreddit, timeframe=week, post_count=20, video_count=5
+2025-03-10 12:08:39,554 - INFO - Récupération des posts de r/askreddit avec tri top...
+2025-03-10 12:10:49,447 - INFO - Tri des posts par nombre de commentaires
+2025-03-10 12:10:49,447 - INFO - 20 posts récupérés de r/askreddit
+2025-03-10 12:10:49,448 - INFO - Structure du premier post: ['post', 'title', 'author', 'score', 'url', 'created_utc', 'id', 'comment_count', 'comments']
+2025-03-10 12:10:49,448 - INFO - 20 posts récupérés, création de 5 vidéos
+2025-03-10 12:10:49,448 - INFO - CommentCardCreator initialisé (1080x1920)
+2025-03-10 12:10:49,449 - INFO - Traitement du post 1/5: [Breaking News] 2025 Donald Trump speech to a join...
+2025-03-10 12:10:49,450 - INFO - TikTokVideoMaker initialisé avec taille=(1080, 1920), fps=30
+2025-03-10 12:10:49,450 - INFO - Création des images...
+2025-03-10 12:10:49,558 - INFO - Carte de titre créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250310_121049\images\title.png
+2025-03-10 12:10:49,637 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250310_121049\images\comment_0.png
+2025-03-10 12:10:49,713 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250310_121049\images\comment_1.png
+2025-03-10 12:10:49,781 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250310_121049\images\comment_2.png
+2025-03-10 12:10:49,848 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250310_121049\images\comment_3.png
+2025-03-10 12:10:49,933 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250310_121049\images\comment_4.png
+2025-03-10 12:10:49,934 - INFO - Création de l'audio...
+2025-03-10 12:10:49,934 - INFO - Génération TTS pour '[Breaking News] 2025 Donald Trump speech to a join...' (71 caractères)
+2025-03-10 12:10:50,417 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250310_121049\audio\title.mp3
+2025-03-10 12:10:50,417 - INFO - Génération TTS pour '# Make your bets on the following:
+
+1. Withdrawal ...' (244 caractères)
+2025-03-10 12:10:55,394 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250310_121049\audio\comment_0.mp3
+2025-03-10 12:10:55,395 - INFO - Génération TTS pour 'At this point he could straight-up publicly admit ...' (214 caractères)
+2025-03-10 12:10:56,605 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250310_121049\audio\comment_1.mp3
+2025-03-10 12:10:56,605 - INFO - Génération TTS pour 'One of the biggest surprises of the last trump pre...' (141 caractères)
+2025-03-10 12:10:57,287 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250310_121049\audio\comment_2.mp3
+2025-03-10 12:10:57,287 - INFO - Génération TTS pour 'Lemme guess... 
+
+Biden Ukraine Biden Biden Russia ...' (123 caractères)
+2025-03-10 12:10:58,583 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250310_121049\audio\comment_3.mp3
+2025-03-10 12:10:58,584 - INFO - Génération TTS pour 'Democrats clap when Trump notes that the United St...' (268 caractères)
+2025-03-10 12:11:00,452 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250310_121049\audio\comment_4.mp3
+2025-03-10 12:11:01,564 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250310_121049\images\title.png (5s)
+2025-03-10 12:11:01,591 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250310_121049\images\comment_0.png (5s)
+2025-03-10 12:11:01,617 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250310_121049\images\comment_1.png (5s)
+2025-03-10 12:11:01,643 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250310_121049\images\comment_2.png (5s)
+2025-03-10 12:11:01,669 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250310_121049\images\comment_3.png (5s)
+2025-03-10 12:11:01,695 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250310_121049\images\comment_4.png (5s)
+2025-03-10 12:11:01,721 - INFO - [VIDEO] Rendu de 6 images...
+2025-03-10 12:11:26,885 - INFO - [VIDEO] Rendu terminé en 25.16 secondes
+2025-03-10 12:11:26,885 - INFO - [VIDEO] Vidéo créée avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250310_121049\video\askreddit_[Breaking_News]_2025_Donald_Trump_speech_20250310_121049_video.mp4
+2025-03-10 12:11:26,886 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-10 12:11:26,886 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-10 12:11:27,100 - INFO - [VIDEO] Sauvegarde de la vidéo avec audio...
+2025-03-10 12:11:38,476 - INFO - [VIDEO] Vidéo avec audio créée avec succès
+2025-03-10 12:11:38,476 - INFO - Traitement du post 2/5: What are your thoughts on candidates passing a civ...
+2025-03-10 12:11:38,477 - INFO - TikTokVideoMaker initialisé avec taille=(1080, 1920), fps=30
+2025-03-10 12:11:38,478 - INFO - Création des images...
+2025-03-10 12:11:38,546 - INFO - Carte de titre créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250310_121138\images\title.png
+2025-03-10 12:11:38,613 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250310_121138\images\comment_0.png
+2025-03-10 12:11:38,685 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250310_121138\images\comment_1.png
+2025-03-10 12:11:38,757 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250310_121138\images\comment_2.png
+2025-03-10 12:11:38,816 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250310_121138\images\comment_3.png
+2025-03-10 12:11:38,906 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250310_121138\images\comment_4.png
+2025-03-10 12:11:38,907 - INFO - Création de l'audio...
+2025-03-10 12:11:38,907 - INFO - Génération TTS pour 'What are your thoughts on candidates passing a civ...' (100 caractères)
+2025-03-10 12:11:39,525 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250310_121138\audio\title.mp3
+2025-03-10 12:11:39,526 - INFO - Génération TTS pour 'We're so far gone from something like that at this...' (100 caractères)
+2025-03-10 12:11:39,841 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250310_121138\audio\comment_0.mp3
+2025-03-10 12:11:39,842 - INFO - Génération TTS pour 'Who would write them?  
+  
+In theory this would be...' (153 caractères)
+2025-03-10 12:11:41,143 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250310_121138\audio\comment_1.mp3
+2025-03-10 12:11:41,143 - INFO - Génération TTS pour 'Who would be in charge of designing the test and d...' (174 caractères)
+2025-03-10 12:11:42,187 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250310_121138\audio\comment_2.mp3
+2025-03-10 12:11:42,188 - INFO - Génération TTS pour 'At this point, we need voters who could pass a civ...' (59 caractères)
+2025-03-10 12:11:42,519 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250310_121138\audio\comment_3.mp3
+2025-03-10 12:11:42,519 - INFO - Génération TTS pour 'Like, seriously, if u wanna make laws, u should pr...' (325 caractères)
+2025-03-10 12:11:45,917 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250310_121138\audio\comment_4.mp3
+2025-03-10 12:11:46,757 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250310_121138\images\title.png (5s)
+2025-03-10 12:11:46,781 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250310_121138\images\comment_0.png (5s)
+2025-03-10 12:11:46,807 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250310_121138\images\comment_1.png (5s)
+2025-03-10 12:11:46,832 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250310_121138\images\comment_2.png (5s)
+2025-03-10 12:11:46,858 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250310_121138\images\comment_3.png (5s)
+2025-03-10 12:11:46,883 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250310_121138\images\comment_4.png (5s)
+2025-03-10 12:11:46,909 - INFO - [VIDEO] Rendu de 6 images...
+2025-03-10 12:12:06,332 - INFO - [VIDEO] Rendu terminé en 19.42 secondes
+2025-03-10 12:12:06,332 - INFO - [VIDEO] Vidéo créée avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_What_are_your_thoughts_on_candidates_pas_20250310_121138\video\askreddit_What_are_your_thoughts_on_candidates_pas_20250310_121138_video.mp4
+2025-03-10 12:12:06,333 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-10 12:12:06,333 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-10 12:12:06,536 - INFO - [VIDEO] Sauvegarde de la vidéo avec audio...
+2025-03-10 12:12:16,621 - INFO - [VIDEO] Vidéo avec audio créée avec succès
+2025-03-10 12:12:16,621 - INFO - Traitement du post 3/5: If aliens landed tomorrow, what’s the first thing ...
+2025-03-10 12:12:16,622 - INFO - TikTokVideoMaker initialisé avec taille=(1080, 1920), fps=30
+2025-03-10 12:12:16,622 - INFO - Création des images...
+2025-03-10 12:12:16,683 - INFO - Carte de titre créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_If_aliens_landed_tomorrow,_what’s_the_fi_20250310_121216\images\title.png
+2025-03-10 12:12:16,743 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_If_aliens_landed_tomorrow,_what’s_the_fi_20250310_121216\images\comment_0.png
+2025-03-10 12:12:16,802 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_If_aliens_landed_tomorrow,_what’s_the_fi_20250310_121216\images\comment_1.png
+2025-03-10 12:12:16,861 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_If_aliens_landed_tomorrow,_what’s_the_fi_20250310_121216\images\comment_2.png
+2025-03-10 12:12:16,920 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_If_aliens_landed_tomorrow,_what’s_the_fi_20250310_121216\images\comment_3.png
+2025-03-10 12:12:16,980 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_If_aliens_landed_tomorrow,_what’s_the_fi_20250310_121216\images\comment_4.png
+2025-03-10 12:12:16,981 - INFO - Création de l'audio...
+2025-03-10 12:12:16,981 - INFO - Génération TTS pour 'If aliens landed tomorrow, what’s the first thing ...' (68 caractères)
+2025-03-10 12:12:17,318 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_If_aliens_landed_tomorrow,_what’s_the_fi_20250310_121216\audio\title.mp3
+2025-03-10 12:12:17,318 - INFO - Génération TTS pour 'I've got my towel, now jab that fish in my ear and...' (68 caractères)
+2025-03-10 12:12:17,728 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_If_aliens_landed_tomorrow,_what’s_the_fi_20250310_121216\audio\comment_0.mp3
+2025-03-10 12:12:17,729 - INFO - Génération TTS pour '"What is the airspeed velocity of an unladen swall...' (54 caractères)
+2025-03-10 12:12:18,173 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_If_aliens_landed_tomorrow,_what’s_the_fi_20250310_121216\audio\comment_1.mp3
+2025-03-10 12:12:18,173 - INFO - Génération TTS pour 'Is the anal probing thing true? If so can I hitch ...' (60 caractères)
+2025-03-10 12:12:18,651 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_If_aliens_landed_tomorrow,_what’s_the_fi_20250310_121216\audio\comment_2.mp3
+2025-03-10 12:12:18,651 - INFO - Génération TTS pour 'I’d run up and jump in and say, “LETS GET THE FUCK...' (65 caractères)
+2025-03-10 12:12:19,155 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_If_aliens_landed_tomorrow,_what’s_the_fi_20250310_121216\audio\comment_3.mp3
+2025-03-10 12:12:19,155 - INFO - Génération TTS pour 'I have a towel and know how to hitchhike. Where ar...' (61 caractères)
+2025-03-10 12:12:19,633 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_If_aliens_landed_tomorrow,_what’s_the_fi_20250310_121216\audio\comment_4.mp3
+2025-03-10 12:12:20,262 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_If_aliens_landed_tomorrow,_what’s_the_fi_20250310_121216\images\title.png (5s)
+2025-03-10 12:12:20,286 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_If_aliens_landed_tomorrow,_what’s_the_fi_20250310_121216\images\comment_0.png (5s)
+2025-03-10 12:12:20,311 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_If_aliens_landed_tomorrow,_what’s_the_fi_20250310_121216\images\comment_1.png (5s)
+2025-03-10 12:12:20,337 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_If_aliens_landed_tomorrow,_what’s_the_fi_20250310_121216\images\comment_2.png (5s)
+2025-03-10 12:12:20,362 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_If_aliens_landed_tomorrow,_what’s_the_fi_20250310_121216\images\comment_3.png (5s)
+2025-03-10 12:12:20,388 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_If_aliens_landed_tomorrow,_what’s_the_fi_20250310_121216\images\comment_4.png (5s)
+2025-03-10 12:12:20,414 - INFO - [VIDEO] Rendu de 6 images...
+2025-03-10 12:12:39,741 - INFO - [VIDEO] Rendu terminé en 19.33 secondes
+2025-03-10 12:12:39,742 - INFO - [VIDEO] Vidéo créée avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_If_aliens_landed_tomorrow,_what’s_the_fi_20250310_121216\video\askreddit_If_aliens_landed_tomorrow,_what’s_the_fi_20250310_121216_video.mp4
+2025-03-10 12:12:39,742 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-10 12:12:39,742 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-10 12:12:39,938 - INFO - [VIDEO] Sauvegarde de la vidéo avec audio...
+2025-03-10 12:12:49,172 - INFO - [VIDEO] Vidéo avec audio créée avec succès
+2025-03-10 12:12:49,172 - INFO - Traitement du post 4/5: How do you feel about removing the 'Electoral Coll...
+2025-03-10 12:12:49,175 - INFO - TikTokVideoMaker initialisé avec taille=(1080, 1920), fps=30
+2025-03-10 12:12:49,175 - INFO - Création des images...
+2025-03-10 12:12:49,245 - INFO - Carte de titre créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_removing_the_'Elec_20250310_121249\images\title.png
+2025-03-10 12:12:49,355 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_removing_the_'Elec_20250310_121249\images\comment_0.png
+2025-03-10 12:12:49,427 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_removing_the_'Elec_20250310_121249\images\comment_1.png
+2025-03-10 12:12:49,517 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_removing_the_'Elec_20250310_121249\images\comment_2.png
+2025-03-10 12:12:49,580 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_removing_the_'Elec_20250310_121249\images\comment_3.png
+2025-03-10 12:12:49,662 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_removing_the_'Elec_20250310_121249\images\comment_4.png
+2025-03-10 12:12:49,663 - INFO - Création de l'audio...
+2025-03-10 12:12:49,664 - INFO - Génération TTS pour 'How do you feel about removing the 'Electoral Coll...' (127 caractères)
+2025-03-10 12:12:50,290 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_removing_the_'Elec_20250310_121249\audio\title.mp3
+2025-03-10 12:12:50,290 - INFO - Génération TTS pour 'I think an even better idea is rank choice voting....' (503 caractères)
+2025-03-10 12:12:55,078 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_removing_the_'Elec_20250310_121249\audio\comment_0.mp3
+2025-03-10 12:12:55,079 - INFO - Génération TTS pour 'You'd need an Amendment to the Constitution for su...' (166 caractères)
+2025-03-10 12:12:56,223 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_removing_the_'Elec_20250310_121249\audio\comment_1.mp3
+2025-03-10 12:12:56,223 - INFO - Génération TTS pour 'The US electoral system needs a reform. One that i...' (328 caractères)
+2025-03-10 12:12:58,457 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_removing_the_'Elec_20250310_121249\audio\comment_2.mp3
+2025-03-10 12:12:58,457 - INFO - Génération TTS pour 'If it makes my side more likely to win, then I’m f...' (117 caractères)
+2025-03-10 12:13:00,026 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_removing_the_'Elec_20250310_121249\audio\comment_3.mp3
+2025-03-10 12:13:00,027 - INFO - Génération TTS pour 'I don’t think anyone realizes that this isn’t some...' (270 caractères)
+2025-03-10 12:13:01,367 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_removing_the_'Elec_20250310_121249\audio\comment_4.mp3
+2025-03-10 12:13:02,483 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_removing_the_'Elec_20250310_121249\images\title.png (5s)
+2025-03-10 12:13:02,508 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_removing_the_'Elec_20250310_121249\images\comment_0.png (5s)
+2025-03-10 12:13:02,533 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_removing_the_'Elec_20250310_121249\images\comment_1.png (5s)
+2025-03-10 12:13:02,558 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_removing_the_'Elec_20250310_121249\images\comment_2.png (5s)
+2025-03-10 12:13:02,584 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_removing_the_'Elec_20250310_121249\images\comment_3.png (5s)
+2025-03-10 12:13:02,609 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_removing_the_'Elec_20250310_121249\images\comment_4.png (5s)
+2025-03-10 12:13:02,635 - INFO - [VIDEO] Rendu de 6 images...
+2025-03-10 12:13:21,919 - INFO - [VIDEO] Rendu terminé en 19.28 secondes
+2025-03-10 12:13:21,920 - INFO - [VIDEO] Vidéo créée avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_How_do_you_feel_about_removing_the_'Elec_20250310_121249\video\askreddit_How_do_you_feel_about_removing_the_'Elec_20250310_121249_video.mp4
+2025-03-10 12:13:21,920 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-10 12:13:21,920 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-10 12:13:22,111 - INFO - [VIDEO] Sauvegarde de la vidéo avec audio...
+2025-03-10 12:13:34,078 - INFO - [VIDEO] Vidéo avec audio créée avec succès
+2025-03-10 12:13:34,078 - INFO - Traitement du post 5/5: Former skinny people of Reddit, what's the worst t...
+2025-03-10 12:13:34,080 - INFO - TikTokVideoMaker initialisé avec taille=(1080, 1920), fps=30
+2025-03-10 12:13:34,080 - INFO - Création des images...
+2025-03-10 12:13:34,141 - INFO - Carte de titre créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Former_skinny_people_of_Reddit,_what's_t_20250310_121334\images\title.png
+2025-03-10 12:13:34,211 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Former_skinny_people_of_Reddit,_what's_t_20250310_121334\images\comment_0.png
+2025-03-10 12:13:34,280 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Former_skinny_people_of_Reddit,_what's_t_20250310_121334\images\comment_1.png
+2025-03-10 12:13:34,346 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Former_skinny_people_of_Reddit,_what's_t_20250310_121334\images\comment_2.png
+2025-03-10 12:13:34,409 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Former_skinny_people_of_Reddit,_what's_t_20250310_121334\images\comment_3.png
+2025-03-10 12:13:34,607 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Former_skinny_people_of_Reddit,_what's_t_20250310_121334\images\comment_4.png
+2025-03-10 12:13:34,608 - INFO - Création de l'audio...
+2025-03-10 12:13:34,608 - INFO - Génération TTS pour 'Former skinny people of Reddit, what's the worst t...' (73 caractères)
+2025-03-10 12:13:34,929 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Former_skinny_people_of_Reddit,_what's_t_20250310_121334\audio\title.mp3
+2025-03-10 12:13:34,930 - INFO - Génération TTS pour 'You can't wear the clothes that are still hanging ...' (171 caractères)
+2025-03-10 12:13:35,915 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Former_skinny_people_of_Reddit,_what's_t_20250310_121334\audio\comment_0.mp3
+2025-03-10 12:13:35,916 - INFO - Génération TTS pour 'The worst part is that it happens so slowly you do...' (156 caractères)
+2025-03-10 12:13:36,637 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Former_skinny_people_of_Reddit,_what's_t_20250310_121334\audio\comment_1.mp3
+2025-03-10 12:13:36,637 - INFO - Génération TTS pour 'I thought I was fat before and i very much was not...' (132 caractères)
+2025-03-10 12:13:37,916 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Former_skinny_people_of_Reddit,_what's_t_20250310_121334\audio\comment_2.mp3
+2025-03-10 12:13:37,917 - INFO - Génération TTS pour 'I have no idea how to dress my body now. I still s...' (124 caractères)
+2025-03-10 12:13:38,617 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Former_skinny_people_of_Reddit,_what's_t_20250310_121334\audio\comment_3.mp3
+2025-03-10 12:13:38,617 - INFO - Génération TTS pour 'Being at least slightly uncomfortable all the time...' (1200 caractères)
+2025-03-10 12:13:46,280 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Former_skinny_people_of_Reddit,_what's_t_20250310_121334\audio\comment_4.mp3
+2025-03-10 12:13:47,485 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Former_skinny_people_of_Reddit,_what's_t_20250310_121334\images\title.png (5s)
+2025-03-10 12:13:47,509 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Former_skinny_people_of_Reddit,_what's_t_20250310_121334\images\comment_0.png (5s)
+2025-03-10 12:13:47,534 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Former_skinny_people_of_Reddit,_what's_t_20250310_121334\images\comment_1.png (5s)
+2025-03-10 12:13:47,559 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Former_skinny_people_of_Reddit,_what's_t_20250310_121334\images\comment_2.png (5s)
+2025-03-10 12:13:47,585 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Former_skinny_people_of_Reddit,_what's_t_20250310_121334\images\comment_3.png (5s)
+2025-03-10 12:13:47,610 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Former_skinny_people_of_Reddit,_what's_t_20250310_121334\images\comment_4.png (5s)
+2025-03-10 12:13:47,639 - INFO - [VIDEO] Rendu de 6 images...
+2025-03-10 12:14:07,344 - INFO - [VIDEO] Rendu terminé en 19.71 secondes
+2025-03-10 12:14:07,345 - INFO - [VIDEO] Vidéo créée avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Former_skinny_people_of_Reddit,_what's_t_20250310_121334\video\askreddit_Former_skinny_people_of_Reddit,_what's_t_20250310_121334_video.mp4
+2025-03-10 12:14:07,345 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-10 12:14:07,345 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-10 12:14:07,544 - INFO - [VIDEO] Sauvegarde de la vidéo avec audio...
+2025-03-10 12:14:19,570 - INFO - [VIDEO] Vidéo avec audio créée avec succès
+2025-03-10 12:14:19,570 - INFO - Fichiers temporaires supprimés: 0
+2025-03-10 12:14:19,570 - INFO - Processus terminé en 340.02 secondes.
+2025-03-10 12:14:19,570 - INFO - Vidéos créées: 5/5
+2025-03-12 11:14:30,658 - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-03-12 11:14:30,822 - INFO - Successfully connected to Reddit API (read-only mode)
+2025-03-12 11:14:30,823 - INFO - TTSGenerator initialisé (langue=en, tld=com)
+2025-03-12 11:14:30,823 - INFO - RedditTikTokCreator initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-03-12 11:14:30,823 - INFO - Début du processus de création vidéo
+2025-03-12 11:14:30,824 - INFO - Paramètres: subreddit=worldnews, timeframe=day, post_count=20, video_count=5
+2025-03-12 11:14:30,824 - INFO - Récupération des posts de r/worldnews avec tri hot...
+2025-03-12 11:16:02,053 - INFO - 20 posts récupérés de r/worldnews
+2025-03-12 11:16:02,054 - INFO - Structure du premier post: ['post', 'title', 'author', 'score', 'url', 'created_utc', 'id', 'comment_count', 'comments']
+2025-03-12 11:16:02,054 - INFO - 20 posts récupérés, création de 5 vidéos
+2025-03-12 11:16:02,056 - INFO - CommentCardCreator initialisé (1080x1920)
+2025-03-12 11:16:02,056 - INFO - Traitement du post 1/5: /r/WorldNews Live Thread: Russian Invasion of Ukra...
+2025-03-12 11:16:02,059 - INFO - TikTokVideoMaker initialisé avec taille=(1080, 1920), fps=30
+2025-03-12 11:16:02,059 - INFO - Création des images...
+2025-03-12 11:16:02,325 - INFO - Carte de titre créée: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews__r_WorldNews_Live_Thread__Russian_Invasi_20250312_111602\images\title.png
+2025-03-12 11:16:02,821 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews__r_WorldNews_Live_Thread__Russian_Invasi_20250312_111602\images\comment_0.png
+2025-03-12 11:16:03,003 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews__r_WorldNews_Live_Thread__Russian_Invasi_20250312_111602\images\comment_1.png
+2025-03-12 11:16:03,544 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews__r_WorldNews_Live_Thread__Russian_Invasi_20250312_111602\images\comment_2.png
+2025-03-12 11:16:03,724 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews__r_WorldNews_Live_Thread__Russian_Invasi_20250312_111602\images\comment_3.png
+2025-03-12 11:16:03,904 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews__r_WorldNews_Live_Thread__Russian_Invasi_20250312_111602\images\comment_4.png
+2025-03-12 11:16:03,906 - INFO - Création de l'audio...
+2025-03-12 11:16:03,907 - INFO - Génération TTS pour '/r/WorldNews Live Thread: Russian Invasion of Ukra...' (85 caractères)
+2025-03-12 11:16:04,278 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews__r_WorldNews_Live_Thread__Russian_Invasi_20250312_111602\audio\title.mp3
+2025-03-12 11:16:04,279 - INFO - Génération TTS pour 'Some more nuggets about the apparent Russian budge...' (1122 caractères)
+2025-03-12 11:16:12,524 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews__r_WorldNews_Live_Thread__Russian_Invasi_20250312_111602\audio\comment_0.mp3
+2025-03-12 11:16:12,525 - INFO - Génération TTS pour 'Russian losses 12/03/2025 reported by the Ukrainia...' (211 caractères)
+2025-03-12 11:16:16,054 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews__r_WorldNews_Live_Thread__Russian_Invasi_20250312_111602\audio\comment_1.mp3
+2025-03-12 11:16:16,055 - INFO - Génération TTS pour '[ISW update for March 11th](https://www.understand...' (1252 caractères)
+2025-03-12 11:16:23,845 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews__r_WorldNews_Live_Thread__Russian_Invasi_20250312_111602\audio\comment_2.mp3
+2025-03-12 11:16:23,846 - INFO - Génération TTS pour 'I doubt any ceasefire is more than a pause for Rus...' (172 caractères)
+2025-03-12 11:16:24,905 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews__r_WorldNews_Live_Thread__Russian_Invasi_20250312_111602\audio\comment_3.mp3
+2025-03-12 11:16:24,906 - INFO - Génération TTS pour '[New Fundraiser#213 @ EuroMaidanPress](https://eur...' (173 caractères)
+2025-03-12 11:16:26,056 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews__r_WorldNews_Live_Thread__Russian_Invasi_20250312_111602\audio\comment_4.mp3
+2025-03-12 11:16:32,313 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews__r_WorldNews_Live_Thread__Russian_Invasi_20250312_111602\images\title.png (5s)
+2025-03-12 11:16:32,379 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews__r_WorldNews_Live_Thread__Russian_Invasi_20250312_111602\images\comment_0.png (5s)
+2025-03-12 11:16:32,443 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews__r_WorldNews_Live_Thread__Russian_Invasi_20250312_111602\images\comment_1.png (5s)
+2025-03-12 11:16:32,505 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews__r_WorldNews_Live_Thread__Russian_Invasi_20250312_111602\images\comment_2.png (5s)
+2025-03-12 11:16:32,569 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews__r_WorldNews_Live_Thread__Russian_Invasi_20250312_111602\images\comment_3.png (5s)
+2025-03-12 11:16:32,645 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews__r_WorldNews_Live_Thread__Russian_Invasi_20250312_111602\images\comment_4.png (5s)
+2025-03-12 11:16:32,712 - INFO - [VIDEO] Rendu de 6 images...
+2025-03-12 11:17:14,210 - INFO - [VIDEO] Rendu terminé en 41.50 secondes
+2025-03-12 11:17:14,211 - INFO - [VIDEO] Vidéo créée avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews__r_WorldNews_Live_Thread__Russian_Invasi_20250312_111602\video\worldnews__r_WorldNews_Live_Thread__Russian_Invasi_20250312_111602_video.mp4
+2025-03-12 11:17:14,211 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-12 11:17:14,212 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-12 11:17:14,617 - INFO - [VIDEO] Sauvegarde de la vidéo avec audio...
+2025-03-12 11:17:54,868 - INFO - [VIDEO] Vidéo avec audio créée avec succès
+2025-03-12 11:17:54,869 - INFO - Traitement du post 2/5: Trump imposes tarrif on Australia....
+2025-03-12 11:17:54,871 - INFO - TikTokVideoMaker initialisé avec taille=(1080, 1920), fps=30
+2025-03-12 11:17:54,872 - INFO - Création des images...
+2025-03-12 11:17:55,021 - INFO - Carte de titre créée: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes_tarrif_on_Australia._20250312_111754\images\title.png
+2025-03-12 11:17:55,281 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes_tarrif_on_Australia._20250312_111754\images\comment_0.png
+2025-03-12 11:17:55,433 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes_tarrif_on_Australia._20250312_111754\images\comment_1.png
+2025-03-12 11:17:55,586 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes_tarrif_on_Australia._20250312_111754\images\comment_2.png
+2025-03-12 11:17:55,735 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes_tarrif_on_Australia._20250312_111754\images\comment_3.png
+2025-03-12 11:17:56,038 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes_tarrif_on_Australia._20250312_111754\images\comment_4.png
+2025-03-12 11:17:56,040 - INFO - Création de l'audio...
+2025-03-12 11:17:56,041 - INFO - Génération TTS pour 'Trump imposes tarrif on Australia....' (34 caractères)
+2025-03-12 11:17:56,377 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes_tarrif_on_Australia._20250312_111754\audio\title.mp3
+2025-03-12 11:17:56,378 - INFO - Génération TTS pour 'Note Australia has a trade surplus with the US and...' (411 caractères)
+2025-03-12 11:17:58,517 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes_tarrif_on_Australia._20250312_111754\audio\comment_0.mp3
+2025-03-12 11:17:58,518 - INFO - Génération TTS pour 'Who hasn’t he or who will he not pick a fight with...' (75 caractères)
+2025-03-12 11:17:59,080 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes_tarrif_on_Australia._20250312_111754\audio\comment_1.mp3
+2025-03-12 11:17:59,081 - INFO - Génération TTS pour 'One man fucking up the entire world. His security ...' (82 caractères)
+2025-03-12 11:17:59,608 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes_tarrif_on_Australia._20250312_111754\audio\comment_2.mp3
+2025-03-12 11:17:59,609 - INFO - Génération TTS pour 'He really is trying to piss off all of the US alli...' (62 caractères)
+2025-03-12 11:18:00,065 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes_tarrif_on_Australia._20250312_111754\audio\comment_3.mp3
+2025-03-12 11:18:00,066 - INFO - Génération TTS pour 'Users often report submissions from this site for ...' (510 caractères)
+2025-03-12 11:18:04,585 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes_tarrif_on_Australia._20250312_111754\audio\comment_4.mp3
+2025-03-12 11:18:07,275 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes_tarrif_on_Australia._20250312_111754\images\title.png (5s)
+2025-03-12 11:18:07,335 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes_tarrif_on_Australia._20250312_111754\images\comment_0.png (5s)
+2025-03-12 11:18:07,400 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes_tarrif_on_Australia._20250312_111754\images\comment_1.png (5s)
+2025-03-12 11:18:07,458 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes_tarrif_on_Australia._20250312_111754\images\comment_2.png (5s)
+2025-03-12 11:18:07,518 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes_tarrif_on_Australia._20250312_111754\images\comment_3.png (5s)
+2025-03-12 11:18:07,582 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes_tarrif_on_Australia._20250312_111754\images\comment_4.png (5s)
+2025-03-12 11:18:07,644 - INFO - [VIDEO] Rendu de 6 images...
+2025-03-12 11:18:42,584 - INFO - [VIDEO] Rendu terminé en 34.94 secondes
+2025-03-12 11:18:42,584 - INFO - [VIDEO] Vidéo créée avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes_tarrif_on_Australia._20250312_111754\video\worldnews_Trump_imposes_tarrif_on_Australia._20250312_111754_video.mp4
+2025-03-12 11:18:42,585 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-12 11:18:42,585 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-12 11:18:43,032 - INFO - [VIDEO] Sauvegarde de la vidéo avec audio...
+2025-03-12 11:19:07,424 - INFO - [VIDEO] Vidéo avec audio créée avec succès
+2025-03-12 11:19:07,425 - INFO - Traitement du post 3/5: Trump imposes, then reverses, new tariffs on Canad...
+2025-03-12 11:19:07,427 - INFO - TikTokVideoMaker initialisé avec taille=(1080, 1920), fps=30
+2025-03-12 11:19:07,428 - INFO - Création des images...
+2025-03-12 11:19:07,575 - INFO - Carte de titre créée: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes,_then_reverses,_new_tariff_20250312_111907\images\title.png
+2025-03-12 11:19:07,746 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes,_then_reverses,_new_tariff_20250312_111907\images\comment_0.png
+2025-03-12 11:19:07,931 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes,_then_reverses,_new_tariff_20250312_111907\images\comment_1.png
+2025-03-12 11:19:08,116 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes,_then_reverses,_new_tariff_20250312_111907\images\comment_2.png
+2025-03-12 11:19:08,261 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes,_then_reverses,_new_tariff_20250312_111907\images\comment_3.png
+2025-03-12 11:19:08,466 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes,_then_reverses,_new_tariff_20250312_111907\images\comment_4.png
+2025-03-12 11:19:08,467 - INFO - Création de l'audio...
+2025-03-12 11:19:08,468 - INFO - Génération TTS pour 'Trump imposes, then reverses, new tariffs on Canad...' (51 caractères)
+2025-03-12 11:19:08,780 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes,_then_reverses,_new_tariff_20250312_111907\audio\title.mp3
+2025-03-12 11:19:08,781 - INFO - Génération TTS pour 'We have reached the point where headlines literall...' (136 caractères)
+2025-03-12 11:19:09,439 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes,_then_reverses,_new_tariff_20250312_111907\audio\comment_0.mp3
+2025-03-12 11:19:09,440 - INFO - Génération TTS pour 'I would LOVE to see some of those checks and balan...' (187 caractères)
+2025-03-12 11:19:11,480 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes,_then_reverses,_new_tariff_20250312_111907\audio\comment_1.mp3
+2025-03-12 11:19:11,481 - INFO - Génération TTS pour 'Trump wrote in his book how he relished in destroy...' (216 caractères)
+2025-03-12 11:19:13,302 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes,_then_reverses,_new_tariff_20250312_111907\audio\comment_2.mp3
+2025-03-12 11:19:13,304 - INFO - Génération TTS pour 'I know that that's at least partially the point, b...' (75 caractères)
+2025-03-12 11:19:13,694 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes,_then_reverses,_new_tariff_20250312_111907\audio\comment_3.mp3
+2025-03-12 11:19:13,695 - INFO - Génération TTS pour 'Wired reported that Trump was selling 1:1 meeting ...' (255 caractères)
+2025-03-12 11:19:15,347 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes,_then_reverses,_new_tariff_20250312_111907\audio\comment_4.mp3
+2025-03-12 11:19:17,593 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes,_then_reverses,_new_tariff_20250312_111907\images\title.png (5s)
+2025-03-12 11:19:17,656 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes,_then_reverses,_new_tariff_20250312_111907\images\comment_0.png (5s)
+2025-03-12 11:19:17,713 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes,_then_reverses,_new_tariff_20250312_111907\images\comment_1.png (5s)
+2025-03-12 11:19:17,775 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes,_then_reverses,_new_tariff_20250312_111907\images\comment_2.png (5s)
+2025-03-12 11:19:17,834 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes,_then_reverses,_new_tariff_20250312_111907\images\comment_3.png (5s)
+2025-03-12 11:19:17,890 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes,_then_reverses,_new_tariff_20250312_111907\images\comment_4.png (5s)
+2025-03-12 11:19:17,946 - INFO - [VIDEO] Rendu de 6 images...
+2025-03-12 11:19:53,780 - INFO - [VIDEO] Rendu terminé en 35.83 secondes
+2025-03-12 11:19:53,781 - INFO - [VIDEO] Vidéo créée avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_imposes,_then_reverses,_new_tariff_20250312_111907\video\worldnews_Trump_imposes,_then_reverses,_new_tariff_20250312_111907_video.mp4
+2025-03-12 11:19:53,782 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-12 11:19:53,782 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-12 11:19:54,175 - INFO - [VIDEO] Sauvegarde de la vidéo avec audio...
+2025-03-12 11:20:15,532 - INFO - [VIDEO] Vidéo avec audio créée avec succès
+2025-03-12 11:20:15,533 - INFO - Traitement du post 4/5: Trump Intensifies Statehood Threats in Attack on C...
+2025-03-12 11:20:15,537 - INFO - TikTokVideoMaker initialisé avec taille=(1080, 1920), fps=30
+2025-03-12 11:20:15,537 - INFO - Création des images...
+2025-03-12 11:20:15,688 - INFO - Carte de titre créée: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_Intensifies_Statehood_Threats_in_A_20250312_112015\images\title.png
+2025-03-12 11:20:15,884 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_Intensifies_Statehood_Threats_in_A_20250312_112015\images\comment_0.png
+2025-03-12 11:20:16,045 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_Intensifies_Statehood_Threats_in_A_20250312_112015\images\comment_1.png
+2025-03-12 11:20:16,181 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_Intensifies_Statehood_Threats_in_A_20250312_112015\images\comment_2.png
+2025-03-12 11:20:16,320 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_Intensifies_Statehood_Threats_in_A_20250312_112015\images\comment_3.png
+2025-03-12 11:20:16,477 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_Intensifies_Statehood_Threats_in_A_20250312_112015\images\comment_4.png
+2025-03-12 11:20:16,479 - INFO - Création de l'audio...
+2025-03-12 11:20:16,480 - INFO - Génération TTS pour 'Trump Intensifies Statehood Threats in Attack on C...' (55 caractères)
+2025-03-12 11:20:16,790 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_Intensifies_Statehood_Threats_in_A_20250312_112015\audio\title.mp3
+2025-03-12 11:20:16,792 - INFO - Génération TTS pour '“there would no longer be a Northern Border proble...' (247 caractères)
+2025-03-12 11:20:18,364 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_Intensifies_Statehood_Threats_in_A_20250312_112015\audio\comment_0.mp3
+2025-03-12 11:20:18,365 - INFO - Génération TTS pour 'Dying in WWIII would be the cherry on top of the m...' (94 caractères)
+2025-03-12 11:20:18,690 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_Intensifies_Statehood_Threats_in_A_20250312_112015\audio\comment_1.mp3
+2025-03-12 11:20:18,691 - INFO - Génération TTS pour 'I will die fighting before I ever become american....' (50 caractères)
+2025-03-12 11:20:19,016 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_Intensifies_Statehood_Threats_in_A_20250312_112015\audio\comment_2.mp3
+2025-03-12 11:20:19,017 - INFO - Génération TTS pour 'Canada should raise tariffs every time he talks sh...' (53 caractères)
+2025-03-12 11:20:19,485 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_Intensifies_Statehood_Threats_in_A_20250312_112015\audio\comment_3.mp3
+2025-03-12 11:20:19,486 - INFO - Génération TTS pour 'Aside from how abhorrent these threats are, why th...' (105 caractères)
+2025-03-12 11:20:20,324 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_Intensifies_Statehood_Threats_in_A_20250312_112015\audio\comment_4.mp3
+2025-03-12 11:20:22,132 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_Intensifies_Statehood_Threats_in_A_20250312_112015\images\title.png (5s)
+2025-03-12 11:20:22,188 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_Intensifies_Statehood_Threats_in_A_20250312_112015\images\comment_0.png (5s)
+2025-03-12 11:20:22,243 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_Intensifies_Statehood_Threats_in_A_20250312_112015\images\comment_1.png (5s)
+2025-03-12 11:20:22,299 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_Intensifies_Statehood_Threats_in_A_20250312_112015\images\comment_2.png (5s)
+2025-03-12 11:20:22,355 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_Intensifies_Statehood_Threats_in_A_20250312_112015\images\comment_3.png (5s)
+2025-03-12 11:20:22,409 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_Intensifies_Statehood_Threats_in_A_20250312_112015\images\comment_4.png (5s)
+2025-03-12 11:20:22,464 - INFO - [VIDEO] Rendu de 6 images...
+2025-03-12 11:20:59,132 - INFO - [VIDEO] Rendu terminé en 36.67 secondes
+2025-03-12 11:20:59,133 - INFO - [VIDEO] Vidéo créée avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Trump_Intensifies_Statehood_Threats_in_A_20250312_112015\video\worldnews_Trump_Intensifies_Statehood_Threats_in_A_20250312_112015_video.mp4
+2025-03-12 11:20:59,133 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-12 11:20:59,134 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-12 11:20:59,545 - INFO - [VIDEO] Sauvegarde de la vidéo avec audio...
+2025-03-12 11:21:20,046 - INFO - [VIDEO] Vidéo avec audio créée avec succès
+2025-03-12 11:21:20,046 - INFO - Traitement du post 5/5: Australia warns US new 25%Steel and aluminium tari...
+2025-03-12 11:21:20,050 - INFO - TikTokVideoMaker initialisé avec taille=(1080, 1920), fps=30
+2025-03-12 11:21:20,050 - INFO - Création des images...
+2025-03-12 11:21:20,215 - INFO - Carte de titre créée: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Australia_warns_US_new_25%Steel_and_alum_20250312_112120\images\title.png
+2025-03-12 11:21:20,368 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Australia_warns_US_new_25%Steel_and_alum_20250312_112120\images\comment_0.png
+2025-03-12 11:21:20,536 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Australia_warns_US_new_25%Steel_and_alum_20250312_112120\images\comment_1.png
+2025-03-12 11:21:20,683 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Australia_warns_US_new_25%Steel_and_alum_20250312_112120\images\comment_2.png
+2025-03-12 11:21:20,831 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Australia_warns_US_new_25%Steel_and_alum_20250312_112120\images\comment_3.png
+2025-03-12 11:21:21,134 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Australia_warns_US_new_25%Steel_and_alum_20250312_112120\images\comment_4.png
+2025-03-12 11:21:21,136 - INFO - Création de l'audio...
+2025-03-12 11:21:21,136 - INFO - Génération TTS pour 'Australia warns US new 25%Steel and aluminium tari...' (132 caractères)
+2025-03-12 11:21:21,789 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Australia_warns_US_new_25%Steel_and_alum_20250312_112120\audio\title.mp3
+2025-03-12 11:21:21,790 - INFO - Génération TTS pour 'Trump has done more damage to the world in 6 weeks...' (101 caractères)
+2025-03-12 11:21:22,428 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Australia_warns_US_new_25%Steel_and_alum_20250312_112120\audio\comment_0.mp3
+2025-03-12 11:21:22,429 - INFO - Génération TTS pour 'Can't trust Trump to keep up any end of any deal -...' (145 caractères)
+2025-03-12 11:21:23,102 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Australia_warns_US_new_25%Steel_and_alum_20250312_112120\audio\comment_1.mp3
+2025-03-12 11:21:23,103 - INFO - Génération TTS pour 'Australia, welcome to the shit show.  Let’s all su...' (85 caractères)
+2025-03-12 11:21:23,775 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Australia_warns_US_new_25%Steel_and_alum_20250312_112120\audio\comment_2.mp3
+2025-03-12 11:21:23,776 - INFO - Génération TTS pour 'Hey Australia! Canada is looking for some new stee...' (74 caractères)
+2025-03-12 11:21:24,231 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Australia_warns_US_new_25%Steel_and_alum_20250312_112120\audio\comment_3.mp3
+2025-03-12 11:21:24,232 - INFO - Génération TTS pour 'Users often report submissions from this site for ...' (510 caractères)
+2025-03-12 11:21:28,232 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Australia_warns_US_new_25%Steel_and_alum_20250312_112120\audio\comment_4.mp3
+2025-03-12 11:21:30,217 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Australia_warns_US_new_25%Steel_and_alum_20250312_112120\images\title.png (5s)
+2025-03-12 11:21:30,276 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Australia_warns_US_new_25%Steel_and_alum_20250312_112120\images\comment_0.png (5s)
+2025-03-12 11:21:30,333 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Australia_warns_US_new_25%Steel_and_alum_20250312_112120\images\comment_1.png (5s)
+2025-03-12 11:21:30,388 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Australia_warns_US_new_25%Steel_and_alum_20250312_112120\images\comment_2.png (5s)
+2025-03-12 11:21:30,452 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Australia_warns_US_new_25%Steel_and_alum_20250312_112120\images\comment_3.png (5s)
+2025-03-12 11:21:30,506 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Australia_warns_US_new_25%Steel_and_alum_20250312_112120\images\comment_4.png (5s)
+2025-03-12 11:21:30,561 - INFO - [VIDEO] Rendu de 6 images...
+2025-03-12 11:22:04,684 - INFO - [VIDEO] Rendu terminé en 34.12 secondes
+2025-03-12 11:22:04,684 - INFO - [VIDEO] Vidéo créée avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\worldnews_Australia_warns_US_new_25%Steel_and_alum_20250312_112120\video\worldnews_Australia_warns_US_new_25%Steel_and_alum_20250312_112120_video.mp4
+2025-03-12 11:22:04,685 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-12 11:22:04,685 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-12 11:22:05,081 - INFO - [VIDEO] Sauvegarde de la vidéo avec audio...
+2025-03-12 11:22:25,866 - INFO - [VIDEO] Vidéo avec audio créée avec succès
+2025-03-12 11:22:25,867 - INFO - Fichiers temporaires supprimés: 0
+2025-03-12 11:22:25,868 - INFO - Processus terminé en 475.04 secondes.
+2025-03-12 11:22:25,868 - INFO - Vidéos créées: 5/5
+2025-03-12 14:17:56,391 - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\src\output
+2025-03-12 14:17:56,463 - INFO - Successfully connected to Reddit API (read-only mode)
+2025-03-12 14:17:56,464 - INFO - TTSGenerator initialisé (langue=en, tld=com)
+2025-03-12 14:17:56,464 - INFO - RedditTikTokCreator initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-03-12 14:17:56,464 - INFO - Début du processus de création vidéo
+2025-03-12 14:17:56,464 - INFO - Paramètres: subreddit=askreddit, timeframe=day, post_count=10, video_count=3
+2025-03-12 14:17:56,464 - INFO - Méthode de tri aléatoire sélectionnée: top
+2025-03-12 14:17:56,464 - INFO - Récupération des posts de r/askreddit avec tri top...
+2025-03-12 14:18:29,673 - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\src\output
+2025-03-12 14:18:29,674 - INFO - Successfully connected to Reddit API (read-only mode)
+2025-03-12 14:18:29,674 - INFO - TTSGenerator initialisé (langue=en, tld=com)
+2025-03-12 14:18:29,674 - INFO - RedditTikTokCreator initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-03-12 14:18:29,674 - INFO - Début du processus de création vidéo
+2025-03-12 14:18:29,674 - INFO - Paramètres: subreddit=askreddit, timeframe=day, post_count=10, video_count=3
+2025-03-12 14:18:29,675 - INFO - Méthode de tri aléatoire sélectionnée: new
+2025-03-12 14:18:29,675 - INFO - Récupération des posts de r/askreddit avec tri new...
+2025-03-12 14:18:35,467 - INFO - 0 posts récupérés de r/askreddit
+2025-03-12 14:18:35,468 - ERROR - Aucun post n'a été récupéré
+2025-03-12 14:18:35,468 - ERROR - Vérifiez vos identifiants Reddit dans le fichier .env
+2025-03-12 14:18:35,468 - ERROR - Suivez les instructions dans le fichier .env pour obtenir vos identifiants
+2025-03-12 14:19:00,876 - INFO - 10 posts récupérés de r/askreddit
+2025-03-12 14:19:00,876 - INFO - Structure du premier post: ['post', 'title', 'author', 'score', 'url', 'created_utc', 'id', 'comment_count', 'comments']
+2025-03-12 14:19:00,877 - INFO - 10 posts récupérés, création de 3 vidéos
+2025-03-12 14:19:00,877 - INFO - CommentCardCreator initialisé (1080x1920)
+2025-03-12 14:19:00,877 - INFO - Traitement du post 1/3: For those of you who voted for Trump specifically ...
+2025-03-12 14:19:00,879 - INFO - TikTokVideoMaker initialisé avec taille=(1080, 1920), fps=30
+2025-03-12 14:19:00,879 - INFO - Création des images...
+2025-03-12 14:19:00,979 - INFO - Carte de titre créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_For_those_of_you_who_voted_for_Trump_spe_20250312_141900\images\title.png
+2025-03-12 14:19:01,055 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_For_those_of_you_who_voted_for_Trump_spe_20250312_141900\images\comment_0.png
+2025-03-12 14:19:01,152 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_For_those_of_you_who_voted_for_Trump_spe_20250312_141900\images\comment_1.png
+2025-03-12 14:19:01,213 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_For_those_of_you_who_voted_for_Trump_spe_20250312_141900\images\comment_2.png
+2025-03-12 14:19:01,272 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_For_those_of_you_who_voted_for_Trump_spe_20250312_141900\images\comment_3.png
+2025-03-12 14:19:01,457 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_For_those_of_you_who_voted_for_Trump_spe_20250312_141900\images\comment_4.png
+2025-03-12 14:19:01,458 - INFO - Création de l'audio...
+2025-03-12 14:19:01,459 - INFO - Génération TTS pour 'For those of you who voted for Trump specifically ...' (190 caractères)
+2025-03-12 14:19:02,581 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_For_those_of_you_who_voted_for_Trump_spe_20250312_141900\audio\title.mp3
+2025-03-12 14:19:02,582 - INFO - Génération TTS pour 'No one has seen any tax benefits because taxes hav...' (171 caractères)
+2025-03-12 14:19:03,698 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_For_those_of_you_who_voted_for_Trump_spe_20250312_141900\audio\comment_0.mp3
+2025-03-12 14:19:03,699 - INFO - Génération TTS pour 'I lost tens of thousands of dollars in my 401k in ...' (368 caractères)
+2025-03-12 14:19:06,520 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_For_those_of_you_who_voted_for_Trump_spe_20250312_141900\audio\comment_1.mp3
+2025-03-12 14:19:06,520 - INFO - Génération TTS pour 'Why do people keep making these posts just to talk...' (65 caractères)
+2025-03-12 14:19:06,780 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_For_those_of_you_who_voted_for_Trump_spe_20250312_141900\audio\comment_2.mp3
+2025-03-12 14:19:06,781 - INFO - Génération TTS pour 'Not yet, but the taxes I did are 2024.
+
+Ask me aga...' (66 caractères)
+2025-03-12 14:19:07,217 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_For_those_of_you_who_voted_for_Trump_spe_20250312_141900\audio\comment_3.mp3
+2025-03-12 14:19:07,218 - INFO - Génération TTS pour 'Waste of time. As Trump supporters will tell you, ...' (1042 caractères)
+2025-03-12 14:19:12,483 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_For_those_of_you_who_voted_for_Trump_spe_20250312_141900\audio\comment_4.mp3
+2025-03-12 14:19:13,927 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_For_those_of_you_who_voted_for_Trump_spe_20250312_141900\images\title.png (5s)
+2025-03-12 14:19:13,961 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_For_those_of_you_who_voted_for_Trump_spe_20250312_141900\images\comment_0.png (5s)
+2025-03-12 14:19:13,992 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_For_those_of_you_who_voted_for_Trump_spe_20250312_141900\images\comment_1.png (5s)
+2025-03-12 14:19:14,024 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_For_those_of_you_who_voted_for_Trump_spe_20250312_141900\images\comment_2.png (5s)
+2025-03-12 14:19:14,052 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_For_those_of_you_who_voted_for_Trump_spe_20250312_141900\images\comment_3.png (5s)
+2025-03-12 14:19:14,082 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_For_those_of_you_who_voted_for_Trump_spe_20250312_141900\images\comment_4.png (5s)
+2025-03-12 14:19:14,115 - INFO - [VIDEO] Rendu de 6 images...
+2025-03-12 14:19:42,224 - INFO - [VIDEO] Rendu terminé en 28.11 secondes
+2025-03-12 14:19:42,225 - INFO - [VIDEO] Vidéo créée avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_For_those_of_you_who_voted_for_Trump_spe_20250312_141900\video\askreddit_For_those_of_you_who_voted_for_Trump_spe_20250312_141900_video.mp4
+2025-03-12 14:19:42,225 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-12 14:19:42,225 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-12 14:19:42,469 - INFO - [VIDEO] Sauvegarde de la vidéo avec audio...
+2025-03-12 14:19:55,614 - INFO - [VIDEO] Vidéo avec audio créée avec succès
+2025-03-12 14:19:55,615 - INFO - Traitement du post 2/3: Redditors who work in the US steel market. Now tha...
+2025-03-12 14:19:55,616 - INFO - TikTokVideoMaker initialisé avec taille=(1080, 1920), fps=30
+2025-03-12 14:19:55,616 - INFO - Création des images...
+2025-03-12 14:19:55,693 - INFO - Carte de titre créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Redditors_who_work_in_the_US_steel_marke_20250312_141955\images\title.png
+2025-03-12 14:19:55,911 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Redditors_who_work_in_the_US_steel_marke_20250312_141955\images\comment_0.png
+2025-03-12 14:19:55,996 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Redditors_who_work_in_the_US_steel_marke_20250312_141955\images\comment_1.png
+2025-03-12 14:19:56,123 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Redditors_who_work_in_the_US_steel_marke_20250312_141955\images\comment_2.png
+2025-03-12 14:19:56,239 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Redditors_who_work_in_the_US_steel_marke_20250312_141955\images\comment_3.png
+2025-03-12 14:19:56,325 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Redditors_who_work_in_the_US_steel_marke_20250312_141955\images\comment_4.png
+2025-03-12 14:19:56,326 - INFO - Création de l'audio...
+2025-03-12 14:19:56,326 - INFO - Génération TTS pour 'Redditors who work in the US steel market. Now tha...' (172 caractères)
+2025-03-12 14:19:57,175 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Redditors_who_work_in_the_US_steel_marke_20250312_141955\audio\title.mp3
+2025-03-12 14:19:57,176 - INFO - Génération TTS pour 'I'm a project manager in steel construction. Recen...' (1344 caractères)
+2025-03-12 14:20:06,727 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Redditors_who_work_in_the_US_steel_marke_20250312_141955\audio\comment_0.mp3
+2025-03-12 14:20:06,727 - INFO - Génération TTS pour 'I work for a company that makes rigging equipment ...' (265 caractères)
+2025-03-12 14:20:08,691 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Redditors_who_work_in_the_US_steel_marke_20250312_141955\audio\comment_1.mp3
+2025-03-12 14:20:08,692 - INFO - Génération TTS pour 'I work in the machining industry. A month ago when...' (620 caractères)
+2025-03-12 14:20:11,676 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Redditors_who_work_in_the_US_steel_marke_20250312_141955\audio\comment_2.mp3
+2025-03-12 14:20:11,677 - INFO - Génération TTS pour 'I work in a Stainless Steal processing plant, not ...' (543 caractères)
+2025-03-12 14:20:14,502 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Redditors_who_work_in_the_US_steel_marke_20250312_141955\audio\comment_3.mp3
+2025-03-12 14:20:14,503 - INFO - Génération TTS pour 'I’m in the aluminum business and suppliers are say...' (271 caractères)
+2025-03-12 14:20:15,424 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Redditors_who_work_in_the_US_steel_marke_20250312_141955\audio\comment_4.mp3
+2025-03-12 14:20:17,347 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Redditors_who_work_in_the_US_steel_marke_20250312_141955\images\title.png (5s)
+2025-03-12 14:20:17,373 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Redditors_who_work_in_the_US_steel_marke_20250312_141955\images\comment_0.png (5s)
+2025-03-12 14:20:17,402 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Redditors_who_work_in_the_US_steel_marke_20250312_141955\images\comment_1.png (5s)
+2025-03-12 14:20:17,428 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Redditors_who_work_in_the_US_steel_marke_20250312_141955\images\comment_2.png (5s)
+2025-03-12 14:20:17,455 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Redditors_who_work_in_the_US_steel_marke_20250312_141955\images\comment_3.png (5s)
+2025-03-12 14:20:17,483 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Redditors_who_work_in_the_US_steel_marke_20250312_141955\images\comment_4.png (5s)
+2025-03-12 14:20:17,511 - INFO - [VIDEO] Rendu de 6 images...
+2025-03-12 14:20:43,513 - INFO - [VIDEO] Rendu terminé en 26.00 secondes
+2025-03-12 14:20:43,514 - INFO - [VIDEO] Vidéo créée avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Redditors_who_work_in_the_US_steel_marke_20250312_141955\video\askreddit_Redditors_who_work_in_the_US_steel_marke_20250312_141955_video.mp4
+2025-03-12 14:20:43,514 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-12 14:20:43,514 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-12 14:20:43,756 - INFO - [VIDEO] Sauvegarde de la vidéo avec audio...
+2025-03-12 14:20:59,655 - INFO - [VIDEO] Vidéo avec audio créée avec succès
+2025-03-12 14:20:59,655 - INFO - Traitement du post 3/3: Men who are 30+, what’s one lesson every guy shoul...
+2025-03-12 14:20:59,656 - INFO - TikTokVideoMaker initialisé avec taille=(1080, 1920), fps=30
+2025-03-12 14:20:59,657 - INFO - Création des images...
+2025-03-12 14:20:59,718 - INFO - Carte de titre créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Men_who_are_30+,_what’s_one_lesson_every_20250312_142059\images\title.png
+2025-03-12 14:20:59,780 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Men_who_are_30+,_what’s_one_lesson_every_20250312_142059\images\comment_0.png
+2025-03-12 14:20:59,849 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Men_who_are_30+,_what’s_one_lesson_every_20250312_142059\images\comment_1.png
+2025-03-12 14:20:59,917 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Men_who_are_30+,_what’s_one_lesson_every_20250312_142059\images\comment_2.png
+2025-03-12 14:20:59,996 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Men_who_are_30+,_what’s_one_lesson_every_20250312_142059\images\comment_3.png
+2025-03-12 14:21:00,081 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Men_who_are_30+,_what’s_one_lesson_every_20250312_142059\images\comment_4.png
+2025-03-12 14:21:00,081 - INFO - Création de l'audio...
+2025-03-12 14:21:00,082 - INFO - Génération TTS pour 'Men who are 30+, what’s one lesson every guy shoul...' (64 caractères)
+2025-03-12 14:21:00,356 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Men_who_are_30+,_what’s_one_lesson_every_20250312_142059\audio\title.mp3
+2025-03-12 14:21:00,357 - INFO - Génération TTS pour 'take care of your back and enjoy spicy foods. Beca...' (83 caractères)
+2025-03-12 14:21:00,748 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Men_who_are_30+,_what’s_one_lesson_every_20250312_142059\audio\comment_0.mp3
+2025-03-12 14:21:00,749 - INFO - Génération TTS pour 'You are only young for a period of your life.  You...' (151 caractères)
+2025-03-12 14:21:01,653 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Men_who_are_30+,_what’s_one_lesson_every_20250312_142059\audio\comment_1.mp3
+2025-03-12 14:21:01,653 - INFO - Génération TTS pour 'You're not indestructible.   All the little injuri...' (106 caractères)
+2025-03-12 14:21:02,281 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Men_who_are_30+,_what’s_one_lesson_every_20250312_142059\audio\comment_2.mp3
+2025-03-12 14:21:02,282 - INFO - Génération TTS pour 'Know when to say "I don't know" and "I can't handl...' (217 caractères)
+2025-03-12 14:21:03,183 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Men_who_are_30+,_what’s_one_lesson_every_20250312_142059\audio\comment_3.mp3
+2025-03-12 14:21:03,184 - INFO - Génération TTS pour 'By far, it has to be learning the value of TIME. 
+...' (202 caractères)
+2025-03-12 14:21:04,551 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Men_who_are_30+,_what’s_one_lesson_every_20250312_142059\audio\comment_4.mp3
+2025-03-12 14:21:05,413 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Men_who_are_30+,_what’s_one_lesson_every_20250312_142059\images\title.png (5s)
+2025-03-12 14:21:05,440 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Men_who_are_30+,_what’s_one_lesson_every_20250312_142059\images\comment_0.png (5s)
+2025-03-12 14:21:05,465 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Men_who_are_30+,_what’s_one_lesson_every_20250312_142059\images\comment_1.png (5s)
+2025-03-12 14:21:05,491 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Men_who_are_30+,_what’s_one_lesson_every_20250312_142059\images\comment_2.png (5s)
+2025-03-12 14:21:05,517 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Men_who_are_30+,_what’s_one_lesson_every_20250312_142059\images\comment_3.png (5s)
+2025-03-12 14:21:05,543 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Men_who_are_30+,_what’s_one_lesson_every_20250312_142059\images\comment_4.png (5s)
+2025-03-12 14:21:05,570 - INFO - [VIDEO] Rendu de 6 images...
+2025-03-12 14:21:27,041 - INFO - [VIDEO] Rendu terminé en 21.47 secondes
+2025-03-12 14:21:27,041 - INFO - [VIDEO] Vidéo créée avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\askreddit_Men_who_are_30+,_what’s_one_lesson_every_20250312_142059\video\askreddit_Men_who_are_30+,_what’s_one_lesson_every_20250312_142059_video.mp4
+2025-03-12 14:21:27,041 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-12 14:21:27,041 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-12 14:21:27,256 - INFO - [VIDEO] Sauvegarde de la vidéo avec audio...
+2025-03-12 14:21:38,379 - INFO - [VIDEO] Vidéo avec audio créée avec succès
+2025-03-12 14:21:38,379 - INFO - Fichiers temporaires supprimés: 0
+2025-03-12 14:21:38,380 - INFO - Processus terminé en 221.92 secondes.
+2025-03-12 14:21:38,380 - INFO - Vidéos créées: 3/3
+2025-03-12 14:42:18,227 - RedditSilentVideoCreator - INFO - RedditSilentVideoCreator initialized with output directory: output
+2025-03-12 14:42:18,228 - RedditSilentVideoCreator - INFO - Starting content creation: subreddit=askreddit, timeframe=day, post_count=1
+2025-03-12 14:42:18,228 - root - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-03-12 14:42:18,303 - utils.redditScrape - INFO - Successfully connected to Reddit API (read-only mode)
+2025-03-12 14:42:18,304 - utils.redditScrape - INFO - Using sorting method: top with span: day
+2025-03-12 14:42:18,716 - utils.redditScrape - INFO - Selected post: For those of you who voted for Trump specifically because you hoped to avoid higher taxes, how has that decision affected your finances? Did things turn out as you had hoped? Why or why not?
+2025-03-12 14:42:23,885 - RedditSilentVideoCreator - INFO - Processing post 1/1
+2025-03-12 14:42:23,887 - RedditSilentVideoCreator - INFO - Creating images...
+2025-03-12 14:42:24,385 - RedditSilentVideoCreator - INFO - Creating silent video...
+2025-03-12 14:42:36,532 - RedditSilentVideoCreator - INFO - Content created successfully in directory: output\askreddit_For-those-of-you-who-voted-for-Trump-specifically-_1741786943_f9bea0f8
+2025-03-12 14:56:32,821 - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-03-12 14:56:32,823 - INFO - Successfully connected to Reddit API (read-only mode)
+2025-03-12 14:56:32,823 - INFO - TTSGenerator initialisé (langue=en, tld=com)
+2025-03-12 14:56:32,823 - INFO - RedditTikTokCreator initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-03-12 14:56:32,823 - INFO - Début du processus de création vidéo
+2025-03-12 14:56:32,823 - INFO - Paramètres: subreddit=AskWomen, timeframe=week, post_count=15, video_count=3
+2025-03-12 14:56:32,823 - INFO - Récupération des posts de r/AskWomen avec tri top...
+2025-03-12 14:57:02,916 - INFO - Tri des posts par nombre de commentaires
+2025-03-12 14:57:02,916 - INFO - 15 posts récupérés de r/AskWomen
+2025-03-12 14:57:02,916 - INFO - Structure du premier post: ['post', 'title', 'author', 'score', 'url', 'created_utc', 'id', 'comment_count', 'comments']
+2025-03-12 14:57:02,917 - INFO - 15 posts récupérés, création de 3 vidéos
+2025-03-12 14:57:02,917 - INFO - CommentCardCreator initialisé (1080x1920)
+2025-03-12 14:57:02,917 - INFO - Traitement du post 1/3: how long were you and your partner together before...
+2025-03-12 14:57:02,919 - INFO - TikTokVideoMaker initialisé avec taille=(1080, 1920), fps=30
+2025-03-12 14:57:02,919 - INFO - Création des images...
+2025-03-12 14:57:03,000 - INFO - Carte de titre créée: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_how_long_were_you_and_your_partner_toget_20250312_145702\images\title.png
+2025-03-12 14:57:03,117 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_how_long_were_you_and_your_partner_toget_20250312_145702\images\comment_0.png
+2025-03-12 14:57:03,242 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_how_long_were_you_and_your_partner_toget_20250312_145702\images\comment_1.png
+2025-03-12 14:57:03,326 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_how_long_were_you_and_your_partner_toget_20250312_145702\images\comment_2.png
+2025-03-12 14:57:03,492 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_how_long_were_you_and_your_partner_toget_20250312_145702\images\comment_3.png
+2025-03-12 14:57:03,580 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_how_long_were_you_and_your_partner_toget_20250312_145702\images\comment_4.png
+2025-03-12 14:57:03,582 - INFO - Création de l'audio...
+2025-03-12 14:57:03,582 - INFO - Génération TTS pour 'how long were you and your partner together before...' (60 caractères)
+2025-03-12 14:57:03,890 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_how_long_were_you_and_your_partner_toget_20250312_145702\audio\title.mp3
+2025-03-12 14:57:03,890 - INFO - Génération TTS pour 'Nine years before we got married. We met young (20...' (479 caractères)
+2025-03-12 14:57:07,819 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_how_long_were_you_and_your_partner_toget_20250312_145702\audio\comment_0.mp3
+2025-03-12 14:57:07,819 - INFO - Génération TTS pour 'We met in September or October 1996.  Our first da...' (598 caractères)
+2025-03-12 14:57:11,003 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_how_long_were_you_and_your_partner_toget_20250312_145702\audio\comment_1.mp3
+2025-03-12 14:57:11,004 - INFO - Génération TTS pour 'Together for 4 years and knew we wanted to get mar...' (216 caractères)
+2025-03-12 14:57:12,450 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_how_long_were_you_and_your_partner_toget_20250312_145702\audio\comment_2.mp3
+2025-03-12 14:57:12,451 - INFO - Génération TTS pour 'We originally met when I was 17 and he was 19. We ...' (936 caractères)
+2025-03-12 14:57:17,867 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_how_long_were_you_and_your_partner_toget_20250312_145702\audio\comment_3.mp3
+2025-03-12 14:57:17,868 - INFO - Génération TTS pour 'From the day we met to the day we said "I Do", It ...' (272 caractères)
+2025-03-12 14:57:20,042 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_how_long_were_you_and_your_partner_toget_20250312_145702\audio\comment_4.mp3
+2025-03-12 14:57:21,770 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_how_long_were_you_and_your_partner_toget_20250312_145702\images\title.png (5s)
+2025-03-12 14:57:21,800 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_how_long_were_you_and_your_partner_toget_20250312_145702\images\comment_0.png (5s)
+2025-03-12 14:57:21,831 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_how_long_were_you_and_your_partner_toget_20250312_145702\images\comment_1.png (5s)
+2025-03-12 14:57:21,861 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_how_long_were_you_and_your_partner_toget_20250312_145702\images\comment_2.png (5s)
+2025-03-12 14:57:21,892 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_how_long_were_you_and_your_partner_toget_20250312_145702\images\comment_3.png (5s)
+2025-03-12 14:57:21,923 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_how_long_were_you_and_your_partner_toget_20250312_145702\images\comment_4.png (5s)
+2025-03-12 14:57:21,954 - INFO - [VIDEO] Rendu de 6 images...
+2025-03-12 14:57:49,745 - INFO - [VIDEO] Rendu terminé en 27.79 secondes
+2025-03-12 14:57:49,745 - INFO - [VIDEO] Vidéo créée avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_how_long_were_you_and_your_partner_toget_20250312_145702\video\AskWomen_how_long_were_you_and_your_partner_toget_20250312_145702_video.mp4
+2025-03-12 14:57:49,745 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-12 14:57:49,745 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-12 14:57:49,973 - INFO - [VIDEO] Sauvegarde de la vidéo avec audio...
+2025-03-12 14:58:05,089 - INFO - [VIDEO] Vidéo avec audio créée avec succès
+2025-03-12 14:58:05,089 - INFO - Traitement du post 2/3: Women, Why Did You or Didn’t You Go to Prom, and W...
+2025-03-12 14:58:05,090 - INFO - TikTokVideoMaker initialisé avec taille=(1080, 1920), fps=30
+2025-03-12 14:58:05,090 - INFO - Création des images...
+2025-03-12 14:58:05,151 - INFO - Carte de titre créée: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_Women,_Why_Did_You_or_Didn’t_You_Go_to_P_20250312_145805\images\title.png
+2025-03-12 14:58:05,225 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_Women,_Why_Did_You_or_Didn’t_You_Go_to_P_20250312_145805\images\comment_0.png
+2025-03-12 14:58:05,287 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_Women,_Why_Did_You_or_Didn’t_You_Go_to_P_20250312_145805\images\comment_1.png
+2025-03-12 14:58:05,361 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_Women,_Why_Did_You_or_Didn’t_You_Go_to_P_20250312_145805\images\comment_2.png
+2025-03-12 14:58:05,445 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_Women,_Why_Did_You_or_Didn’t_You_Go_to_P_20250312_145805\images\comment_3.png
+2025-03-12 14:58:05,505 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_Women,_Why_Did_You_or_Didn’t_You_Go_to_P_20250312_145805\images\comment_4.png
+2025-03-12 14:58:05,506 - INFO - Création de l'audio...
+2025-03-12 14:58:05,506 - INFO - Génération TTS pour 'Women, Why Did You or Didn’t You Go to Prom, and W...' (65 caractères)
+2025-03-12 14:58:05,804 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_Women,_Why_Did_You_or_Didn’t_You_Go_to_P_20250312_145805\audio\title.mp3
+2025-03-12 14:58:05,804 - INFO - Génération TTS pour 'I did not go to Prom. I didn’t really have many fr...' (184 caractères)
+2025-03-12 14:58:07,068 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_Women,_Why_Did_You_or_Didn’t_You_Go_to_P_20250312_145805\audio\comment_0.mp3
+2025-03-12 14:58:07,069 - INFO - Génération TTS pour 'I went to senior prom and it wasn’t anything to wr...' (91 caractères)
+2025-03-12 14:58:07,628 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_Women,_Why_Did_You_or_Didn’t_You_Go_to_P_20250312_145805\audio\comment_1.mp3
+2025-03-12 14:58:07,629 - INFO - Génération TTS pour 'I was 8 months pregnant. Being pregnant in high sc...' (161 caractères)
+2025-03-12 14:58:08,559 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_Women,_Why_Did_You_or_Didn’t_You_Go_to_P_20250312_145805\audio\comment_2.mp3
+2025-03-12 14:58:08,560 - INFO - Génération TTS pour 'I didn't go because it was too expensive. Luckily ...' (266 caractères)
+2025-03-12 14:58:09,768 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_Women,_Why_Did_You_or_Didn’t_You_Go_to_P_20250312_145805\audio\comment_3.mp3
+2025-03-12 14:58:09,769 - INFO - Génération TTS pour 'I didn't go, it just never interested me and no I ...' (66 caractères)
+2025-03-12 14:58:10,071 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_Women,_Why_Did_You_or_Didn’t_You_Go_to_P_20250312_145805\audio\comment_4.mp3
+2025-03-12 14:58:10,914 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_Women,_Why_Did_You_or_Didn’t_You_Go_to_P_20250312_145805\images\title.png (5s)
+2025-03-12 14:58:10,940 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_Women,_Why_Did_You_or_Didn’t_You_Go_to_P_20250312_145805\images\comment_0.png (5s)
+2025-03-12 14:58:10,967 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_Women,_Why_Did_You_or_Didn’t_You_Go_to_P_20250312_145805\images\comment_1.png (5s)
+2025-03-12 14:58:10,993 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_Women,_Why_Did_You_or_Didn’t_You_Go_to_P_20250312_145805\images\comment_2.png (5s)
+2025-03-12 14:58:11,020 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_Women,_Why_Did_You_or_Didn’t_You_Go_to_P_20250312_145805\images\comment_3.png (5s)
+2025-03-12 14:58:11,046 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_Women,_Why_Did_You_or_Didn’t_You_Go_to_P_20250312_145805\images\comment_4.png (5s)
+2025-03-12 14:58:11,072 - INFO - [VIDEO] Rendu de 6 images...
+2025-03-12 14:58:35,597 - INFO - [VIDEO] Rendu terminé en 24.53 secondes
+2025-03-12 14:58:35,597 - INFO - [VIDEO] Vidéo créée avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_Women,_Why_Did_You_or_Didn’t_You_Go_to_P_20250312_145805\video\AskWomen_Women,_Why_Did_You_or_Didn’t_You_Go_to_P_20250312_145805_video.mp4
+2025-03-12 14:58:35,598 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-12 14:58:35,598 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-12 14:58:35,813 - INFO - [VIDEO] Sauvegarde de la vidéo avec audio...
+2025-03-12 14:58:47,139 - INFO - [VIDEO] Vidéo avec audio créée avec succès
+2025-03-12 14:58:47,140 - INFO - Traitement du post 3/3: What are your thoughts on receiving flowers on the...
+2025-03-12 14:58:47,141 - INFO - TikTokVideoMaker initialisé avec taille=(1080, 1920), fps=30
+2025-03-12 14:58:47,141 - INFO - Création des images...
+2025-03-12 14:58:47,202 - INFO - Carte de titre créée: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_What_are_your_thoughts_on_receiving_flow_20250312_145847\images\title.png
+2025-03-12 14:58:47,293 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_What_are_your_thoughts_on_receiving_flow_20250312_145847\images\comment_0.png
+2025-03-12 14:58:47,367 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_What_are_your_thoughts_on_receiving_flow_20250312_145847\images\comment_1.png
+2025-03-12 14:58:47,440 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_What_are_your_thoughts_on_receiving_flow_20250312_145847\images\comment_2.png
+2025-03-12 14:58:47,545 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_What_are_your_thoughts_on_receiving_flow_20250312_145847\images\comment_3.png
+2025-03-12 14:58:47,604 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_What_are_your_thoughts_on_receiving_flow_20250312_145847\images\comment_4.png
+2025-03-12 14:58:47,605 - INFO - Création de l'audio...
+2025-03-12 14:58:47,605 - INFO - Génération TTS pour 'What are your thoughts on receiving flowers on the...' (62 caractères)
+2025-03-12 14:58:47,870 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_What_are_your_thoughts_on_receiving_flow_20250312_145847\audio\title.mp3
+2025-03-12 14:58:47,871 - INFO - Génération TTS pour 'I adore flowers! On a first date I think a single ...' (316 caractères)
+2025-03-12 14:58:50,469 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_What_are_your_thoughts_on_receiving_flow_20250312_145847\audio\comment_0.mp3
+2025-03-12 14:58:50,469 - INFO - Génération TTS pour 'I think it’s sweet and shows promise that they’re ...' (154 caractères)
+2025-03-12 14:58:51,103 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_What_are_your_thoughts_on_receiving_flow_20250312_145847\audio\comment_1.mp3
+2025-03-12 14:58:51,103 - INFO - Génération TTS pour 'I loveeee flowers but I think I might feel a bit p...' (175 caractères)
+2025-03-12 14:58:52,003 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_What_are_your_thoughts_on_receiving_flow_20250312_145847\audio\comment_2.mp3
+2025-03-12 14:58:52,003 - INFO - Génération TTS pour 'I went on a blind date, met the guy at a restauran...' (427 caractères)
+2025-03-12 14:58:55,321 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_What_are_your_thoughts_on_receiving_flow_20250312_145847\audio\comment_3.mp3
+2025-03-12 14:58:55,322 - INFO - Génération TTS pour 'Preferably not but I’d be grateful and polite if t...' (65 caractères)
+2025-03-12 14:58:55,656 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_What_are_your_thoughts_on_receiving_flow_20250312_145847\audio\comment_4.mp3
+2025-03-12 14:58:56,648 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_What_are_your_thoughts_on_receiving_flow_20250312_145847\images\title.png (5s)
+2025-03-12 14:58:56,674 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_What_are_your_thoughts_on_receiving_flow_20250312_145847\images\comment_0.png (5s)
+2025-03-12 14:58:56,700 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_What_are_your_thoughts_on_receiving_flow_20250312_145847\images\comment_1.png (5s)
+2025-03-12 14:58:56,727 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_What_are_your_thoughts_on_receiving_flow_20250312_145847\images\comment_2.png (5s)
+2025-03-12 14:58:56,755 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_What_are_your_thoughts_on_receiving_flow_20250312_145847\images\comment_3.png (5s)
+2025-03-12 14:58:56,783 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_What_are_your_thoughts_on_receiving_flow_20250312_145847\images\comment_4.png (5s)
+2025-03-12 14:58:56,810 - INFO - [VIDEO] Rendu de 6 images...
+2025-03-12 14:59:18,553 - INFO - [VIDEO] Rendu terminé en 21.74 secondes
+2025-03-12 14:59:18,554 - INFO - [VIDEO] Vidéo créée avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskWomen_What_are_your_thoughts_on_receiving_flow_20250312_145847\video\AskWomen_What_are_your_thoughts_on_receiving_flow_20250312_145847_video.mp4
+2025-03-12 14:59:18,554 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-12 14:59:18,554 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-12 14:59:18,776 - INFO - [VIDEO] Sauvegarde de la vidéo avec audio...
+2025-03-12 14:59:31,237 - INFO - [VIDEO] Vidéo avec audio créée avec succès
+2025-03-12 14:59:31,237 - INFO - Fichiers temporaires supprimés: 0
+2025-03-12 14:59:31,237 - INFO - Processus terminé en 178.41 secondes.
+2025-03-12 14:59:31,237 - INFO - Vidéos créées: 3/3
+2025-03-12 15:30:54,737 - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-03-12 15:30:54,811 - INFO - Successfully connected to Reddit API (read-only mode)
+2025-03-12 15:30:54,812 - INFO - TTSGenerator initialisé (langue=en, tld=com)
+2025-03-12 15:30:54,812 - INFO - RedditTikTokCreator initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-03-12 15:30:54,812 - INFO - Début du processus de création vidéo
+2025-03-12 15:30:54,812 - INFO - Paramètres: subreddit=AskMen, timeframe=week, post_count=15, video_count=3
+2025-03-12 15:30:54,812 - INFO - Récupération des posts de r/AskMen avec tri top...
+2025-03-12 15:32:14,407 - INFO - Tri des posts par nombre de commentaires
+2025-03-12 15:32:14,408 - INFO - 15 posts récupérés de r/AskMen
+2025-03-12 15:32:14,408 - INFO - Structure du premier post: ['post', 'title', 'author', 'score', 'url', 'created_utc', 'id', 'comment_count', 'comments']
+2025-03-12 15:32:14,408 - INFO - 15 posts récupérés, création de 3 vidéos
+2025-03-12 15:32:14,409 - INFO - CommentCardCreator initialisé (1080x1920)
+2025-03-12 15:32:14,409 - INFO - Traitement du post 1/3: Fellow men, what is YOUR ultimate male fantasy?...
+2025-03-12 15:32:14,410 - INFO - TikTokVideoMaker initialisé avec taille=(1080, 1920), fps=30
+2025-03-12 15:32:14,410 - INFO - Création des images...
+2025-03-12 15:32:14,492 - INFO - Carte de titre créée: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_Fellow_men,_what_is_YOUR_ultimate_male_f_20250312_153214\images\title.png
+2025-03-12 15:32:14,563 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_Fellow_men,_what_is_YOUR_ultimate_male_f_20250312_153214\images\comment_0.png
+2025-03-12 15:32:14,624 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_Fellow_men,_what_is_YOUR_ultimate_male_f_20250312_153214\images\comment_1.png
+2025-03-12 15:32:14,713 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_Fellow_men,_what_is_YOUR_ultimate_male_f_20250312_153214\images\comment_2.png
+2025-03-12 15:32:14,773 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_Fellow_men,_what_is_YOUR_ultimate_male_f_20250312_153214\images\comment_3.png
+2025-03-12 15:32:14,838 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_Fellow_men,_what_is_YOUR_ultimate_male_f_20250312_153214\images\comment_4.png
+2025-03-12 15:32:14,839 - INFO - Création de l'audio...
+2025-03-12 15:32:14,839 - INFO - Génération TTS pour 'Fellow men, what is YOUR ultimate male fantasy?...' (47 caractères)
+2025-03-12 15:32:15,115 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_Fellow_men,_what_is_YOUR_ultimate_male_f_20250312_153214\audio\title.mp3
+2025-03-12 15:32:15,115 - INFO - Génération TTS pour 'Armed attackers burst into a store I am in, I play...' (147 caractères)
+2025-03-12 15:32:16,029 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_Fellow_men,_what_is_YOUR_ultimate_male_f_20250312_153214\audio\comment_0.mp3
+2025-03-12 15:32:16,030 - INFO - Génération TTS pour 'Retire and drive a prius 10 under the speed limit ...' (73 caractères)
+2025-03-12 15:32:16,344 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_Fellow_men,_what_is_YOUR_ultimate_male_f_20250312_153214\audio\comment_1.mp3
+2025-03-12 15:32:16,345 - INFO - Génération TTS pour 'It has changed over the years. Sexual, heroic, or ...' (289 caractères)
+2025-03-12 15:32:18,704 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_Fellow_men,_what_is_YOUR_ultimate_male_f_20250312_153214\audio\comment_2.mp3
+2025-03-12 15:32:18,705 - INFO - Génération TTS pour 'That i found some way to get wealth while i was in...' (64 caractères)
+2025-03-12 15:32:19,061 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_Fellow_men,_what_is_YOUR_ultimate_male_f_20250312_153214\audio\comment_3.mp3
+2025-03-12 15:32:19,061 - INFO - Génération TTS pour 'Moving to a small mountain town, not having neighb...' (111 caractères)
+2025-03-12 15:32:20,185 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_Fellow_men,_what_is_YOUR_ultimate_male_f_20250312_153214\audio\comment_4.mp3
+2025-03-12 15:32:21,100 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_Fellow_men,_what_is_YOUR_ultimate_male_f_20250312_153214\images\title.png (5s)
+2025-03-12 15:32:21,131 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_Fellow_men,_what_is_YOUR_ultimate_male_f_20250312_153214\images\comment_0.png (5s)
+2025-03-12 15:32:21,160 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_Fellow_men,_what_is_YOUR_ultimate_male_f_20250312_153214\images\comment_1.png (5s)
+2025-03-12 15:32:21,188 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_Fellow_men,_what_is_YOUR_ultimate_male_f_20250312_153214\images\comment_2.png (5s)
+2025-03-12 15:32:21,218 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_Fellow_men,_what_is_YOUR_ultimate_male_f_20250312_153214\images\comment_3.png (5s)
+2025-03-12 15:32:21,247 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_Fellow_men,_what_is_YOUR_ultimate_male_f_20250312_153214\images\comment_4.png (5s)
+2025-03-12 15:32:21,274 - INFO - [VIDEO] Rendu de 6 images...
+2025-03-12 15:32:45,218 - INFO - [VIDEO] Rendu terminé en 23.94 secondes
+2025-03-12 15:32:45,219 - INFO - [VIDEO] Vidéo créée avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_Fellow_men,_what_is_YOUR_ultimate_male_f_20250312_153214\video\AskMen_Fellow_men,_what_is_YOUR_ultimate_male_f_20250312_153214_video.mp4
+2025-03-12 15:32:45,219 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-12 15:32:45,219 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-12 15:32:45,448 - INFO - [VIDEO] Sauvegarde de la vidéo avec audio...
+2025-03-12 15:32:56,952 - INFO - [VIDEO] Vidéo avec audio créée avec succès
+2025-03-12 15:32:56,953 - INFO - Traitement du post 2/3: If she’s gorgeous, seems to have it all together, ...
+2025-03-12 15:32:56,954 - INFO - TikTokVideoMaker initialisé avec taille=(1080, 1920), fps=30
+2025-03-12 15:32:56,954 - INFO - Création des images...
+2025-03-12 15:32:57,020 - INFO - Carte de titre créée: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_If_she’s_gorgeous,_seems_to_have_it_all__20250312_153256\images\title.png
+2025-03-12 15:32:57,166 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_If_she’s_gorgeous,_seems_to_have_it_all__20250312_153256\images\comment_0.png
+2025-03-12 15:32:57,257 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_If_she’s_gorgeous,_seems_to_have_it_all__20250312_153256\images\comment_1.png
+2025-03-12 15:32:57,317 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_If_she’s_gorgeous,_seems_to_have_it_all__20250312_153256\images\comment_2.png
+2025-03-12 15:32:57,394 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_If_she’s_gorgeous,_seems_to_have_it_all__20250312_153256\images\comment_3.png
+2025-03-12 15:32:57,462 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_If_she’s_gorgeous,_seems_to_have_it_all__20250312_153256\images\comment_4.png
+2025-03-12 15:32:57,463 - INFO - Création de l'audio...
+2025-03-12 15:32:57,463 - INFO - Génération TTS pour 'If she’s gorgeous, seems to have it all together, ...' (87 caractères)
+2025-03-12 15:32:57,859 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_If_she’s_gorgeous,_seems_to_have_it_all__20250312_153256\audio\title.mp3
+2025-03-12 15:32:57,860 - INFO - Génération TTS pour 'Some people have their lives put together, are goo...' (768 caractères)
+2025-03-12 15:33:03,780 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_If_she’s_gorgeous,_seems_to_have_it_all__20250312_153256\audio\comment_0.mp3
+2025-03-12 15:33:03,781 - INFO - Génération TTS pour 'I mean, ask her? There's plenty of gorgeous, have ...' (299 caractères)
+2025-03-12 15:33:05,958 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_If_she’s_gorgeous,_seems_to_have_it_all__20250312_153256\audio\comment_1.mp3
+2025-03-12 15:33:05,959 - INFO - Génération TTS pour 'Nothing. Not everyone jumps at the first warm body...' (74 caractères)
+2025-03-12 15:33:06,405 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_If_she’s_gorgeous,_seems_to_have_it_all__20250312_153256\audio\comment_2.mp3
+2025-03-12 15:33:06,406 - INFO - Génération TTS pour 'Not everybody's goal is to date. I've been told th...' (209 caractères)
+2025-03-12 15:33:07,629 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_If_she’s_gorgeous,_seems_to_have_it_all__20250312_153256\audio\comment_3.mp3
+2025-03-12 15:33:07,630 - INFO - Génération TTS pour 'The theory is she has standards. And if someone be...' (126 caractères)
+2025-03-12 15:33:08,517 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_If_she’s_gorgeous,_seems_to_have_it_all__20250312_153256\audio\comment_4.mp3
+2025-03-12 15:33:09,664 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_If_she’s_gorgeous,_seems_to_have_it_all__20250312_153256\images\title.png (5s)
+2025-03-12 15:33:09,690 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_If_she’s_gorgeous,_seems_to_have_it_all__20250312_153256\images\comment_0.png (5s)
+2025-03-12 15:33:09,719 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_If_she’s_gorgeous,_seems_to_have_it_all__20250312_153256\images\comment_1.png (5s)
+2025-03-12 15:33:09,744 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_If_she’s_gorgeous,_seems_to_have_it_all__20250312_153256\images\comment_2.png (5s)
+2025-03-12 15:33:09,771 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_If_she’s_gorgeous,_seems_to_have_it_all__20250312_153256\images\comment_3.png (5s)
+2025-03-12 15:33:09,802 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_If_she’s_gorgeous,_seems_to_have_it_all__20250312_153256\images\comment_4.png (5s)
+2025-03-12 15:33:09,829 - INFO - [VIDEO] Rendu de 6 images...
+2025-03-12 15:33:30,432 - INFO - [VIDEO] Rendu terminé en 20.60 secondes
+2025-03-12 15:33:30,432 - INFO - [VIDEO] Vidéo créée avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_If_she’s_gorgeous,_seems_to_have_it_all__20250312_153256\video\AskMen_If_she’s_gorgeous,_seems_to_have_it_all__20250312_153256_video.mp4
+2025-03-12 15:33:30,432 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-12 15:33:30,433 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-12 15:33:30,634 - INFO - [VIDEO] Sauvegarde de la vidéo avec audio...
+2025-03-12 15:33:42,558 - INFO - [VIDEO] Vidéo avec audio créée avec succès
+2025-03-12 15:33:42,558 - INFO - Traitement du post 3/3: When to physically escalate?...
+2025-03-12 15:33:42,561 - INFO - TikTokVideoMaker initialisé avec taille=(1080, 1920), fps=30
+2025-03-12 15:33:42,561 - INFO - Création des images...
+2025-03-12 15:33:42,616 - INFO - Carte de titre créée: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_When_to_physically_escalate__20250312_153342\images\title.png
+2025-03-12 15:33:42,680 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_When_to_physically_escalate__20250312_153342\images\comment_0.png
+2025-03-12 15:33:42,771 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_When_to_physically_escalate__20250312_153342\images\comment_1.png
+2025-03-12 15:33:42,842 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_When_to_physically_escalate__20250312_153342\images\comment_2.png
+2025-03-12 15:33:42,948 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_When_to_physically_escalate__20250312_153342\images\comment_3.png
+2025-03-12 15:33:43,021 - INFO - Carte de commentaire créée: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_When_to_physically_escalate__20250312_153342\images\comment_4.png
+2025-03-12 15:33:43,021 - INFO - Création de l'audio...
+2025-03-12 15:33:43,022 - INFO - Génération TTS pour 'When to physically escalate?...' (28 caractères)
+2025-03-12 15:33:43,362 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_When_to_physically_escalate__20250312_153342\audio\title.mp3
+2025-03-12 15:33:43,363 - INFO - Génération TTS pour 'That's your ego talking.  You have nothing to gain...' (98 caractères)
+2025-03-12 15:33:43,808 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_When_to_physically_escalate__20250312_153342\audio\comment_0.mp3
+2025-03-12 15:33:43,808 - INFO - Génération TTS pour 'Physical confrontation potentially leading to seri...' (332 caractères)
+2025-03-12 15:33:46,515 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_When_to_physically_escalate__20250312_153342\audio\comment_1.mp3
+2025-03-12 15:33:46,515 - INFO - Génération TTS pour 'when? After they hit you if that is the only way t...' (169 caractères)
+2025-03-12 15:33:48,412 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_When_to_physically_escalate__20250312_153342\audio\comment_2.mp3
+2025-03-12 15:33:48,413 - INFO - Génération TTS pour 'Yeah you could have stepped to this guy.
+
+You coul...' (466 caractères)
+2025-03-12 15:33:50,413 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_When_to_physically_escalate__20250312_153342\audio\comment_3.mp3
+2025-03-12 15:33:50,414 - INFO - Génération TTS pour 'Nope. Engaging in a fight will only land you in tr...' (184 caractères)
+2025-03-12 15:33:52,062 - INFO - TTS généré avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_When_to_physically_escalate__20250312_153342\audio\comment_4.mp3
+2025-03-12 15:33:53,064 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_When_to_physically_escalate__20250312_153342\images\title.png (5s)
+2025-03-12 15:33:53,088 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_When_to_physically_escalate__20250312_153342\images\comment_0.png (5s)
+2025-03-12 15:33:53,114 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_When_to_physically_escalate__20250312_153342\images\comment_1.png (5s)
+2025-03-12 15:33:53,139 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_When_to_physically_escalate__20250312_153342\images\comment_2.png (5s)
+2025-03-12 15:33:53,168 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_When_to_physically_escalate__20250312_153342\images\comment_3.png (5s)
+2025-03-12 15:33:53,195 - INFO - Ajout d'image: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_When_to_physically_escalate__20250312_153342\images\comment_4.png (5s)
+2025-03-12 15:33:53,221 - INFO - [VIDEO] Rendu de 6 images...
+2025-03-12 15:34:14,479 - INFO - [VIDEO] Rendu terminé en 21.26 secondes
+2025-03-12 15:34:14,480 - INFO - [VIDEO] Vidéo créée avec succès: C:\Users\Artillio\Documents\reddit-video-maker\output\AskMen_When_to_physically_escalate__20250312_153342\video\AskMen_When_to_physically_escalate__20250312_153342_video.mp4
+2025-03-12 15:34:14,480 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-12 15:34:14,480 - INFO - [VIDEO] Début de l'ajout d'audio
+2025-03-12 15:34:14,683 - INFO - [VIDEO] Sauvegarde de la vidéo avec audio...
+2025-03-12 15:34:27,253 - INFO - [VIDEO] Vidéo avec audio créée avec succès
+2025-03-12 15:34:27,253 - INFO - Fichiers temporaires supprimés: 0
+2025-03-12 15:34:27,253 - INFO - Processus terminé en 212.44 secondes.
+2025-03-12 15:34:27,253 - INFO - Vidéos créées: 3/3
+2025-03-12 15:44:48,585 - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\src\output
+2025-03-12 15:44:48,587 - INFO - Successfully connected to Reddit API (read-only mode)
+2025-03-12 15:44:48,587 - INFO - TTSGenerator initialisé (langue=en, tld=com)
+2025-03-12 15:44:48,587 - INFO - RedditTikTokCreator initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-03-12 15:44:48,587 - INFO - Début du processus de création vidéo
+2025-03-12 15:44:48,587 - INFO - Paramètres: subreddit=askreddit, timeframe=day, post_count=10, video_count=3
+2025-03-12 15:44:48,587 - INFO - Méthode de tri aléatoire sélectionnée: controversial
+2025-03-12 15:44:48,587 - INFO - Récupération des posts de r/askreddit avec tri controversial...
+2025-03-12 15:44:48,713 - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\src\output
+2025-03-12 15:44:48,714 - INFO - Successfully connected to Reddit API (read-only mode)
+2025-03-12 15:44:48,714 - INFO - TTSGenerator initialisé (langue=en, tld=com)
+2025-03-12 15:44:48,714 - INFO - RedditTikTokCreator initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-03-12 15:44:48,715 - INFO - Début du processus de création vidéo
+2025-03-12 15:44:48,715 - INFO - Paramètres: subreddit=askreddit, timeframe=day, post_count=10, video_count=3
+2025-03-12 15:44:48,715 - INFO - Méthode de tri aléatoire sélectionnée: rising
+2025-03-12 15:44:48,715 - INFO - Récupération des posts de r/askreddit avec tri rising...
+2025-03-12 15:44:59,412 - WARNING - Retrying due to 500 status: GET https://oauth.reddit.com/comments/1j8sgi1/
+2025-03-12 15:47:55,920 - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\src\output
+2025-03-12 15:47:55,921 - INFO - Successfully connected to Reddit API (read-only mode)
+2025-03-12 15:47:55,921 - INFO - TTSGenerator initialisé (langue=en, tld=com)
+2025-03-12 15:47:55,921 - INFO - RedditTikTokCreator initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-03-12 15:47:55,922 - INFO - Début du processus de création vidéo
+2025-03-12 15:47:55,922 - INFO - Paramètres: subreddit=askreddit, timeframe=day, post_count=10, video_count=3
+2025-03-12 15:47:55,922 - INFO - Méthode de tri aléatoire sélectionnée: top
+2025-03-12 15:47:55,922 - INFO - Récupération des posts de r/askreddit avec tri top...
+2025-03-12 15:47:59,980 - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\src\output
+2025-03-12 15:47:59,981 - INFO - Successfully connected to Reddit API (read-only mode)
+2025-03-12 15:47:59,982 - INFO - TTSGenerator initialisé (langue=en, tld=com)
+2025-03-12 15:47:59,982 - INFO - RedditTikTokCreator initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-03-12 15:47:59,982 - INFO - Début du processus de création vidéo
+2025-03-12 15:47:59,982 - INFO - Paramètres: subreddit=askreddit, timeframe=day, post_count=10, video_count=3
+2025-03-12 15:47:59,982 - INFO - Méthode de tri aléatoire sélectionnée: hot
+2025-03-12 15:47:59,982 - INFO - Récupération des posts de r/askreddit avec tri hot...
+2025-03-12 15:49:32,983 - RedditSilentVideoCreator - INFO - RedditSilentVideoCreator initialized with output directory: output
+2025-03-12 15:49:32,983 - RedditSilentVideoCreator - INFO - Starting content creation: subreddit=askreddit, timeframe=day, post_count=1
+2025-03-12 15:49:32,983 - root - INFO - MediaExtractor initialisé avec répertoire de sortie: C:\Users\Artillio\Documents\reddit-video-maker\output
+2025-03-12 15:49:33,034 - utils.redditScrape - INFO - Successfully connected to Reddit API (read-only mode)
+2025-03-12 15:49:33,034 - utils.redditScrape - INFO - Using sorting method: controversial with span: day
+2025-03-12 15:49:33,464 - utils.redditScrape - INFO - Selected post: have you ever lost a close relationship just because of different political beliefs? what happened?
+2025-03-12 15:49:35,273 - RedditSilentVideoCreator - INFO - Processing post 1/1
+2025-03-12 15:49:35,278 - RedditSilentVideoCreator - INFO - Creating images...
+2025-03-12 15:49:35,755 - RedditSilentVideoCreator - INFO - Creating silent video...
+2025-03-12 15:49:47,443 - RedditSilentVideoCreator - INFO - Content created successfully in directory: output\askreddit_have-you-ever-lost-a-close-relationship-just-becau_1741790975_f6af2ed5
+>>>>>>> 7aa53f45c1e7f2d04afffbdbf61069660b6fdcd0
+2025-05-16 11:45:15,861 - ERROR - Erreur d'importation: No module named 'utils'
+2025-05-16 11:45:15,862 - ERROR - Assurez-vous d'exécuter le script depuis le dossier src
