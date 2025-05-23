@@ -99,3 +99,11 @@ LOGGING_CONFIG = {
     "log_to_file": True,
     "log_file": "reddit_video_maker.log"
 }
+
+# Configuration pour l'interface graphique
+GUI_CONFIG = {
+    "window_width": 900,
+    "window_height": 700,
+    "preview_width": 400,
+    "preview_height": 600
+}

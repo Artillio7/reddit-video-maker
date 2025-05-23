@@ -19,7 +19,7 @@ import shutil
 import threading
 
 # Importer la classe TikTokVideoMaker depuis le module utils.modern_video
-from utils.modern_video import TikTokVideoMaker
+from .utils.modern_video import TikTokVideoMaker
 
 # Vérifier si moviepy est installé
 try:
