@@ -106,12 +106,26 @@ class ModernFuturisticCaptionMaker:
         meta_text = f'Posted by u/{author} on {subreddit}'
         meta_height = draw.textbbox((0, 0), meta_text, font=meta_font)[3]
         
-        # Card dimensions
+        # Card dimensions - optimized for minimal borders while keeping text readable
         padding = 40
-        card_width = int(self.width * 0.9)
-        card_height = title_height + meta_height + padding * 3
+        min_border = 20  # Bordure minimale pour garder la lisibilité
         
-        # Card position
+        # Calculer la largeur optimale basée sur le contenu du texte
+        max_line_width = max(draw.textbbox((0, 0), line, font=title_font)[2] for line in title_lines)
+        meta_width = draw.textbbox((0, 0), meta_text, font=meta_font)[2]
+        content_width = max(max_line_width, meta_width)
+        
+        # Largeur de carte optimale : contenu + padding, mais pas plus que l'écran moins les bordures minimales
+        optimal_card_width = content_width + (padding * 2)
+        max_allowed_width = self.width - (min_border * 2)
+        card_width = min(optimal_card_width, max_allowed_width)
+        
+        # Hauteur de carte optimale
+        card_height = title_height + meta_height + padding * 3
+        max_allowed_height = self.height - (min_border * 2)
+        card_height = min(card_height, max_allowed_height)
+        
+        # Card position - centré avec bordures minimales
         card_x = (self.width - card_width) // 2
         card_y = (self.height - card_height) // 2
         
@@ -150,12 +164,26 @@ class ModernFuturisticCaptionMaker:
         meta_text = f'u/{author}'
         meta_height = draw.textbbox((0, 0), meta_text, font=meta_font)[3]
         
-        # Card dimensions
+        # Card dimensions - optimized for minimal borders while keeping text readable
         padding = 40
-        card_width = int(self.width * 0.9)
-        card_height = text_height + meta_height + padding * 3
+        min_border = 20  # Bordure minimale pour garder la lisibilité
         
-        # Card position - adjust based on comment number
+        # Calculer la largeur optimale basée sur le contenu du texte
+        max_line_width = max(draw.textbbox((0, 0), line, font=comment_font)[2] for line in text_lines)
+        meta_width = draw.textbbox((0, 0), meta_text, font=meta_font)[2]
+        content_width = max(max_line_width, meta_width)
+        
+        # Largeur de carte optimale : contenu + padding, mais pas plus que l'écran moins les bordures minimales
+        optimal_card_width = content_width + (padding * 2)
+        max_allowed_width = self.width - (min_border * 2)
+        card_width = min(optimal_card_width, max_allowed_width)
+        
+        # Hauteur de carte optimale
+        card_height = text_height + meta_height + padding * 3
+        max_allowed_height = self.height - (min_border * 2)
+        card_height = min(card_height, max_allowed_height)
+        
+        # Card position - centré avec bordures minimales
         card_x = (self.width - card_width) // 2
         card_y = (self.height - card_height) // 2
         

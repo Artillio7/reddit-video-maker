@@ -126,15 +126,21 @@ class TikTokVideoMaker:
             video_ratio = video_width / video_height
             
             # Déterminer la meilleure façon de redimensionner l'image pour le format TikTok
-            # Pour le format vertical de TikTok, nous voulons que l'image soit bien visible
-            # mais pas trop grande pour éviter qu'elle ne soit coupée
+            # Optimisation pour bordures minimales tout en gardant la lisibilité
             
-            # Limiter la largeur maximale à 80% de la largeur de la vidéo
-            max_width = int(video_width * 0.8)  # 80% de la largeur de la vidéo
+            # Bordures minimales pour garder la lisibilité
+            min_border_horizontal = 30  # Bordure minimale horizontale
+            min_border_vertical = 40    # Bordure minimale verticale
             
-            # Limiter la hauteur maximale à 60% de la hauteur de la vidéo
-            # pour laisser de l'espace en haut et en bas
-            max_height = int(video_height * 0.6)  # 60% de la hauteur de la vidéo
+            # Calculer les dimensions maximales disponibles
+            max_width = video_width - (min_border_horizontal * 2)
+            max_height = video_height - (min_border_vertical * 2)
+            
+            # Pour les images très hautes, permettre d'utiliser plus d'espace vertical
+            if img_height > img_width * 1.5:  # Image très haute
+                max_height = int(video_height * 0.85)  # Utiliser 85% de la hauteur
+            elif img_width > img_height * 1.5:  # Image très large
+                max_width = int(video_width * 0.9)   # Utiliser 90% de la largeur
             
             # Calculer les nouvelles dimensions en respectant le ratio d'aspect original
             if img_ratio > video_ratio:  # Image plus large que haute par rapport à la vidéo

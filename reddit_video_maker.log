@@ -48778,3 +48778,5 @@ You coul...' (466 caractères)
 >>>>>>> 7aa53f45c1e7f2d04afffbdbf61069660b6fdcd0
 2025-05-16 11:45:15,861 - ERROR - Erreur d'importation: No module named 'utils'
 2025-05-16 11:45:15,862 - ERROR - Assurez-vous d'exécuter le script depuis le dossier src
+2025-05-23 16:49:45,123 - ERROR - Erreur d'importation: No module named 'utils'
+2025-05-23 16:49:45,124 - ERROR - Assurez-vous d'exécuter le script depuis le dossier src
