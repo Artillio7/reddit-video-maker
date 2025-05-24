@@ -563,20 +563,28 @@ class TikTokGUI(tk.Tk):
             video_maker.set_background(self.background_path, self.background_type)
         
         # Configurer l'audio d'arrière-plan si sélectionné
+        audio_duration = total_duration  # Valeur par défaut si pas d'audio
         if self.background_audio_path and os.path.exists(self.background_audio_path):
             video_maker.set_background_audio(self.background_audio_path)
-        
-        # Calculer la durée de chaque image en fonction de sa taille
-        total_size = sum(os.path.getsize(img) for img in self.selected_images)
-        
-        # Ajouter chaque image à la vidéo
-        for img_path in self.selected_images:
-            # Calculer la durée proportionnelle à la taille de l'image
-            img_size = os.path.getsize(img_path)
-            duration = (img_size / total_size) * total_duration
             
-            # Ajouter l'image à la vidéo avec la nouvelle logique de redimensionnement
-            video_maker.add_image(img_path, duration)
+            # Obtenir la durée de l'audio pour synchroniser les images
+            try:
+                audio_clip = AudioFileClip(self.background_audio_path)
+                audio_duration = audio_clip.duration
+                audio_clip.close()
+                self.status_var.set(f"Durée de l'audio détectée: {audio_duration:.2f} secondes")
+            except Exception as e:
+                self.status_var.set(f"Impossible de déterminer la durée de l'audio: {str(e)}")
+                # Continuer avec la durée définie par l'utilisateur
+        
+        # Calculer la durée de chaque image en fonction du nombre d'images et de la durée de l'audio
+        image_count = len(self.selected_images)
+        duration_per_image = audio_duration / image_count
+        
+        # Ajouter chaque image à la vidéo avec une durée égale
+        for img_path in self.selected_images:
+            # Ajouter l'image à la vidéo avec la durée calculée
+            video_maker.add_image(img_path, duration_per_image)
         
         # Rendre la vidéo
         if video_maker.render():
