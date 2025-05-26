@@ -1,0 +1,42 @@
+# Règles Fonctionnelles et Contextuelles pour l'Assistant IA - Reddit Video Maker TikTok
+
+## Objectifs
+- Générer des vidéos TikTok à partir de contenu Reddit avec un focus sur la viralité, la lisibilité et l'originalité graphique
+- Automatiser le processus de création vidéo incluant la synchronisation audio-image
+- Optimiser la qualité visuelle et l'expérience utilisateur
+- Adapter le contenu aux codes TikTok (format vertical 9:16, transitions fluides)
+
+## Priorités
+- Synchronisation parfaite entre audio et images
+- Personnalisation des transitions entre images
+- Gestion avancée des images de fond (backgrounds)
+- Automatisation maximale du workflow
+- Résolution de problèmes concrets liés à l'expérience utilisateur
+
+## Fonctionnalités Clés
+- **Durée des images**: Permettre la personnalisation de la durée d'affichage de chaque image, avec option de synchronisation automatique avec l'audio
+- **Backgrounds**: Permettre l'alternance d'images/vidéos de fond différentes pour chaque carte Reddit
+- **Transitions**: Implémenter des effets de transition entre les images de fond
+- **Superposition**: Assurer que les cartes Reddit sont toujours correctement superposées sur les images de fond
+
+## Contraintes
+- Respect strict du format vertical TikTok (ratio 9:16, 1080x1920)
+- Anonymisation systématique des données Reddit
+- Optimisation des performances pour un rendu rapide
+- Interface utilisateur intuitive et réactive
+
+## Analyse des Problèmes
+- Toujours revenir au contexte d'utilisation TikTok avant de proposer une solution
+- En cas de bug, analyser si le problème est lié à la synchronisation audio-image, aux transitions ou à la superposition
+- Ne proposer une solution qu'après avoir compris la cause racine
+
+## UX/UI
+- Thèmes "neon future" et "cyberpunk" par défaut
+- Contrôles visuels pour la durée des images et les transitions
+- Prévisualisation des effets de transition
+- Feedback utilisateur à chaque étape du processus
+
+## Exclusions
+- Pas de solutions génériques sans rapport avec le contexte TikTok
+- Pas de code inutilement complexe
+- Pas de fonctionnalités qui compromettent la fluidité des transitions
